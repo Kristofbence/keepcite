@@ -37,6 +37,23 @@ leaner, answer-first template (`renderKeyword()` in `build.mjs`).
 3. Run `node build.mjs` → writes `/<cc>/<slug>/index.html` and adds it to the sitemap.
 4. Each page emits `BreadcrumbList` + `FAQPage` JSON-LD automatically.
 
+## Legal / static pages
+
+`/imprint/`, `/privacy/`, `/accessibility-statement/` are generated from
+`data/legal/*.json` via `renderLegal()`. Each has a `slug`, `lang`, `canonical`,
+`h1`, `updated`, and a single `bodyHtml` field. Placeholder fields awaiting real
+data use `<span class='todo'>[…]</span>` (highlighted amber) — fill these before
+relying on the Impressum legally.
+
+## Footer (column layout)
+
+The navy column footer is generated once by `footerColumns()` from `data/*.json`:
+one column per market (in `MARKET_ORDER`) listing the hub + every keyword
+sub-page for that market, plus a Legal column. New market or keyword pages appear
+automatically on the next `node build.mjs`. The same footer is injected into
+`index.html` between the `<!--FOOTER:START-->` / `<!--FOOTER:END-->` markers, so
+the hand-authored root page stays in sync too — **do not remove those markers.**
+
 ## Notes
 
 - The Web3Forms key is shared; each page adds a hidden `market` field (e.g. `DE`)

@@ -1,0 +1,14 @@
+{
+  "slug": "accessibility-statement",
+  "lang": "en",
+  "canonical": "https://keepcite.com/accessibility-statement/",
+  "title": "Accessibility Statement | keepcite",
+  "metaDescription": "keepcite's own accessibility statement: our WCAG 2.1 AA conformance target, how we test, scope and limitations, and how to give feedback.",
+  "robots": "index,follow",
+  "skip": "Skip to content",
+  "cta": "Free scan",
+  "h1": "Accessibility Statement",
+  "updated": "Last reviewed: 12 July 2026",
+  "footNote": "© 2026 Chirimoya OÜ · keepcite",
+  "bodyHtml": "<p>keepcite is a business built on digital accessibility, so we hold our own website to the standard we sell. This statement explains our target, how we test, and how to reach us if something isn't working for you.</p>\n\n<h2>Conformance target</h2>\n<p>We aim to conform to the <strong>Web Content Accessibility Guidelines (WCAG) 2.1, Level AA</strong> — the standard referenced by EN 301 549 and the European Accessibility Act. We consider this site to be substantially conformant with WCAG 2.1 AA, and we treat any shortfall as a defect to fix.</p>\n\n<h2>What we do to meet it</h2>\n<ul>\n  <li>Semantic HTML with a single main heading per page, landmark regions, and a skip-to-content link.</li>\n  <li>Full keyboard operability with visible focus indicators.</li>\n  <li>Colour contrast checked against the WCAG 2.1 AA thresholds.</li>\n  <li>Respect for the user's reduced-motion preference.</li>\n  <li>Form fields with associated labels and clear, text-based instructions.</li>\n</ul>\n\n<h2>How we test</h2>\n<p>We combine <strong>automated checks</strong> (accessibility linting against WCAG 2.1 AA) with <strong>manual testing</strong>: keyboard-only navigation, screen-reader testing (for example NVDA and VoiceOver), zoom and reflow to 200%, and colour-contrast verification. We re-test whenever we change the site.</p>\n\n<h2>Scope and limitations</h2>\n<p>This statement covers keepcite.com and its country and topic pages. It is a self-assessment, not a third-party certification. Content served by external providers may not be under our direct control. If you find a barrier we've missed, please tell us — see below.</p>\n\n<h2>Feedback and contact</h2>\n<p>If you encounter an accessibility barrier on this site, or need information from it in an alternative format, email <a href='mailto:hello@keepcite.com'>hello@keepcite.com</a>. We aim to acknowledge feedback within five working days.</p>\n\n<h2>Enforcement</h2>\n<p>If you are not satisfied with our response, you can contact the accessibility enforcement or supervisory body in your EU member state.</p>"
+}

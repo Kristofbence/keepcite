@@ -41,6 +41,29 @@ const extraCss = `
   .kwsection p{color:#3C4452;font-weight:500;margin-bottom:12px;}
   .kwscan{max-width:560px;margin:0 auto;}
   .kwscanband{padding:16px 0 60px;}
+  /* column footer */
+  .footcols{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 28px;padding-bottom:30px;border-bottom:1px solid var(--navy-line);}
+  @media(max-width:820px){.footcols{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:460px){.footcols{grid-template-columns:1fr;}}
+  .footcol{display:flex;flex-direction:column;gap:8px;min-width:0;}
+  .footcol h3{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#7E92BE;font-weight:600;margin:0 0 2px;}
+  .footcol h3 a{color:#fff;text-decoration:none;}
+  .footcol h3 a:hover{color:#6E93FF;}
+  .footcol a{color:var(--navy-text);text-decoration:none;font-size:13px;line-height:1.4;}
+  .footcol a:hover{color:#fff;}
+  footer .foot-row{margin-top:26px;}
+  /* legal pages */
+  .legalwrap{padding:34px 0 64px;}
+  .legal{max-width:820px;}
+  .legal h1{font-size:clamp(30px,4vw,44px);margin-bottom:8px;}
+  .legal .updated{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);margin-bottom:26px;}
+  .legal h2{font-size:22px;font-weight:800;letter-spacing:-.015em;margin:32px 0 10px;}
+  .legal h3{font-size:17px;font-weight:700;margin:20px 0 6px;}
+  .legal p,.legal li{color:#28324A;font-weight:500;font-size:16px;margin-bottom:12px;line-height:1.65;}
+  .legal ul{margin:0 0 12px 22px;}
+  .legal a{color:var(--blue);}
+  .legal address{font-style:normal;color:#28324A;font-weight:600;line-height:1.8;margin-bottom:12px;}
+  .legal .todo{background:#FFF0C2;color:#7A5B00;padding:1px 7px;border-radius:5px;font-weight:700;font-size:14px;}
 `;
 
 // reveal + count-up only (no geo fetch — country pages hardcode their country)
@@ -92,6 +115,93 @@ function faqSchema(items, langName) {
     '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: langName,
     mainEntity: items.map(i => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.aPlain || i.a.replace(/<[^>]+>/g, '') } })),
   };
+}
+
+// ---------- shared column footer ----------
+const MARKET_ORDER = ['de', 'fr', 'es', 'it', 'nl', 'ie'];
+let FOOTER_COLS = ''; // assigned in the build step once markets + keywords are loaded
+
+function footerColumns(markets, keywords) {
+  const sorted = [...markets].sort((a, b) => {
+    const ai = MARKET_ORDER.indexOf(a.cc), bi = MARKET_ORDER.indexOf(b.cc);
+    return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi);
+  });
+  const cols = [`<nav class="footcol" aria-label="EU / English"><h3><a href="/">EU / English</a></h3></nav>`];
+  for (const m of sorted) {
+    const path = m.canonical.replace(BASE, '');
+    const kws = keywords.filter(k => k.cc === m.cc)
+      .map(k => `<a href="/${k.cc}/${k.slug}/">${esc(k.breadcrumb[k.breadcrumb.length - 1].name)}</a>`).join('');
+    cols.push(`<nav class="footcol" aria-label="${esc(m.switchLabel)}"><h3><a href="${path}">${esc(m.switchLabel)}</a></h3>${kws}</nav>`);
+  }
+  cols.push(`<div class="footcol"><h3>Legal</h3><a href="/imprint/">Imprint</a><a href="/privacy/">Privacy</a><a href="/accessibility-statement/">Accessibility statement</a><a href="mailto:hello@keepcite.com">hello@keepcite.com</a></div>`);
+  return `<div class="footcols">\n      ${cols.join('\n      ')}\n    </div>`;
+}
+
+function renderFooter(noteHtml, sourcesLabel, sources) {
+  const src = sources && sources.length
+    ? `\n    <p class="sources">${sourcesLabel} ${sources.map(s => `<a href="${s.href}" rel="nofollow">${esc(s.label)}</a>`).join(' · ')}</p>` : '';
+  return `<footer>
+  <div class="wrap">
+    ${FOOTER_COLS}
+    <div class="foot-row">
+      <a class="logo" href="/">keep<em>cite</em></a>
+      <p><a href="mailto:hello@keepcite.com">hello@keepcite.com</a> · Chirimoya OÜ · Tallinn, EU</p>
+    </div>
+    <p class="foot-note">${raw(noteHtml)}</p>${src}
+  </div>
+</footer>`;
+}
+
+// ---------- legal / static content pages ----------
+function renderLegal(page) {
+  return `<!DOCTYPE html>
+<html lang="${page.lang}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${esc(page.title)}</title>
+<meta name="description" content="${esc(page.metaDescription)}">
+<link rel="canonical" href="${page.canonical}">
+<meta name="robots" content="${page.robots || 'index,follow'}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>${sharedCss}${extraCss}</style>
+</head>
+<body>
+<a class="skip" href="#main">${esc(page.skip || 'Skip to main content')}</a>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/">keep<em>cite</em></a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="/">keepcite.com</a></li>
+        <li><a class="btn" href="/#scan" style="padding:11px 20px;font-size:14.5px;">${esc(page.cta || 'Free scan')}</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="legalwrap">
+    <div class="wrap">
+      <div class="legal reveal">
+        <h1 class="display">${esc(page.h1)}</h1>
+        <p class="updated">${esc(page.updated)}</p>
+        ${page.bodyHtml}
+      </div>
+    </div>
+  </section>
+</main>
+
+${renderFooter(page.footNote, null, null)}
+
+<script>${script('.')}
+</script>
+</body>
+</html>
+`;
 }
 
 // ---------- the template ----------
@@ -288,17 +398,7 @@ ${d.fines.items.map(fineCard).join('\n')}
 
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="foot-row">
-      <a class="logo" href="#top">keep<em>cite</em></a>
-      <p>${raw(d.footer.contactHtml)}</p>
-    </div>
-    <div class="countryswitch">${d._siblings.map(c => `<a href="${c.href}"${c.lang ? ` hreflang="${c.lang}"` : ''}>${esc(c.label)}</a>`).join('')}</div>
-    <p class="foot-note">${raw(d.footer.noteHtml)}</p>
-    <p class="sources">${d.footer.sourcesLabel} ${d.footer.sources.map(s => `<a href="${s.href}" rel="nofollow">${esc(s.label)}</a>`).join(' · ')}</p>
-  </div>
-</footer>
+${renderFooter(d.footer.noteHtml, d.footer.sourcesLabel, d.footer.sources)}
 
 <script>${script(sep)}
 </script>
@@ -438,17 +538,7 @@ ${JSON.stringify(faq, null, 2)}
   </section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="foot-row">
-      <a class="logo" href="${kw.hubHref}">keep<em>cite</em></a>
-      <p>${raw(kw.footer.contactHtml)}</p>
-    </div>
-    <div class="countryswitch"><a href="${kw.hubHref}">${esc(kw.hubLabel)}</a><a href="/">EU / English</a></div>
-    <p class="foot-note">${raw(kw.footer.noteHtml)}</p>
-    <p class="sources">${kw.footer.sourcesLabel} ${kw.footer.sources.map(s => `<a href="${s.href}" rel="nofollow">${esc(s.label)}</a>`).join(' · ')}</p>
-  </div>
-</footer>
+${renderFooter(kw.footer.noteHtml, kw.footer.sourcesLabel, kw.footer.sources)}
 
 <script>${script(sep)}
 </script>
@@ -476,9 +566,23 @@ function siblingsFor(cc) {
   return list;
 }
 
+// keyword sub-pages: data/keywords/<cc>-<slug>.json → /<cc>/<slug>/index.html
+const kwDir = join(dataDir, 'keywords');
+const keywords = existsSync(kwDir)
+  ? readdirSync(kwDir).filter(f => f.endsWith('.json')).map(f => JSON.parse(readFileSync(join(kwDir, f), 'utf8')))
+  : [];
+
+// legal / static pages: data/legal/<slug>.json → /<slug>/index.html
+const legalDir = join(dataDir, 'legal');
+const legals = existsSync(legalDir)
+  ? readdirSync(legalDir).filter(f => f.endsWith('.json')).map(f => JSON.parse(readFileSync(join(legalDir, f), 'utf8')))
+  : [];
+
+// build the shared column footer now that markets + keywords are known
+FOOTER_COLS = footerColumns(markets, keywords);
+
 const built = [];
 for (const m of markets) {
-  m._siblings = siblingsFor(m.cc);
   const html = render(m, alternatesFor(), m.thousandsSep || '.');
   const dir = join(ROOT, m.cc);
   mkdirSync(dir, { recursive: true });
@@ -486,12 +590,6 @@ for (const m of markets) {
   built.push(`/${m.cc}/`);
   console.log(`built /${m.cc}/index.html`);
 }
-
-// keyword sub-pages: data/keywords/<cc>-<slug>.json → /<cc>/<slug>/index.html
-const kwDir = join(dataDir, 'keywords');
-const keywords = existsSync(kwDir)
-  ? readdirSync(kwDir).filter(f => f.endsWith('.json')).map(f => JSON.parse(readFileSync(join(kwDir, f), 'utf8')))
-  : [];
 for (const kw of keywords) {
   const html = renderKeyword(kw, kw.thousandsSep || '.');
   const dir = join(ROOT, kw.cc, kw.slug);
@@ -500,9 +598,25 @@ for (const kw of keywords) {
   built.push(`/${kw.cc}/${kw.slug}/`);
   console.log(`built /${kw.cc}/${kw.slug}/index.html`);
 }
+for (const pg of legals) {
+  const html = renderLegal(pg);
+  const dir = join(ROOT, pg.slug);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, 'index.html'), html);
+  built.push(`/${pg.slug}/`);
+  console.log(`built /${pg.slug}/index.html`);
+}
 
-// sitemap.xml (root + every market + every keyword page)
-const urls = [`${BASE}/`, ...markets.map(m => m.canonical), ...keywords.map(k => k.canonical)];
+// keep index.html's footer in sync (between the FOOTER markers)
+const idxPath = join(ROOT, 'index.html');
+const idx = readFileSync(idxPath, 'utf8');
+const idxFooter = `<!--FOOTER:START-->\n    ${FOOTER_COLS}\n    <div class="foot-row">\n      <a class="logo" href="/">keep<em>cite</em></a>\n      <p><a href="mailto:hello@keepcite.com">hello@keepcite.com</a> · Chirimoya OÜ · Tallinn, EU</p>\n    </div>\n    <p class="foot-note">This page passes the audit it sells: WCAG 2.1 AA, keyboard-navigable, screen-reader tested. · © 2026 keepcite</p>\n    <!--FOOTER:END-->`;
+const idxPatched = idx.replace(/<!--FOOTER:START-->[\s\S]*?<!--FOOTER:END-->/, idxFooter);
+if (idxPatched !== idx) { writeFileSync(idxPath, idxPatched); console.log('patched index.html footer'); }
+else { console.log('WARNING: index.html footer markers not found — footer not patched'); }
+
+// sitemap.xml (root + markets + keyword pages + legal pages)
+const urls = [`${BASE}/`, ...markets.map(m => m.canonical), ...keywords.map(k => k.canonical), ...legals.map(l => l.canonical)];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}
