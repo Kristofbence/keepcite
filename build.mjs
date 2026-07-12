@@ -611,9 +611,13 @@ for (const pg of legals) {
 const idxPath = join(ROOT, 'index.html');
 const idx = readFileSync(idxPath, 'utf8');
 const idxFooter = `<!--FOOTER:START-->\n    ${FOOTER_COLS}\n    <div class="foot-row">\n      <a class="logo" href="/">keep<em>cite</em></a>\n      <p><a href="mailto:hello@keepcite.com">hello@keepcite.com</a> · Chirimoya OÜ · Tallinn, EU</p>\n    </div>\n    <p class="foot-note">This page passes the audit it sells: WCAG 2.1 AA, keyboard-navigable, screen-reader tested. · © 2026 keepcite</p>\n    <!--FOOTER:END-->`;
-const idxPatched = idx.replace(/<!--FOOTER:START-->[\s\S]*?<!--FOOTER:END-->/, idxFooter);
-if (idxPatched !== idx) { writeFileSync(idxPath, idxPatched); console.log('patched index.html footer'); }
-else { console.log('WARNING: index.html footer markers not found — footer not patched'); }
+const markerRe = /<!--FOOTER:START-->[\s\S]*?<!--FOOTER:END-->/;
+if (!markerRe.test(idx)) { console.log('WARNING: index.html footer markers not found — footer not patched'); }
+else {
+  const idxPatched = idx.replace(markerRe, idxFooter);
+  if (idxPatched !== idx) { writeFileSync(idxPath, idxPatched); console.log('patched index.html footer'); }
+  else { console.log('index.html footer already current'); }
+}
 
 // sitemap.xml (root + markets + keyword pages + legal pages)
 const urls = [`${BASE}/`, ...markets.map(m => m.canonical), ...keywords.map(k => k.canonical), ...legals.map(l => l.canonical)];
