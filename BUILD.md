@@ -54,6 +54,24 @@ automatically on the next `node build.mjs`. The same footer is injected into
 `index.html` between the `<!--FOOTER:START-->` / `<!--FOOTER:END-->` markers, so
 the hand-authored root page stays in sync too — **do not remove those markers.**
 
+## Analytics
+
+Every page loads **Plausible** (cookieless, GDPR-friendly, no cookie banner) via the
+shared `ANALYTICS` tag in `build.mjs` (`data-domain="keepcite.com"`) and directly in
+`index.html`'s `<head>`. The privacy policy discloses it (§2d). Switching to Google
+Analytics would require a cookie-consent banner and rewriting the privacy page — do
+not swap it out casually.
+
+## Validate submission-readiness
+
+```bash
+node build.mjs && node validate.mjs
+```
+
+`validate.mjs` discovers every page from `data/` and checks: unique `<title>` < 60,
+unique meta description < 160, exactly one `<h1>`, a canonical tag, a self-referencing
+hreflang, and parseable JSON-LD. It exits non-zero on any failure.
+
 ## Notes
 
 - The Web3Forms key is shared; each page adds a hidden `market` field (e.g. `DE`)

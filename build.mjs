@@ -3,12 +3,15 @@
 // → /<cc>/index.html, all sharing index.html's exact CSS. Also emits sitemap.xml.
 // Run: `node build.mjs`   (Node 18+, no dependencies)
 
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const BASE = 'https://keepcite.com';
+
+// Privacy-friendly, cookieless analytics (no cookie banner needed under GDPR).
+const ANALYTICS = '<script defer data-domain="keepcite.com" src="https://plausible.io/js/script.js"></script>';
 
 // ---- shared chrome pulled straight from index.html so pages stay identical ----
 const index = readFileSync(join(ROOT, 'index.html'), 'utf8');
@@ -162,11 +165,16 @@ function renderLegal(page) {
 <title>${esc(page.title)}</title>
 <meta name="description" content="${esc(page.metaDescription)}">
 <link rel="canonical" href="${page.canonical}">
+<link rel="alternate" hreflang="${page.lang}" href="${page.canonical}">
 <meta name="robots" content="${page.robots || 'index,follow'}">
+<script type="application/ld+json">
+${JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebPage', name: page.h1, url: page.canonical, inLanguage: page.lang, isPartOf: { '@type': 'WebSite', name: 'keepcite', url: `${BASE}/` } }, null, 2)}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>${sharedCss}${extraCss}</style>
+${ANALYTICS}
 </head>
 <body>
 <a class="skip" href="#main">${esc(page.skip || 'Skip to main content')}</a>
@@ -235,6 +243,7 @@ ${JSON.stringify(faqSchema(d.faqSection.items, d.schema.inLanguage), null, 2)}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>${sharedCss}${extraCss}</style>
+${ANALYTICS}
 </head>
 <body>
 <a class="skip" href="#main">${esc(d.skip)}</a>
@@ -428,6 +437,7 @@ function renderKeyword(kw, sep) {
 <title>${esc(kw.title)}</title>
 <meta name="description" content="${esc(kw.metaDescription)}">
 <link rel="canonical" href="${kw.canonical}">
+<link rel="alternate" hreflang="${kw.hreflang || kw.lang}" href="${kw.canonical}">
 <meta property="og:title" content="${esc(kw.ogTitle)}">
 <meta property="og:description" content="${esc(kw.ogDescription)}">
 <meta property="og:type" content="article">
@@ -443,6 +453,7 @@ ${JSON.stringify(faq, null, 2)}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>${sharedCss}${extraCss}</style>
+${ANALYTICS}
 </head>
 <body>
 <a class="skip" href="#scan">${esc(kw.skip)}</a>
@@ -619,12 +630,18 @@ else {
   else { console.log('index.html footer already current'); }
 }
 
-// sitemap.xml (root + markets + keyword pages + legal pages)
-const urls = [`${BASE}/`, ...markets.map(m => m.canonical), ...keywords.map(k => k.canonical), ...legals.map(l => l.canonical)];
+// sitemap.xml (root + markets + keyword pages + legal pages) with <lastmod>
+const entries = [
+  { loc: `${BASE}/`, file: 'index.html' },
+  ...markets.map(m => ({ loc: m.canonical, file: `${m.cc}/index.html` })),
+  ...keywords.map(k => ({ loc: k.canonical, file: `${k.cc}/${k.slug}/index.html` })),
+  ...legals.map(l => ({ loc: l.canonical, file: `${l.slug}/index.html` })),
+];
+const lastmod = f => statSync(join(ROOT, f)).mtime.toISOString().slice(0, 10);
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}
+${entries.map(e => `  <url><loc>${e.loc}</loc><lastmod>${lastmod(e.file)}</lastmod></url>`).join('\n')}
 </urlset>
 `;
 writeFileSync(join(ROOT, 'sitemap.xml'), sitemap);
-console.log(`wrote sitemap.xml (${urls.length} urls)`);
+console.log(`wrote sitemap.xml (${entries.length} urls)`);
