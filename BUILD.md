@@ -25,6 +25,18 @@ This writes `/<cc>/index.html` for every `data/<cc>.json` and regenerates
 4. Run `node build.mjs`.
 5. Add the new `hreflang` line to `index.html`'s `<head>` and a link in its footer.
 
+## Add a keyword sub-page
+
+Keyword pages target one high-intent term each (e.g. "BFSG Bußgeld") and use a
+leaner, answer-first template (`renderKeyword()` in `build.mjs`).
+
+1. Add `data/keywords/<cc>-<slug>.json` (copy `data/keywords/de-bfsg-bussgeld.json`).
+   Key fields: `cc`, `slug`, `canonical`, `hubHref`/`hubLabel`, an `answerHtml`
+   (the extractable answer paragraph), `breadcrumb`, `sections`, and a localized `faqSection`.
+2. Link it from the country hub (add an internal link in that market's `data/<cc>.json`).
+3. Run `node build.mjs` → writes `/<cc>/<slug>/index.html` and adds it to the sitemap.
+4. Each page emits `BreadcrumbList` + `FAQPage` JSON-LD automatically.
+
 ## Notes
 
 - The Web3Forms key is shared; each page adds a hidden `market` field (e.g. `DE`)
