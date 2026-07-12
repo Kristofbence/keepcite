@@ -300,7 +300,7 @@ const markets = files.map(f => JSON.parse(readFileSync(join(dataDir, f), 'utf8')
 // hreflang alternates: every market + the English root as en/x-default
 function alternatesFor() {
   const alts = [{ lang: 'x-default', href: `${BASE}/` }, { lang: 'en', href: `${BASE}/` }];
-  for (const m of markets) alts.push({ lang: m.lang, href: m.canonical });
+  for (const m of markets) alts.push({ lang: m.hreflang || m.lang, href: m.canonical });
   return alts;
 }
 

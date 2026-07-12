@@ -1,0 +1,137 @@
+{
+  "cc": "ie",
+  "lang": "en",
+  "hreflang": "en-IE",
+  "switchLabel": "Ireland",
+  "ogLocale": "en_IE",
+  "thousandsSep": ",",
+  "canonical": "https://keepcite.com/ie/",
+  "title": "European Accessibility Act Ireland (S.I. 636/2023): is your checkout compliant? | keepcite",
+  "metaDescription": "Since 28 June 2025, S.I. 636/2023 makes the European Accessibility Act binding on online stores in Ireland — the only EU state with criminal liability. keepcite audits your checkout against WCAG 2.1 AA and gives you dated evidence. Free scan in 48 hours.",
+  "ogTitle": "EAA compliance in Ireland (S.I. 636/2023) — keepcite",
+  "ogDescription": "Free accessibility scan of your checkout. Ireland is the only EU country where non-compliance is a criminal offence — fines to €60,000 and up to 18 months. Build your evidence trail first.",
+  "schema": {
+    "serviceName": "keepcite",
+    "serviceDesc": "Accessibility auditing against WCAG 2.1 AA and continuous compliance evidence for online stores in Ireland.",
+    "areaServed": "Ireland",
+    "email": "scan@keepcite.com",
+    "inLanguage": "en"
+  },
+  "skip": "Skip to main content",
+  "nav": {
+    "ariaLabel": "Main",
+    "whyNow": "Why now",
+    "how": "How it works",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "cta": "Free scan"
+  },
+  "kicker": "European Accessibility Act · Ireland",
+  "geoFlagSvg": "<svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='30' height='60' fill='#169B62'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#FF883E'/></svg>",
+  "geoText": "Selling in <b>Ireland</b>? Non-compliance is a <b>criminal offence</b> under S.I. 636/2023 — fines to €60,000, up to 18 months, and directors are personally liable.",
+  "h1Html": "Is your checkout <span class='hl'>breaking Irish law?</span>",
+  "heroSubHtml": "Every online store serving Ireland must now meet the accessibility standard. Most don't. Ireland is the <b style='color:var(--ink)'>only EU state with criminal liability</b>.",
+  "scan": {
+    "h2": "See if you're compliant",
+    "free": "Free",
+    "sub2": "Your store, scanned against the law's standard.",
+    "formAria": "Request a free compliance scan",
+    "subject": "New scan request — keepcite (IE)",
+    "urlLabel": "Your store URL",
+    "urlPh": "https://yourstore.ie",
+    "emailLabel": "Work email",
+    "emailPh": "you@company.ie",
+    "button": "See if I'm compliant",
+    "note": "Violations · screenshots · legal clauses. No call. No spam."
+  },
+  "trust": [
+    "Standard: <b>WCAG 2.1 AA</b>",
+    "Basis: <b>EN 301 549</b>",
+    "Result: <b>in 48 hours</b>"
+  ],
+  "keyFacts": {
+    "title": "Ireland's EAA rules at a glance",
+    "items": [
+      { "label": "Law", "value": "S.I. No. 636/2023 — transposes Directive (EU) 2019/882" },
+      { "label": "In force", "value": "28 June 2025" },
+      { "label": "Who", "value": "Online stores and digital services for consumers in Ireland" },
+      { "label": "Standard", "value": "EN 301 549 → WCAG 2.1 Level AA" },
+      { "label": "Penalty", "value": "on indictment up to <b>€60,000 or 18 months</b>; summary up to €5,000 or 6 months" },
+      { "label": "Liability", "value": "criminal — directors and officers personally liable (Reg. 33)" },
+      { "label": "Exemption", "value": "microenterprises only — under 10 staff <b>and</b> under €2M turnover" }
+    ]
+  },
+  "law": {
+    "titleHtml": "What is the <span style='color:var(--blue)'>European Accessibility Act?</span>",
+    "pill": "The law, in 30 seconds",
+    "cells": [
+      { "h3Html": "What <span>it is</span>", "bodyHtml": "An EU directive (2019/882), transposed in Ireland by <b>S.I. 636/2023 and in force since 28 June 2025</b>. Digital services sold to consumers must be usable by people with disabilities. E-commerce is named explicitly." },
+      { "h3Html": "Who <span>must comply</span>", "bodyHtml": "Anyone selling products <b>or services</b> online to consumers in Ireland — stores, SaaS, booking &amp; ticketing, banking, e-books. Only true microenterprises are exempt: under 10 staff <b>and</b> under €2M turnover." },
+      { "h3Html": "What <span>it requires</span>", "bodyHtml": "Your site must meet <b>WCAG 2.1 AA</b> — a technical standard with ~50 testable criteria. Your checkout and payment flow are the highest-risk pages. A public accessibility statement is also mandatory." }
+    ]
+  },
+  "fines": {
+    "h2Html": "Are you compliant? <span class='u'>In Ireland, it's criminal.</span>",
+    "lead": "Ireland went further than any other member state. Enforcement has already begun elsewhere.",
+    "items": [
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flag of Ireland'><rect width='30' height='60' fill='#169B62'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#FF883E'/></svg>", "tagline": "On indictment · Ireland", "to": 60000, "prefix": "€", "suffix": "", "small": "+ 18 MONTHS", "what": "Fine on conviction on indictment under S.I. 636/2023 (Reg. 32), or up to 18 months' imprisonment. Directors can be personally liable." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flag of Ireland'><rect width='30' height='60' fill='#169B62'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#FF883E'/></svg>", "tagline": "Summary conviction", "to": 5000, "prefix": "€", "suffix": "", "small": "+ 6 MONTHS", "what": "Class A fine in the lower court, or up to 6 months' imprisonment." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flag of Spain'><rect width='90' height='60' fill='#AA151B'/><rect y='15' width='90' height='30' fill='#F1BF00'/></svg>", "to": 1000000, "prefix": "€", "suffix": "", "what": "Maximum fine · Spain — the steepest in the EU." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flag of France'><rect width='30' height='60' fill='#0055A4'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#EF4135'/></svg>", "tagline": "Court order · Carrefour", "to": 500, "prefix": "€", "suffix": "", "small": "/ DAY", "what": "Daily penalty ordered against Carrefour by a French court (2026): site and app accessible within six months." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flag of Germany'><rect width='90' height='20' fill='#000'/><rect y='20' width='90' height='20' fill='#DD0000'/><rect y='40' width='90' height='20' fill='#FFCE00'/></svg>", "to": 100000, "prefix": "€", "suffix": "", "what": "Maximum fine · Germany — plus waves of competitor cease-and-desist letters." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flag of the Netherlands'><rect width='90' height='20' fill='#AE1C28'/><rect y='20' width='90' height='20' fill='#fff'/><rect y='40' width='90' height='20' fill='#21468B'/></svg>", "to": 900000, "prefix": "€", "suffix": "", "what": "Maximum fine · Netherlands — or up to 1% of annual turnover." }
+    ]
+  },
+  "value": {
+    "kicker": "How it works",
+    "h2": "We scan it. We fix it. We keep it fixed.",
+    "lead": "Three concrete deliverables — colour-coded, so you always know what you're buying.",
+    "steps": [
+      { "ofClass": "of-scan", "tagchip": "48 hours", "n": "1", "h3Html": "The Scan", "p": "Automated WCAG 2.1 AA scan of your checkout. You get a 3-page PDF: your worst violations, screenshots, the exact clauses — and whether your mandatory statement exists.", "chipClass": "pc-free", "chipText": "FREE" },
+      { "ofClass": "of-fix", "tagchip": "2–3 weeks", "n": "2", "h3Html": "The Audit &amp; Fix Plan", "p": "Full human audit — screen reader, keyboard, the ~2/3 of failures no tool can catch. Your devs get ready-to-ship tickets with code. We write and publish your accessibility statement.", "chipClass": "pc-blue", "chipText": "€999 one-time" },
+      { "ofClass": "of-mon", "tagchip": "Every month", "n": "3", "h3Html": "The Evidence", "p": "Monthly scans of your store, regression alerts when a release breaks something, and a dated compliance certificate for your evidence file. Cancel anytime.", "chipClass": "pc-navy", "chipText": "€99 / month" }
+    ],
+    "proof": [
+      { "b": "Dated certificate", "span": "monthly, for your evidence file" },
+      { "b": "Regression checks", "span": "every release, before it hurts you" },
+      { "b": "Named contact", "span": "if a regulator or lawyer writes" },
+      { "b": "Plain-English briefs", "span": "rulings &amp; rules that affect you" }
+    ]
+  },
+  "midcta": {
+    "h2": "Find out before a prosecutor does.",
+    "button": "Get my free scan",
+    "note": "3-page PDF · 48 hours · no call, no pitch deck"
+  },
+  "pricing": {
+    "kicker": "Pricing",
+    "h2": "Simple. No retainers, no surprises.",
+    "lead": "Start free. Pay once to get compliant. Pay monthly to stay that way.",
+    "plans": [
+      { "cls": "p-free", "tier": "The Scan", "priceHtml": "€0", "forText": "See where you stand", "items": ["Checkout scanned against WCAG 2.1 AA", "3-page PDF with your worst violations", "Accessibility statement check", "Delivered in 48 hours"], "btnText": "Get the free scan", "btnAlt": true },
+      { "cls": "p-audit", "tier": "The Audit &amp; Fix Plan", "priceHtml": "€999 <small>one-time</small>", "forText": "Get compliant", "items": ["Full human audit: screen reader + keyboard", "Developer-ready fix tickets with code", "Accessibility statement written &amp; published", "Your dated baseline evidence pack"], "btnText": "Start with the free scan", "btnAlt": false },
+      { "cls": "p-mon", "tier": "The Evidence", "priceHtml": "€99 <small>/ month</small>", "forText": "Stay compliant", "items": ["Monthly scans of your store", "Regression alerts on every release", "Dated compliance certificate each month", "Cancel anytime"], "btnText": "Start with the free scan", "btnAlt": true }
+    ],
+    "noteHtml": "Bigger store, multiple brands, or want it fully done for you — fixes included, a named accessibility contact, priority support? <a href='mailto:hello@keepcite.com?subject=Done-for-you%20compliance'>Ask about our done-for-you plan →</a>"
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      { "q": "Does this law apply to my store?", "a": "Selling to consumers in Ireland via website or app? Yes. The EAA has been in force since 28 June 2025 under S.I. 636/2023 — e-commerce, banking, telecom, travel booking, e-books. The standard is WCAG 2.1 AA (EN 301 549). Only true microenterprises — under 10 staff AND under €2M turnover — are exempt. Both must be true." },
+      { "q": "Why is Ireland different?", "a": "Ireland is the only EU member state that makes serious EAA non-compliance a criminal offence. Under S.I. 636/2023 (Regs. 32–33), conviction on indictment carries a fine up to <b>€60,000 or 18 months' imprisonment</b>; summary conviction up to €5,000 or 6 months. Company directors, managers and officers can be held personally liable unless they prove they took reasonable steps." },
+      { "q": "Can't I just install a widget?", "a": "No. Overlays don't touch the code the standard measures. 800+ accessibility professionals have publicly said they don't work, and the US FTC ordered accessiBe to pay $1M over its compliance claims. Worse: a widget proves you knew — without fixing anything." },
+      { "q": "What do I get every month?", "a": "Weekly automated scans, monthly human screen-reader testing, developer-ready fix tickets, your accessibility statement kept current, and a dated compliance certificate — the evidence file you hand to any regulator or court." },
+      { "q": "Why monitoring instead of a one-off audit?", "a": "Because every deploy can break compliance again. An audit is a snapshot. Evidence has to be current to protect you — and your directors." },
+      { "q": "Is this legal advice?", "a": "No — it's the technical evidence your solicitor will be glad exists. We audit, fix, document. Your counsel decides strategy." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Budapest, EU",
+    "noteHtml": "This page passes the audit it sells: WCAG 2.1 AA, keyboard-navigable, screen-reader tested. · © 2026 keepcite · Imprint · Privacy · Accessibility statement",
+    "sourcesLabel": "Sources:",
+    "sources": [
+      { "label": "S.I. No. 636/2023 (Irish Statute Book)", "href": "https://www.irishstatutebook.ie/eli/2023/si/636/made/en/print" },
+      { "label": "Directive (EU) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L0882" }
+    ]
+  }
+}
