@@ -1,0 +1,135 @@
+{
+  "cc": "fr",
+  "lang": "fr",
+  "switchLabel": "France",
+  "ogLocale": "fr_FR",
+  "thousandsSep": " ",
+  "canonical": "https://keepcite.com/fr/",
+  "title": "European Accessibility Act & RGAA : votre e-commerce est-il conforme ? | keepcite",
+  "metaDescription": "Depuis le 28 juin 2025, l'European Accessibility Act impose l'accessibilité aux sites e-commerce en France. keepcite audite votre tunnel de commande selon WCAG 2.1 AA (RGAA) et fournit une preuve datée. Scan gratuit en 48 h.",
+  "ogTitle": "Conformité EAA / RGAA pour l'e-commerce — keepcite",
+  "ogDescription": "Scan d'accessibilité gratuit de votre tunnel de commande. Sanctions jusqu'à 50 000 € par service. Constituez votre dossier de preuves avant la mise en demeure.",
+  "schema": {
+    "serviceName": "keepcite",
+    "serviceDesc": "Audit d'accessibilité RGAA / WCAG 2.1 AA et preuve de conformité continue pour les sites e-commerce en France.",
+    "areaServed": "France",
+    "email": "scan@keepcite.com",
+    "inLanguage": "fr"
+  },
+  "skip": "Aller au contenu principal",
+  "nav": {
+    "ariaLabel": "Navigation principale",
+    "whyNow": "Pourquoi maintenant",
+    "how": "Comment ça marche",
+    "pricing": "Tarifs",
+    "faq": "FAQ",
+    "cta": "Scan gratuit"
+  },
+  "kicker": "Accessibilité numérique · RGAA",
+  "geoFlagSvg": "<svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='30' height='60' fill='#0055A4'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#EF4135'/></svg>",
+  "geoText": "Vous vendez en <b>France</b>? Carrefour a déjà été condamné : 500 €/jour d'astreinte, et l'ARCOM peut sanctionner jusqu'à 50 000 €.",
+  "h1Html": "Votre tunnel de commande <span class='hl'>enfreint-il la loi ?</span>",
+  "heroSubHtml": "Tout site e-commerce en France doit désormais respecter la norme d'accessibilité. La plupart ne le font pas. Sanctions jusqu'à <b style='color:var(--ink)'>50 000 € par service</b>.",
+  "scan": {
+    "h2": "Êtes-vous conforme ?",
+    "free": "Gratuit",
+    "sub2": "Votre boutique, testée selon la norme de la loi.",
+    "formAria": "Demander un scan d'accessibilité gratuit",
+    "subject": "Nouvelle demande de scan — keepcite (FR)",
+    "urlLabel": "URL de votre boutique",
+    "urlPh": "https://votreboutique.fr",
+    "emailLabel": "E-mail professionnel",
+    "emailPh": "vous@entreprise.fr",
+    "button": "Vérifier ma conformité",
+    "note": "Violations · captures d'écran · articles de loi. Sans appel. Sans spam."
+  },
+  "trust": [
+    "Norme : <b>WCAG 2.1 AA</b>",
+    "Base : <b>EN 301 549</b>",
+    "Résultat : <b>sous 48 h</b>"
+  ],
+  "keyFacts": {
+    "title": "L'essentiel en un coup d'œil",
+    "items": [
+      { "label": "Loi", "value": "European Accessibility Act — transposé par l'ordonnance 2023-859" },
+      { "label": "En vigueur", "value": "28 juin 2025" },
+      { "label": "Pour qui", "value": "Sites e-commerce et services numériques B2C en France" },
+      { "label": "Norme", "value": "EN 301 549 → WCAG 2.1 niveau AA (RGAA)" },
+      { "label": "Sanction", "value": "jusqu'à <b>50 000 € par service</b> (ARCOM), renouvelable tous les 6 mois" },
+      { "label": "Exception", "value": "seules les microentreprises — moins de 10 salariés <b>et</b> moins de 2 M€ de CA" }
+    ]
+  },
+  "law": {
+    "titleHtml": "Qu'est-ce que l'<span style='color:var(--blue)'>European Accessibility Act ?</span>",
+    "pill": "La loi en 30 secondes",
+    "cells": [
+      { "h3Html": "Ce que <span>c'est</span>", "bodyHtml": "Une directive européenne (2019/882), <b>transposée en France et applicable depuis le 28 juin 2025</b>. Les services numériques destinés aux consommateurs doivent être utilisables par les personnes en situation de handicap. L'e-commerce est explicitement visé." },
+      { "h3Html": "Qui <span>est concerné</span>", "bodyHtml": "Toute entreprise vendant des produits <b>ou services</b> en ligne à des consommateurs en France — boutiques, SaaS, réservation &amp; billetterie, banque, livres numériques. Seules les vraies microentreprises sont exemptées : moins de 10 salariés <b>et</b> moins de 2 M€ de CA." },
+      { "h3Html": "Ce qu'elle <span>exige</span>", "bodyHtml": "Votre site doit respecter <b>WCAG 2.1 AA</b> (norme EN 301 549, base du RGAA) — une cinquantaine de critères testables. Le tunnel de commande et le paiement sont les pages les plus à risque. Une déclaration d'accessibilité publique est obligatoire." }
+    ]
+  },
+  "fines": {
+    "h2Html": "Êtes-vous conforme ? <span class='u'>La sanction a déjà commencé.</span>",
+    "lead": "Les tribunaux et les concurrents ont ouvert la voie. Les autorités suivent.",
+    "items": [
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Drapeau de la France'><rect width='30' height='60' fill='#0055A4'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#EF4135'/></svg>", "tagline": "Décision de justice · Carrefour", "to": 500, "prefix": "", "suffix": " €", "small": "/ JOUR", "what": "Astreinte prononcée contre Carrefour (Tribunal judiciaire de Caen, 2026) : site et application accessibles sous six mois. La conformité à 71 % a été jugée insuffisante." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Drapeau de la France'><rect width='30' height='60' fill='#0055A4'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#EF4135'/></svg>", "tagline": "Sanction ARCOM", "to": 50000, "prefix": "", "suffix": " €", "small": "/ SERVICE", "what": "Amende maximale par service, renouvelable tous les 6 mois. Cumulable entre site web, application et borne." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Drapeau de l Espagne'><rect width='90' height='60' fill='#AA151B'/><rect y='15' width='90' height='30' fill='#F1BF00'/></svg>", "to": 1000000, "prefix": "", "suffix": " €", "what": "Amende maximale · Espagne — la plus élevée de l'UE." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Drapeau de l Allemagne'><rect width='90' height='20' fill='#000'/><rect y='20' width='90' height='20' fill='#DD0000'/><rect y='40' width='90' height='20' fill='#FFCE00'/></svg>", "to": 100000, "prefix": "", "suffix": " €", "what": "Amende maximale · Allemagne — plus des vagues de mises en demeure entre concurrents." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Drapeau de l Irlande'><rect width='30' height='60' fill='#169B62'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#FF883E'/></svg>", "to": 60000, "prefix": "", "suffix": " €", "small": "+ PRISON", "what": "Irlande — seul État de l'UE où l'infraction est pénale. Jusqu'à 18 mois." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Drapeau des Pays-Bas'><rect width='90' height='20' fill='#AE1C28'/><rect y='20' width='90' height='20' fill='#fff'/><rect y='40' width='90' height='20' fill='#21468B'/></svg>", "to": 900000, "prefix": "", "suffix": " €", "what": "Amende maximale · Pays-Bas — ou jusqu'à 10 % du chiffre d'affaires." }
+    ]
+  },
+  "value": {
+    "kicker": "Comment ça marche",
+    "h2": "On scanne. On corrige. On maintient la conformité.",
+    "lead": "Trois livrables concrets — à code couleur, pour toujours savoir ce que vous achetez.",
+    "steps": [
+      { "ofClass": "of-scan", "tagchip": "48 heures", "n": "1", "h3Html": "Le Scan", "p": "Scan automatique WCAG 2.1 AA de votre tunnel de commande. Vous recevez un PDF de 3 pages : vos pires violations, des captures d'écran, les articles exacts — et si votre déclaration obligatoire existe.", "chipClass": "pc-free", "chipText": "GRATUIT" },
+      { "ofClass": "of-fix", "tagchip": "2–3 semaines", "n": "2", "h3Html": "Audit &amp; plan de correction", "p": "Audit humain complet — lecteur d'écran, clavier, les ~2/3 des défauts qu'aucun outil ne détecte. Vos développeurs reçoivent des tickets prêts à livrer, avec le code. Nous rédigeons et publions votre déclaration d'accessibilité.", "chipClass": "pc-blue", "chipText": "999 € une fois" },
+      { "ofClass": "of-mon", "tagchip": "Chaque mois", "n": "3", "h3Html": "La Preuve", "p": "Scans mensuels de votre boutique, alertes de régression quand une mise en production casse quelque chose, et un certificat de conformité daté pour votre dossier de preuves. Résiliable à tout moment.", "chipClass": "pc-navy", "chipText": "99 € / mois" }
+    ],
+    "proof": [
+      { "b": "Certificat daté", "span": "chaque mois, pour votre dossier de preuves" },
+      { "b": "Contrôle de régression", "span": "à chaque mise en production, avant tout dommage" },
+      { "b": "Interlocuteur dédié", "span": "si une autorité ou un avocat vous écrit" },
+      { "b": "Notes claires", "span": "décisions &amp; règles qui vous concernent" }
+    ]
+  },
+  "midcta": {
+    "h2": "Découvrez-le avant qu'un avocat ne le fasse.",
+    "button": "Obtenir mon scan gratuit",
+    "note": "PDF de 3 pages · 48 heures · sans appel, sans argumentaire"
+  },
+  "pricing": {
+    "kicker": "Tarifs",
+    "h2": "Simple. Sans abonnement caché, sans surprise.",
+    "lead": "Commencez gratuitement. Payez une fois pour être conforme. Payez au mois pour le rester.",
+    "plans": [
+      { "cls": "p-free", "tier": "Le Scan", "priceHtml": "0 €", "forText": "Voir où vous en êtes", "items": ["Tunnel de commande testé selon WCAG 2.1 AA", "PDF de 3 pages avec vos pires violations", "Vérification de la déclaration d'accessibilité", "Livré en 48 heures"], "btnText": "Obtenir le scan gratuit", "btnAlt": true },
+      { "cls": "p-audit", "tier": "Audit &amp; plan de correction", "priceHtml": "999 € <small>une fois</small>", "forText": "Devenir conforme", "items": ["Audit humain complet : lecteur d'écran + clavier", "Tickets de correction avec le code", "Déclaration d'accessibilité rédigée &amp; publiée", "Votre dossier de preuves de référence, daté"], "btnText": "Commencer par le scan gratuit", "btnAlt": false },
+      { "cls": "p-mon", "tier": "La Preuve", "priceHtml": "99 € <small>/ mois</small>", "forText": "Rester conforme", "items": ["Scans mensuels de votre boutique", "Alertes de régression à chaque mise en production", "Certificat de conformité daté chaque mois", "Résiliable à tout moment"], "btnText": "Commencer par le scan gratuit", "btnAlt": true }
+    ],
+    "noteHtml": "Boutique plus grande, plusieurs marques, ou tout clé en main — corrections incluses, interlocuteur dédié, support prioritaire ? <a href='mailto:hello@keepcite.com?subject=Offre%20cl%C3%A9%20en%20main'>Demandez notre offre clé en main →</a>"
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      { "q": "Cette loi s'applique-t-elle à ma boutique ?", "a": "Vous vendez à des consommateurs en France via un site ou une application ? Alors oui. L'European Accessibility Act est applicable depuis le 28 juin 2025 — e-commerce, banque, télécoms, réservation, livres numériques. La norme est WCAG 2.1 AA (EN 301 549, base du RGAA). Seules les vraies microentreprises — moins de 10 salariés ET moins de 2 M€ de CA — sont exemptées. Les deux conditions doivent être réunies." },
+      { "q": "À combien s'élèvent les sanctions ?", "a": "L'ARCOM peut prononcer une amende jusqu'à <b>50 000 € par service</b>, renouvelable tous les 6 mois en cas de manquement persistant, et cumulable entre le site, l'application et la borne. En 2026, le Tribunal judiciaire de Caen a par ailleurs condamné Carrefour à une astreinte de 500 €/jour pour rendre son site et son application accessibles." },
+      { "q": "L'affaire Carrefour, qu'est-ce que ça change ?", "a": "Le tribunal a jugé qu'une conformité partielle ne suffit pas : Carrefour affirmait respecter 71 % des critères du RGAA, ce qui a été explicitement rejeté. L'accessibilité est une obligation de résultat. C'est la première décision, sous une transposition nationale de l'EAA, à viser un distributeur et à couvrir une application mobile." },
+      { "q": "Un widget d'accessibilité, ça suffit ?", "a": "Non. Les overlays ne modifient pas le code que la norme mesure. Plus de 800 spécialistes de l'accessibilité affirment publiquement qu'ils ne fonctionnent pas, et la FTC américaine a condamné l'éditeur accessiBe à 1 M$ pour allégations trompeuses. Pire : un widget prouve que vous saviez — sans rien corriger." },
+      { "q": "Que recevez-vous chaque mois ?", "a": "Des scans automatiques hebdomadaires, des tests mensuels au lecteur d'écran, des tickets de correction, votre déclaration d'accessibilité tenue à jour, et un certificat de conformité daté — le dossier de preuves que vous présentez à toute autorité, association ou avocat." },
+      { "q": "Est-ce un conseil juridique ?", "a": "Non — c'est la preuve technique dont votre avocat sera ravi de disposer. Nous auditons, corrigeons, documentons. La stratégie relève de votre conseil." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Budapest, UE",
+    "noteHtml": "Cette page réussit l'audit qu'elle vend : WCAG 2.1 AA, navigable au clavier, testée au lecteur d'écran. · © 2026 keepcite · Mentions légales · Confidentialité · Déclaration d'accessibilité",
+    "sourcesLabel": "Sources :",
+    "sources": [
+      { "label": "Directive (UE) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32019L0882" },
+      { "label": "RGAA — accessibilite.numerique.gouv.fr", "href": "https://accessibilite.numerique.gouv.fr/" }
+    ]
+  }
+}

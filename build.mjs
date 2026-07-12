@@ -279,7 +279,7 @@ ${d.fines.items.map(fineCard).join('\n')}
       <a class="logo" href="#top">keep<em>cite</em></a>
       <p>${raw(d.footer.contactHtml)}</p>
     </div>
-    <div class="countryswitch">${d.footer.otherCountries.map(c => `<a href="${c.href}">${esc(c.label)}</a>`).join('')}</div>
+    <div class="countryswitch">${d._siblings.map(c => `<a href="${c.href}"${c.lang ? ` hreflang="${c.lang}"` : ''}>${esc(c.label)}</a>`).join('')}</div>
     <p class="foot-note">${raw(d.footer.noteHtml)}</p>
     <p class="sources">${d.footer.sourcesLabel} ${d.footer.sources.map(s => `<a href="${s.href}" rel="nofollow">${esc(s.label)}</a>`).join(' · ')}</p>
   </div>
@@ -304,8 +304,16 @@ function alternatesFor() {
   return alts;
 }
 
+// each page's footer links back to the EU/English root + every sibling market
+function siblingsFor(cc) {
+  const list = [{ label: 'EU / English', href: '/', lang: 'en' }];
+  for (const m of markets) if (m.cc !== cc) list.push({ label: m.switchLabel || m.cc.toUpperCase(), href: `/${m.cc}/`, lang: m.lang });
+  return list;
+}
+
 const built = [];
 for (const m of markets) {
+  m._siblings = siblingsFor(m.cc);
   const html = render(m, alternatesFor(), m.thousandsSep || '.');
   const dir = join(ROOT, m.cc);
   mkdirSync(dir, { recursive: true });
