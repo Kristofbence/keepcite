@@ -1,0 +1,73 @@
+{
+  "cc": "de",
+  "lang": "de",
+  "slug": "barrierefreiheit-shopify",
+  "ogLocale": "de_DE",
+  "thousandsSep": ".",
+  "canonical": "https://keepcite.com/de/barrierefreiheit-shopify/",
+  "hubHref": "/de/",
+  "hubLabel": "BFSG-Übersicht",
+  "title": "Barrierefreiheit im Shopify-Shop (BFSG)",
+  "metaDescription": "Ist Ihr Shopify-Shop BFSG-konform? Was WCAG 2.1 AA für Theme, Checkout und Apps bedeutet — und wie Sie es prüfen lassen. Gratis-Scan in 48 Stunden.",
+  "ogTitle": "Barrierefreiheit im Shopify-Shop: BFSG-konform?",
+  "ogDescription": "Shopify liefert Plattform und Checkout — Theme, Apps und Inhalte bestimmen die Barrierefreiheit. Was zu prüfen ist und wie keepcite den Nachweis liefert.",
+  "schema": { "inLanguage": "de" },
+  "skip": "Zum Scan springen",
+  "nav": { "ariaLabel": "Hauptnavigation", "pricing": "Preise", "faq": "FAQ", "cta": "Gratis-Scan" },
+  "breadcrumb": [
+    { "name": "keepcite", "href": "/", "item": "https://keepcite.com/" },
+    { "name": "Deutschland (BFSG)", "href": "/de/", "item": "https://keepcite.com/de/" },
+    { "name": "Shopify", "href": "/de/barrierefreiheit-shopify/", "item": "https://keepcite.com/de/barrierefreiheit-shopify/" }
+  ],
+  "kicker": "BFSG · Shopify",
+  "h1Html": "Barrierefreiheit im <span class='hl'>Shopify-Shop</span>",
+  "answerHtml": "Auch <b>Shopify</b>-Shops müssen seit dem 28. Juni 2025 das BFSG erfüllen — Maßstab ist <b>WCAG 2.1 AA</b>. Shopify stellt Plattform und gehosteten Checkout bereit, doch <b>Theme, Apps und Ihre Inhalte</b> bestimmen die tatsächliche Barrierefreiheit. Ein Standard-Theme ist nicht automatisch vollständig konform, und Drittanbieter-Apps können Barrieren einführen.",
+  "keyFacts": {
+    "title": "Shopify & BFSG auf einen Blick",
+    "items": [
+      { "label": "Gilt für", "value": "alle Shopify-Shops mit Verbraucherverkauf in DE/EU" },
+      { "label": "Standard", "value": "WCAG 2.1 AA (EN 301 549)" },
+      { "label": "Kritisch", "value": "Theme, Produktseiten, Apps, Inhalte" },
+      { "label": "Verantwortung", "value": "der Shop-Betreiber (nicht die Plattform)" },
+      { "label": "Bußgeld", "value": "bis 100.000 € (§ 37 BFSG)" },
+      { "label": "Pflicht", "value": "Barrierefreiheitserklärung" }
+    ]
+  },
+  "sections": [
+    { "h2": "Ist Shopify automatisch barrierefrei?", "bodyHtml": "<p>Nein. Shopify bietet eine solide Grundlage und einige als barrierefrei ausgewiesene Themes, aber keine Garantie: <b>Theme-Anpassungen, Apps und Ihre Inhalte</b> (Bilder ohne Alt-Text, schlechte Kontraste, unbeschriftete Buttons) entscheiden über die Konformität. Geprüft wird der real ausgelieferte Code Ihres Shops.</p>" },
+    { "h2": "Welche Stellen sind bei Shopify kritisch?", "bodyHtml": "<p>Typische Schwachstellen: das <b>Theme</b> (Fokus, Tastaturbedienung, Kontraste), <b>Produkt- und Sammlungsseiten</b>, Popups und Cookie-Banner sowie <b>Drittanbieter-Apps</b>, die Inhalte oder Formulare einfügen. Prüfen Sie auch, ob Ihr Checkout durch Anpassungen barrierefrei bleibt.</p>" },
+    { "h2": "Wer haftet — Shopify oder der Händler?", "bodyHtml": "<p>Verantwortlich ist der <b>Shop-Betreiber</b>. Auch wenn Shopify Teile des Checkouts bereitstellt, richtet sich die BFSG-Pflicht an das Unternehmen, das den Shop betreibt und die Inhalte, das Theme und die Apps auswählt.</p>" },
+    { "h2": "Wie prüfen Sie Ihren Shopify-Shop?", "bodyHtml": "<p>Ein automatischer WCAG-2.1-AA-Scan findet viele Probleme; die entscheidenden ~2/3 (Screenreader, Tastatur, Fokuslogik) braucht ein manuelles Audit. keepcite liefert beides plus einen datierten Nachweis. Starten Sie mit dem kostenlosen Scan unten.</p>" }
+  ],
+  "scan": {
+    "h2": "Ist Ihr Shopify-Shop konform?",
+    "free": "Gratis",
+    "sub2": "Prüfen Sie Ihren Checkout gegen das BFSG / WCAG 2.1 AA.",
+    "formAria": "Kostenlosen BFSG-Scan anfordern",
+    "subject": "Neue Scan-Anfrage — keepcite (DE · Shopify)",
+    "urlLabel": "Ihre Shop-URL",
+    "urlPh": "https://ihrshop.de",
+    "emailLabel": "Geschäftliche E-Mail",
+    "emailPh": "sie@firma.de",
+    "button": "Prüfen, ob ich konform bin",
+    "note": "Verstöße · Screenshots · Gesetzesklauseln. Kein Anruf. Kein Spam."
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      { "q": "Sind Shopify-Themes barrierefrei?", "a": "Einige Themes sind auf Barrierefreiheit ausgelegt, aber kein Theme garantiert Konformität. Ihre Anpassungen, Inhalte und Apps entscheiden mit — geprüft wird der ausgelieferte Code." },
+      { "q": "Was ist mit dem Shopify-Checkout?", "a": "Shopify stellt den Checkout weitgehend bereit, was hilft. Dennoch bleiben Sie als Betreiber verantwortlich, und Anpassungen oder Checkout-Apps können die Barrierefreiheit beeinflussen." },
+      { "q": "Und Apps von Drittanbietern?", "a": "Apps fügen oft eigenes HTML ein (Popups, Formulare, Buttons) und sind eine häufige Quelle von Barrieren. Jede App sollte gegen WCAG 2.1 AA geprüft werden." },
+      { "q": "Was kostet ein Verstoß?", "a": "Bußgelder bis 100.000 € nach § 37 BFSG, dazu Abmahnungen und mögliche Vertriebsuntersagung. Details: <a href='/de/bfsg-bussgeld/'>BFSG-Bußgeld</a>." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, EU",
+    "noteHtml": "Diese Seite besteht das Audit, das sie verkauft: WCAG 2.1 AA, tastaturbedienbar, mit Screenreader getestet. · © 2026 keepcite",
+    "sourcesLabel": "Quellen:",
+    "sources": [
+      { "label": "§ 37 BFSG (gesetze-im-internet.de)", "href": "https://www.gesetze-im-internet.de/bfsg/__37.html" },
+      { "label": "Richtlinie (EU) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32019L0882" }
+    ]
+  }
+}

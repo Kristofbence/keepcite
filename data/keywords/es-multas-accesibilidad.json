@@ -1,0 +1,74 @@
+{
+  "cc": "es",
+  "lang": "es",
+  "slug": "multas-accesibilidad",
+  "ogLocale": "es_ES",
+  "thousandsSep": ".",
+  "canonical": "https://keepcite.com/es/multas-accesibilidad/",
+  "hubHref": "/es/",
+  "hubLabel": "Ley 11/2023",
+  "title": "Multas por accesibilidad: de 301 € a 1.000.000 €",
+  "metaDescription": "El régimen sancionador de la Ley 11/2023 va de 301 € (leves) a 1.000.000 € (muy graves), vía LGDPD. Quién sanciona y cómo protegerte. Escaneo gratis en 48 h.",
+  "ogTitle": "Multas por accesibilidad en España: hasta 1.000.000 €",
+  "ogDescription": "Ley 11/2023: leves ≤30.000 €, graves ≤90.000 €, muy graves ≤1.000.000 €, más posible suspensión de la actividad. Crea tu expediente de pruebas.",
+  "schema": { "inLanguage": "es" },
+  "skip": "Ir al escaneo",
+  "nav": { "ariaLabel": "Navegación principal", "pricing": "Precios", "faq": "Preguntas frecuentes", "cta": "Escaneo gratis" },
+  "breadcrumb": [
+    { "name": "keepcite", "href": "/", "item": "https://keepcite.com/" },
+    { "name": "España (Ley 11/2023)", "href": "/es/", "item": "https://keepcite.com/es/" },
+    { "name": "Multas por accesibilidad", "href": "/es/multas-accesibilidad/", "item": "https://keepcite.com/es/multas-accesibilidad/" }
+  ],
+  "kicker": "Ley 11/2023 · Sanciones",
+  "h1Html": "Multas por accesibilidad: <span class='hl'>¿cuánto arriesgas?</span>",
+  "answerHtml": "En España, incumplir la Ley 11/2023 se sanciona con multas de <b>301 € a 1.000.000 €</b>. Los tramos, tomados del régimen de la <b>LGDPD</b> (RD Legislativo 1/2013): <b>leves hasta 30.000 €</b>, <b>graves hasta 90.000 €</b> y <b>muy graves hasta 1.000.000 €</b>. Además, la autoridad puede llegar a <b>suspender la actividad</b>.",
+  "keyFacts": {
+    "title": "Las multas de un vistazo",
+    "items": [
+      { "label": "Rango", "value": "de 301 € a <b>1.000.000 €</b>" },
+      { "label": "Leves", "value": "hasta 30.000 €" },
+      { "label": "Graves", "value": "hasta 90.000 €" },
+      { "label": "Muy graves", "value": "hasta 1.000.000 €" },
+      { "label": "Medida adicional", "value": "posible suspensión de la actividad" },
+      { "label": "Base legal", "value": "Ley 11/2023 + LGDPD (RD Leg. 1/2013, Título III)" }
+    ]
+  },
+  "sections": [
+    { "h2": "¿De cuánto son las multas exactamente?", "bodyHtml": "<p>La Ley 11/2023 no fija una tabla propia: remite al régimen sancionador sectorial y, en su defecto, al Título III de la <b>LGDPD</b> (Texto Refundido aprobado por RD Legislativo 1/2013). Ese régimen prevé multas de <b>301 € a 1.000.000 €</b>: las <b>leves</b> hasta 30.000 €, las <b>graves</b> hasta 90.000 € y las <b>muy graves</b> hasta 1.000.000 €.</p><p>La cuantía concreta depende de la gravedad, la intencionalidad, el número de afectados y la reincidencia.</p>" },
+    { "h2": "¿Quién impone las sanciones?", "bodyHtml": "<p>La competencia sancionadora corresponde a las autoridades designadas conforme a la legislación aplicable. Además de la multa, en los casos más graves la autoridad puede acordar la <b>suspensión de la actividad</b> del infractor.</p>" },
+    { "h2": "¿A quién afecta y desde cuándo?", "bodyHtml": "<p>Desde el <b>28 de junio de 2025</b>, la obligación alcanza a las tiendas online y servicios digitales dirigidos a consumidores en España. Solo se libran las microempresas: menos de 10 empleados <b>y</b> menos de 2 M€ de facturación.</p>" },
+    { "h2": "¿Cómo evitar una multa?", "bodyHtml": "<p>Tres pasos: auditar tu checkout según <b>WCAG 2.1 AA</b> y corregir los incumplimientos, publicar tu <b>declaración de accesibilidad</b> y conservar una <b>prueba fechada</b> de conformidad. keepcite está hecho para eso — empieza por el escaneo gratuito de abajo.</p>" }
+  ],
+  "scan": {
+    "h2": "¿Cumples la ley?",
+    "free": "Gratis",
+    "sub2": "Tu tienda, analizada frente al estándar de la ley.",
+    "formAria": "Solicitar un escaneo de accesibilidad gratuito",
+    "subject": "Nueva solicitud de escaneo — keepcite (ES · multas)",
+    "urlLabel": "URL de tu tienda",
+    "urlPh": "https://tutienda.es",
+    "emailLabel": "Correo profesional",
+    "emailPh": "tu@empresa.es",
+    "button": "Comprobar si cumplo",
+    "note": "Incumplimientos · capturas · artículos legales. Sin llamadas. Sin spam."
+  },
+  "faqSection": {
+    "h2": "Preguntas frecuentes",
+    "items": [
+      { "q": "¿Ya se han impuesto multas?", "a": "La aplicación está empezando y aún no abundan las sanciones económicas públicas de gran cuantía. El régimen (hasta 1.000.000 €) ya está vigente y a disposición de las autoridades desde el 28 de junio de 2025." },
+      { "q": "¿Basta con una declaración de accesibilidad?", "a": "Es obligatoria, pero por sí sola no protege. Lo decisivo es la conformidad real con WCAG 2.1 AA y una prueba fechada que la acredite. Una declaración sin corrección puede incluso demostrar que conocías el problema." },
+      { "q": "¿Un widget u overlay me protege?", "a": "No. Los overlays no cambian el código que mide el estándar. Más de 800 profesionales afirman que no funcionan, y la FTC de EE. UU. multó a accessiBe con 1 M$ por afirmaciones engañosas." },
+      { "q": "¿Qué debo conservar como prueba?", "a": "Una declaración de accesibilidad actualizada y una prueba fechada de conformidad (auditoría, correcciones, pruebas con lector de pantalla). keepcite emite un certificado fechado cada mes para ese expediente." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, UE",
+    "noteHtml": "Esta página supera la auditoría que vende: WCAG 2.1 AA, navegable por teclado, probada con lector de pantalla. · © 2026 keepcite",
+    "sourcesLabel": "Fuentes:",
+    "sources": [
+      { "label": "RD 193/2023 (BOE)", "href": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-7417" },
+      { "label": "LGDPD — RD Legislativo 1/2013 (BOE)", "href": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12632" },
+      { "label": "Directiva (UE) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32019L0882" }
+    ]
+  }
+}

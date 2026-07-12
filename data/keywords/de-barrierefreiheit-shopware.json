@@ -1,0 +1,73 @@
+{
+  "cc": "de",
+  "lang": "de",
+  "slug": "barrierefreiheit-shopware",
+  "ogLocale": "de_DE",
+  "thousandsSep": ".",
+  "canonical": "https://keepcite.com/de/barrierefreiheit-shopware/",
+  "hubHref": "/de/",
+  "hubLabel": "BFSG-Übersicht",
+  "title": "Barrierefreiheit im Shopware-Shop (BFSG)",
+  "metaDescription": "Ist Ihr Shopware-Shop BFSG-konform? Was WCAG 2.1 AA für Storefront, Checkout und Theme bedeutet — und wie Sie es prüfen. Gratis-Scan in 48 Stunden.",
+  "ogTitle": "Barrierefreiheit im Shopware-Shop: BFSG-konform?",
+  "ogDescription": "Shopware liefert die Plattform — die Barrierefreiheit hängt von Theme, Templates und Ihren Anpassungen ab. Was zu prüfen ist und wie keepcite hilft.",
+  "schema": { "inLanguage": "de" },
+  "skip": "Zum Scan springen",
+  "nav": { "ariaLabel": "Hauptnavigation", "pricing": "Preise", "faq": "FAQ", "cta": "Gratis-Scan" },
+  "breadcrumb": [
+    { "name": "keepcite", "href": "/", "item": "https://keepcite.com/" },
+    { "name": "Deutschland (BFSG)", "href": "/de/", "item": "https://keepcite.com/de/" },
+    { "name": "Shopware", "href": "/de/barrierefreiheit-shopware/", "item": "https://keepcite.com/de/barrierefreiheit-shopware/" }
+  ],
+  "kicker": "BFSG · Shopware",
+  "h1Html": "Barrierefreiheit im <span class='hl'>Shopware-Shop</span>",
+  "answerHtml": "Auch <b>Shopware</b>-Shops müssen seit dem 28. Juni 2025 das BFSG erfüllen — Maßstab ist <b>WCAG 2.1 AA</b>. Shopware liefert die Plattform, aber die Barrierefreiheit hängt von <b>Theme, Templates und Ihren Anpassungen</b> ab: Ein Standard-Storefront ist nicht automatisch vollständig konform. Der Checkout ist die kritischste Strecke.",
+  "keyFacts": {
+    "title": "Shopware & BFSG auf einen Blick",
+    "items": [
+      { "label": "Gilt für", "value": "alle Shopware-Shops mit Verbraucherverkauf in DE/EU" },
+      { "label": "Standard", "value": "WCAG 2.1 AA (EN 301 549)" },
+      { "label": "Kritisch", "value": "Checkout, Formulare, Navigation, Kontraste" },
+      { "label": "Verantwortung", "value": "der Shop-Betreiber (nicht die Plattform)" },
+      { "label": "Bußgeld", "value": "bis 100.000 € (§ 37 BFSG)" },
+      { "label": "Pflicht", "value": "Barrierefreiheitserklärung" }
+    ]
+  },
+  "sections": [
+    { "h2": "Ist Shopware automatisch barrierefrei?", "bodyHtml": "<p>Nein — keine Shop-Plattform macht Ihren Shop von allein rechtssicher barrierefrei. Shopware bietet eine solide technische Basis, doch <b>Theme, Templates, Plugins und Ihre individuellen Anpassungen</b> bestimmen das Ergebnis. Geprüft wird der ausgelieferte HTML-Code Ihres Shops, nicht die Plattform an sich.</p>" },
+    { "h2": "Welche Stellen im Shopware-Shop sind kritisch?", "bodyHtml": "<p>Erfahrungsgemäß am häufigsten betroffen: der <b>mehrstufige Checkout</b>, Formular-Beschriftungen und Fehlermeldungen, die <b>Tastatur- und Fokus-Reihenfolge</b>, Farbkontraste, Slider und Overlays sowie der Cookie-/Consent-Layer. Auch nachträglich installierte <b>Erweiterungen</b> können Barrieren einführen.</p>" },
+    { "h2": "Wer haftet — Shopware oder der Händler?", "bodyHtml": "<p>Verantwortlich für die Konformität ist der <b>Shop-Betreiber</b> als Dienstleister gegenüber Verbrauchern — nicht der Plattformhersteller. Bußgelder nach § 37 BFSG richten sich an das Unternehmen, das den Shop betreibt.</p>" },
+    { "h2": "Wie prüfen Sie Ihren Shopware-Shop?", "bodyHtml": "<p>Kombinieren Sie einen automatischen WCAG-2.1-AA-Scan mit einem manuellen Audit (Screenreader, Tastatur) — gerade der Checkout braucht die manuelle Prüfung. keepcite liefert beides plus einen datierten Nachweis. Starten Sie mit dem kostenlosen Scan unten.</p>" }
+  ],
+  "scan": {
+    "h2": "Ist Ihr Shopware-Shop konform?",
+    "free": "Gratis",
+    "sub2": "Prüfen Sie Ihren Checkout gegen das BFSG / WCAG 2.1 AA.",
+    "formAria": "Kostenlosen BFSG-Scan anfordern",
+    "subject": "Neue Scan-Anfrage — keepcite (DE · Shopware)",
+    "urlLabel": "Ihre Shop-URL",
+    "urlPh": "https://ihrshop.de",
+    "emailLabel": "Geschäftliche E-Mail",
+    "emailPh": "sie@firma.de",
+    "button": "Prüfen, ob ich konform bin",
+    "note": "Verstöße · Screenshots · Gesetzesklauseln. Kein Anruf. Kein Spam."
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      { "q": "Macht ein barrierefreies Shopware-Theme meinen Shop konform?", "a": "Es hilft, reicht aber nicht. Ihre Inhalte, Plugins und Anpassungen sowie der Checkout entscheiden mit. Konform ist der real ausgelieferte Code — nicht das Theme im Auslieferungszustand." },
+      { "q": "Was ist mit Plugins und Erweiterungen?", "a": "Erweiterungen können Barrieren einführen (z. B. unbeschriftete Buttons, fehlender Fokus, schlechte Kontraste). Jede zusätzliche Funktion sollte gegen WCAG 2.1 AA geprüft werden." },
+      { "q": "Gilt das auch für B2B-Shops?", "a": "Das BFSG zielt auf Dienste für Verbraucher. Reine B2B-Angebote können außerhalb des Anwendungsbereichs liegen — viele Shops verkaufen aber auch an Verbraucher und fallen dann darunter. Im Zweifel prüfen lassen." },
+      { "q": "Was kostet ein Verstoß?", "a": "Bußgelder bis 100.000 € nach § 37 BFSG, dazu Abmahnungen und mögliche Vertriebsuntersagung. Details: <a href='/de/bfsg-bussgeld/'>BFSG-Bußgeld</a>." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, EU",
+    "noteHtml": "Diese Seite besteht das Audit, das sie verkauft: WCAG 2.1 AA, tastaturbedienbar, mit Screenreader getestet. · © 2026 keepcite",
+    "sourcesLabel": "Quellen:",
+    "sources": [
+      { "label": "§ 37 BFSG (gesetze-im-internet.de)", "href": "https://www.gesetze-im-internet.de/bfsg/__37.html" },
+      { "label": "Richtlinie (EU) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32019L0882" }
+    ]
+  }
+}

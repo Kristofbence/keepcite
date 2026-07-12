@@ -1,0 +1,74 @@
+{
+  "cc": "fr",
+  "lang": "fr",
+  "slug": "sanctions-accessibilite",
+  "ogLocale": "fr_FR",
+  "thousandsSep": " ",
+  "canonical": "https://keepcite.com/fr/sanctions-accessibilite/",
+  "hubHref": "/fr/",
+  "hubLabel": "Accessibilité (RGAA)",
+  "title": "Sanctions accessibilité : jusqu'à 50 000 € (ARCOM)",
+  "metaDescription": "L'ARCOM peut sanctionner l'inaccessibilité jusqu'à 50 000 € par service, renouvelable tous les 6 mois. Carrefour a déjà été condamné. Scan gratuit en 48 h.",
+  "ogTitle": "Sanctions d'accessibilité en France : jusqu'à 50 000 €",
+  "ogDescription": "ARCOM : 50 000 € par service, renouvelable. Plus l'astreinte de 500 €/jour imposée à Carrefour. Constituez votre preuve avant la mise en demeure.",
+  "schema": { "inLanguage": "fr" },
+  "skip": "Aller au scan",
+  "nav": { "ariaLabel": "Navigation principale", "pricing": "Tarifs", "faq": "FAQ", "cta": "Scan gratuit" },
+  "breadcrumb": [
+    { "name": "keepcite", "href": "/", "item": "https://keepcite.com/" },
+    { "name": "France (RGAA)", "href": "/fr/", "item": "https://keepcite.com/fr/" },
+    { "name": "Sanctions accessibilité", "href": "/fr/sanctions-accessibilite/", "item": "https://keepcite.com/fr/sanctions-accessibilite/" }
+  ],
+  "kicker": "RGAA · Sanctions",
+  "h1Html": "Sanctions d'accessibilité : <span class='hl'>combien risquez-vous ?</span>",
+  "answerHtml": "En France, l'<b>ARCOM</b> peut prononcer une amende jusqu'à <b>50 000 € par service</b> non accessible, <b>renouvelable tous les 6 mois</b> tant que le manquement persiste et cumulable entre site, application et borne. S'y ajoute le risque judiciaire : en 2026, le Tribunal judiciaire de Caen a condamné <b>Carrefour</b> à une astreinte de <b>500 €/jour</b>.",
+  "keyFacts": {
+    "title": "Les sanctions en un coup d'œil",
+    "items": [
+      { "label": "Autorité", "value": "ARCOM — mise en demeure, puis sanction" },
+      { "label": "Amende maximale", "value": "<b>50 000 € par service</b> (obligations principales)" },
+      { "label": "Obligations complémentaires", "value": "jusqu'à 25 000 €" },
+      { "label": "Renouvellement", "value": "tous les 6 mois si le manquement persiste" },
+      { "label": "Voie judiciaire", "value": "astreinte — Carrefour : 500 €/jour (2026)" },
+      { "label": "Base légale", "value": "ordonnance 2023-859 ; Directive (UE) 2019/882" }
+    ]
+  },
+  "sections": [
+    { "h2": "Quelles amendes l'ARCOM peut-elle infliger ?", "bodyHtml": "<p>Pour les obligations principales d'accessibilité, l'ARCOM peut prononcer une amende <b>jusqu'à 50 000 € par service</b> ; pour les obligations complémentaires, le plafond est de 25 000 €. Avant toute sanction, l'ARCOM adresse une <b>mise en demeure</b> qu'elle peut rendre publique (name and shame).</p><p>Si le manquement persiste plus de six mois, une nouvelle sanction peut être prononcée — la sanction est donc <b>renouvelable tous les 6 mois</b>, et cumulable entre votre site, votre application et vos bornes.</p>" },
+    { "h2": "L'affaire Carrefour : que retenir ?", "bodyHtml": "<p>En 2026, le Tribunal judiciaire de Caen a ordonné à <b>Carrefour</b> de rendre son site et son application accessibles sous six mois, sous une astreinte de <b>500 €/jour</b>. Carrefour affirmait respecter 71 % des critères du RGAA : le tribunal a jugé cela insuffisant. L'accessibilité est une <b>obligation de résultat</b>, et c'est la première décision, sous une transposition nationale de l'EAA, à viser un distributeur et à couvrir une application mobile.</p>" },
+    { "h2": "Qui est concerné et depuis quand ?", "bodyHtml": "<p>Depuis le <b>28 juin 2025</b>, l'obligation s'applique aux services numériques destinés aux consommateurs : e-commerce, SaaS, réservation, banque, livres numériques. Seules les microentreprises sont exemptées — moins de 10 salariés <b>et</b> moins de 2 M€ de chiffre d'affaires.</p>" },
+    { "h2": "Comment se protéger d'une sanction ?", "bodyHtml": "<p>Trois étapes : auditer votre tunnel de commande selon <b>WCAG 2.1 AA</b> et corriger les violations, publier votre <b>déclaration d'accessibilité</b>, et conserver une <b>preuve datée</b> de conformité. C'est exactement ce que fournit keepcite — commencez par le scan gratuit ci-dessous.</p>" }
+  ],
+  "scan": {
+    "h2": "Êtes-vous conforme ?",
+    "free": "Gratuit",
+    "sub2": "Votre boutique, testée selon la norme de la loi.",
+    "formAria": "Demander un scan d'accessibilité gratuit",
+    "subject": "Nouvelle demande de scan — keepcite (FR · sanctions)",
+    "urlLabel": "URL de votre boutique",
+    "urlPh": "https://votreboutique.fr",
+    "emailLabel": "E-mail professionnel",
+    "emailPh": "vous@entreprise.fr",
+    "button": "Vérifier ma conformité",
+    "note": "Violations · captures d'écran · articles de loi. Sans appel. Sans spam."
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      { "q": "L'ARCOM a-t-elle déjà sanctionné ?", "a": "L'ARCOM contrôle et a déjà mis en demeure des services (dont des sites publics). Les sanctions financières montent en puissance ; le risque le plus immédiat aujourd'hui reste la mise en demeure publique et la voie judiciaire, comme l'a montré la condamnation de Carrefour." },
+      { "q": "Les sanctions sont-elles cumulables ?", "a": "Oui. L'amende de 50 000 € s'entend <b>par service</b> et est cumulable entre votre site web, votre application et vos bornes, et renouvelable tous les 6 mois si le manquement persiste." },
+      { "q": "Un widget d'accessibilité évite-t-il la sanction ?", "a": "Non. Les overlays ne modifient pas le code que la norme mesure. Plus de 800 spécialistes affirment publiquement qu'ils ne fonctionnent pas, et la FTC américaine a condamné accessiBe à 1 M$. Un widget prouve surtout que vous saviez, sans corriger." },
+      { "q": "Que faut-il fournir en cas de contrôle ?", "a": "Une déclaration d'accessibilité à jour et une preuve datée de conformité (audit, correctifs, tests). keepcite produit un certificat daté chaque mois, précisément pour ce dossier." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, UE",
+    "noteHtml": "Cette page réussit l'audit qu'elle vend : WCAG 2.1 AA, navigable au clavier, testée au lecteur d'écran. · © 2026 keepcite",
+    "sourcesLabel": "Sources :",
+    "sources": [
+      { "label": "Ordonnance n° 2023-859 (Légifrance)", "href": "https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000048050657/" },
+      { "label": "Directive (UE) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32019L0882" },
+      { "label": "RGAA — accessibilite.numerique.gouv.fr", "href": "https://accessibilite.numerique.gouv.fr/" }
+    ]
+  }
+}

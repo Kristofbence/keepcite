@@ -1,0 +1,74 @@
+{
+  "cc": "fr",
+  "lang": "fr",
+  "slug": "accessibilite-prestashop",
+  "ogLocale": "fr_FR",
+  "thousandsSep": " ",
+  "canonical": "https://keepcite.com/fr/accessibilite-prestashop/",
+  "hubHref": "/fr/",
+  "hubLabel": "Accessibilité (RGAA)",
+  "title": "Accessibilité d'une boutique PrestaShop (EAA)",
+  "metaDescription": "Votre boutique PrestaShop est-elle conforme à l'EAA (WCAG 2.1 AA) ? Ce que thème, tunnel de commande et modules impliquent — et comment vérifier. Scan gratuit.",
+  "ogTitle": "Accessibilité d'une boutique PrestaShop : conforme ?",
+  "ogDescription": "PrestaShop fournit la plateforme — l'accessibilité dépend du thème, des modules et de vos personnalisations. Ce qu'il faut vérifier et comment keepcite aide.",
+  "schema": { "inLanguage": "fr" },
+  "skip": "Aller au scan",
+  "nav": { "ariaLabel": "Navigation principale", "pricing": "Tarifs", "faq": "FAQ", "cta": "Scan gratuit" },
+  "breadcrumb": [
+    { "name": "keepcite", "href": "/", "item": "https://keepcite.com/" },
+    { "name": "France (RGAA)", "href": "/fr/", "item": "https://keepcite.com/fr/" },
+    { "name": "PrestaShop", "href": "/fr/accessibilite-prestashop/", "item": "https://keepcite.com/fr/accessibilite-prestashop/" }
+  ],
+  "kicker": "RGAA · PrestaShop",
+  "h1Html": "Accessibilité d'une boutique <span class='hl'>PrestaShop</span>",
+  "answerHtml": "Les boutiques <b>PrestaShop</b> doivent respecter l'<b>European Accessibility Act</b> depuis le 28 juin 2025 — norme <b>WCAG 2.1 AA</b> (base du RGAA). PrestaShop fournit la plateforme, mais l'accessibilité dépend de votre <b>thème, de vos modules et de vos personnalisations</b> : un thème standard n'est pas automatiquement conforme. Le tunnel de commande est la zone la plus à risque.",
+  "keyFacts": {
+    "title": "PrestaShop & EAA en un coup d'œil",
+    "items": [
+      { "label": "S'applique à", "value": "toute boutique PrestaShop vendant à des consommateurs en France/UE" },
+      { "label": "Norme", "value": "WCAG 2.1 AA (EN 301 549)" },
+      { "label": "Zones critiques", "value": "tunnel de commande, formulaires, contrastes, navigation" },
+      { "label": "Responsable", "value": "l'e-commerçant (pas la plateforme)" },
+      { "label": "Sanction", "value": "jusqu'à 50 000 € par service (ARCOM)" },
+      { "label": "Obligation", "value": "déclaration d'accessibilité" }
+    ]
+  },
+  "sections": [
+    { "h2": "PrestaShop est-il accessible par défaut ?", "bodyHtml": "<p>Non — aucune plateforme e-commerce ne rend votre boutique conforme à elle seule. PrestaShop offre une base technique, mais votre <b>thème, vos modules et vos personnalisations</b> déterminent le résultat. C'est le code HTML réellement servi par votre boutique qui est évalué, pas la plateforme.</p>" },
+    { "h2": "Quelles zones vérifier en priorité ?", "bodyHtml": "<p>Les points les plus souvent en cause : le <b>tunnel de commande</b> multi-étapes, les libellés et messages d'erreur des <b>formulaires</b>, l'ordre de <b>focus et la navigation au clavier</b>, les contrastes, les carrousels et pop-ups, et le bandeau cookies. Les <b>modules tiers</b> ajoutent souvent leur propre code et de nouvelles barrières.</p>" },
+    { "h2": "Qui est responsable — PrestaShop ou le marchand ?", "bodyHtml": "<p>La responsabilité incombe à l'<b>e-commerçant</b> qui exploite la boutique, choisit le thème, les modules et les contenus — pas à l'éditeur de la plateforme. Les sanctions de l'ARCOM (jusqu'à 50 000 € par service) visent l'entreprise qui fournit le service.</p>" },
+    { "h2": "Comment auditer votre boutique PrestaShop ?", "bodyHtml": "<p>Associez un scan automatique WCAG 2.1 AA à un audit manuel (lecteur d'écran, clavier) — le tunnel de commande exige la vérification manuelle. keepcite fournit les deux, plus une preuve datée. Commencez par le scan gratuit ci-dessous. Voir aussi : <a href='/fr/sanctions-accessibilite/'>sanctions d'accessibilité</a>.</p>" }
+  ],
+  "scan": {
+    "h2": "Êtes-vous conforme ?",
+    "free": "Gratuit",
+    "sub2": "Votre boutique, testée selon la norme de la loi.",
+    "formAria": "Demander un scan d'accessibilité gratuit",
+    "subject": "Nouvelle demande de scan — keepcite (FR · PrestaShop)",
+    "urlLabel": "URL de votre boutique",
+    "urlPh": "https://votreboutique.fr",
+    "emailLabel": "E-mail professionnel",
+    "emailPh": "vous@entreprise.fr",
+    "button": "Vérifier ma conformité",
+    "note": "Violations · captures d'écran · articles de loi. Sans appel. Sans spam."
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      { "q": "Un thème PrestaShop accessible suffit-il ?", "a": "Il aide, mais ne suffit pas. Vos contenus, modules et personnalisations, ainsi que le tunnel de commande, décident de la conformité réelle. C'est le code livré qui est évalué, pas le thème seul." },
+      { "q": "Et les modules tiers ?", "a": "Les modules insèrent souvent leur propre HTML (formulaires, pop-ups, boutons) et sont une source fréquente de barrières. Chaque module devrait être testé au regard de WCAG 2.1 AA." },
+      { "q": "Le tunnel de commande est-il concerné ?", "a": "Oui, c'est même la zone la plus à risque : c'est là que se joue la possibilité, pour une personne handicapée, de finaliser un achat. Il doit être testé au clavier et au lecteur d'écran." },
+      { "q": "Quelles sanctions en cas de non-conformité ?", "a": "L'ARCOM peut sanctionner jusqu'à 50 000 € par service, renouvelable tous les 6 mois. Détails : <a href='/fr/sanctions-accessibilite/'>sanctions d'accessibilité</a>." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, UE",
+    "noteHtml": "Cette page réussit l'audit qu'elle vend : WCAG 2.1 AA, navigable au clavier, testée au lecteur d'écran. · © 2026 keepcite",
+    "sourcesLabel": "Sources :",
+    "sources": [
+      { "label": "Ordonnance n° 2023-859 (Légifrance)", "href": "https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000048050657/" },
+      { "label": "Directive (UE) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32019L0882" },
+      { "label": "RGAA — accessibilite.numerique.gouv.fr", "href": "https://accessibilite.numerique.gouv.fr/" }
+    ]
+  }
+}
