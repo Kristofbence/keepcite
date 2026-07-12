@@ -1,0 +1,135 @@
+{
+  "cc": "de",
+  "lang": "de",
+  "ogLocale": "de_DE",
+  "thousandsSep": ".",
+  "canonical": "https://keepcite.com/de/",
+  "title": "BFSG für Online-Shops: Ist Ihr Checkout konform? | keepcite",
+  "metaDescription": "Das Barrierefreiheitsstärkungsgesetz (BFSG) gilt seit 28. Juni 2025 für Online-Shops. keepcite prüft Ihren Checkout gegen WCAG 2.1 AA, liefert Entwickler-Fixes und einen datierten Nachweis. Kostenloser Scan in 48 Stunden.",
+  "ogTitle": "BFSG-Konformität für Online-Shops — keepcite",
+  "ogDescription": "Kostenloser Barrierefreiheits-Scan Ihres Checkouts. Bußgelder bis 100.000 €. Bauen Sie Ihre Nachweisakte auf, bevor die Abmahnung kommt.",
+  "schema": {
+    "serviceName": "keepcite",
+    "serviceDesc": "Barrierefreiheits-Audit nach BFSG / WCAG 2.1 AA und laufender Konformitätsnachweis für Online-Shops in Deutschland.",
+    "areaServed": "Germany",
+    "email": "scan@keepcite.com",
+    "inLanguage": "de"
+  },
+  "skip": "Zum Hauptinhalt springen",
+  "nav": {
+    "ariaLabel": "Hauptnavigation",
+    "whyNow": "Warum jetzt",
+    "how": "Ablauf",
+    "pricing": "Preise",
+    "faq": "FAQ",
+    "cta": "Gratis-Scan"
+  },
+  "kicker": "Barrierefreiheitsstärkungsgesetz (BFSG)",
+  "geoFlagSvg": "<svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='90' height='20' fill='#000'/><rect y='20' width='90' height='20' fill='#DD0000'/><rect y='40' width='90' height='20' fill='#FFCE00'/></svg>",
+  "geoText": "Sie verkaufen in <b>Deutschland</b>? Das BFSG gilt — Bußgelder bis 100.000 € und Wettbewerber verschicken bereits Abmahnungen.",
+  "h1Html": "Verstößt Ihr Checkout <span class='hl'>gegen das BFSG?</span>",
+  "heroSubHtml": "Jeder Online-Shop in Deutschland muss den Barrierefreiheitsstandard erfüllen. Die meisten tun es nicht. Bußgelder bis <b style='color:var(--ink)'>100.000 €</b>.",
+  "scan": {
+    "h2": "Sind Sie konform?",
+    "free": "Gratis",
+    "sub2": "Ihr Shop, geprüft gegen den Standard des Gesetzes.",
+    "formAria": "Kostenlosen Barrierefreiheits-Scan anfordern",
+    "subject": "Neue Scan-Anfrage — keepcite (DE)",
+    "urlLabel": "Ihre Shop-URL",
+    "urlPh": "https://ihrshop.de",
+    "emailLabel": "Geschäftliche E-Mail",
+    "emailPh": "sie@firma.de",
+    "button": "Prüfen, ob ich konform bin",
+    "note": "Verstöße · Screenshots · Gesetzesklauseln. Kein Anruf. Kein Spam."
+  },
+  "trust": [
+    "Standard: <b>WCAG 2.1 AA</b>",
+    "Grundlage: <b>EN 301 549</b>",
+    "Ergebnis: <b>in 48 Stunden</b>"
+  ],
+  "keyFacts": {
+    "title": "Das BFSG auf einen Blick",
+    "items": [
+      { "label": "Gesetz", "value": "Barrierefreiheitsstärkungsgesetz (BFSG) — Umsetzung der EU-Richtlinie 2019/882" },
+      { "label": "Gilt seit", "value": "28. Juni 2025" },
+      { "label": "Für wen", "value": "Online-Shops und digitale Dienste für Verbraucher in Deutschland" },
+      { "label": "Standard", "value": "EN 301 549 → WCAG 2.1 Stufe AA" },
+      { "label": "Bußgeld", "value": "bis zu <b>100.000 €</b> (§ 37 BFSG); die Marktüberwachung kann den Vertrieb untersagen" },
+      { "label": "Ausnahme", "value": "nur Kleinstunternehmen — unter 10 Mitarbeitende <b>und</b> unter 2 Mio. € Jahresumsatz" }
+    ]
+  },
+  "law": {
+    "titleHtml": "Was ist das <span style='color:var(--blue)'>Barrierefreiheitsstärkungsgesetz?</span>",
+    "pill": "Das Gesetz in 30 Sekunden",
+    "cells": [
+      { "h3Html": "Was <span>es ist</span>", "bodyHtml": "Ein deutsches Gesetz, <b>in Kraft seit 28. Juni 2025</b>, das die EU-Richtlinie 2019/882 umsetzt. Digitale Dienste für Verbraucher müssen für Menschen mit Behinderungen nutzbar sein. E-Commerce ist ausdrücklich erfasst." },
+      { "h3Html": "Wer <span>betroffen ist</span>", "bodyHtml": "Alle, die Produkte <b>oder Dienstleistungen</b> online an Verbraucher in Deutschland verkaufen — Shops, SaaS, Buchung &amp; Ticketing, Banking, E-Books. Ausgenommen sind nur echte Kleinstunternehmen: unter 10 Mitarbeitende <b>und</b> unter 2 Mio. € Umsatz." },
+      { "h3Html": "Was <span>gefordert ist</span>", "bodyHtml": "Ihre Website muss <b>WCAG 2.1 AA</b> erfüllen — ein technischer Standard mit rund 50 prüfbaren Kriterien. Checkout und Bezahlvorgang sind die risikoreichsten Seiten. Eine öffentliche Barrierefreiheitserklärung ist Pflicht." }
+    ]
+  },
+  "fines": {
+    "h2Html": "Sind Sie konform? <span class='u'>Die Durchsetzung hat begonnen.</span>",
+    "lead": "Gerichte und Wettbewerber waren zuerst. Die Behörden kommen als Nächstes.",
+    "items": [
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flagge Deutschlands'><rect width='90' height='20' fill='#000'/><rect y='20' width='90' height='20' fill='#DD0000'/><rect y='40' width='90' height='20' fill='#FFCE00'/></svg>", "tagline": "Gilt seit 28. Juni 2025", "to": 100000, "prefix": "", "suffix": " €", "what": "Höchststrafe bei schweren Verstößen gegen das BFSG (§ 37). Die Marktüberwachung kann zusätzlich den Vertrieb untersagen." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flagge Deutschlands'><rect width='90' height='20' fill='#000'/><rect y='20' width='90' height='20' fill='#DD0000'/><rect y='40' width='90' height='20' fill='#FFCE00'/></svg>", "tagline": "Passiert gerade", "to": 500, "prefix": "", "suffix": "", "small": "ABMAHNUNGEN", "what": "Geschätzte wettbewerbsrechtliche Abmahnungen pro Quartal. 1.500–5.000 € Abwehrkosten. Pro Fall." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flagge Frankreichs'><rect width='30' height='60' fill='#0055A4'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#EF4135'/></svg>", "tagline": "Gerichtlich angeordnet", "to": 500, "prefix": "", "suffix": " €", "small": "/ TAG", "what": "Zwangsgeld gegen einen großen französischen Händler — sechs Monate zur vollständigen Umsetzung." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flagge Spaniens'><rect width='90' height='60' fill='#AA151B'/><rect y='15' width='90' height='30' fill='#F1BF00'/></svg>", "to": 1000000, "prefix": "", "suffix": " €", "what": "Höchststrafe · Spanien — plus Befugnis, den Geschäftsbetrieb auszusetzen." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flagge Irlands'><rect width='30' height='60' fill='#169B62'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#FF883E'/></svg>", "to": 60000, "prefix": "", "suffix": " €", "small": "+ HAFT", "what": "Irland — einziger EU-Staat mit strafrechtlicher Haftung. Bis zu 18 Monate." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flagge der Niederlande'><rect width='90' height='20' fill='#AE1C28'/><rect y='20' width='90' height='20' fill='#fff'/><rect y='40' width='90' height='20' fill='#21468B'/></svg>", "to": 900000, "prefix": "", "suffix": " €", "what": "Höchststrafe · Niederlande — oder bis zu 10 % des Umsatzes." }
+    ]
+  },
+  "value": {
+    "kicker": "So funktioniert's",
+    "h2": "Wir scannen. Wir beheben. Wir halten es konform.",
+    "lead": "Drei konkrete Ergebnisse — farblich codiert, damit Sie immer wissen, was Sie bekommen.",
+    "steps": [
+      { "ofClass": "of-scan", "tagchip": "48 Stunden", "n": "1", "h3Html": "Der Scan", "p": "Automatischer WCAG-2.1-AA-Scan Ihres Checkouts. Sie erhalten ein 3-seitiges PDF: Ihre schwersten Verstöße, Screenshots, die genauen Klauseln — und ob Ihre Pflicht-Erklärung existiert.", "chipClass": "pc-free", "chipText": "GRATIS" },
+      { "ofClass": "of-fix", "tagchip": "2–3 Wochen", "n": "2", "h3Html": "Audit &amp; Maßnahmenplan", "p": "Vollständiges manuelles Audit — Screenreader, Tastatur, die rund 2/3 der Fehler, die kein Tool findet. Ihre Entwickler erhalten umsetzbare Tickets mit Code. Wir schreiben und veröffentlichen Ihre Barrierefreiheitserklärung.", "chipClass": "pc-blue", "chipText": "999 € einmalig" },
+      { "ofClass": "of-mon", "tagchip": "Monatlich", "n": "3", "h3Html": "Der Nachweis", "p": "Monatliche Scans Ihres Shops, Regressions-Alarme, wenn ein Release etwas bricht, und ein datiertes Konformitätszertifikat für Ihre Nachweisakte. Jederzeit kündbar.", "chipClass": "pc-navy", "chipText": "99 € / Monat" }
+    ],
+    "proof": [
+      { "b": "Datiertes Zertifikat", "span": "monatlich, für Ihre Nachweisakte" },
+      { "b": "Regressionsprüfung", "span": "bei jedem Release, bevor es schadet" },
+      { "b": "Fester Ansprechpartner", "span": "wenn eine Behörde oder Kanzlei schreibt" },
+      { "b": "Verständliche Briefings", "span": "Urteile &amp; Regeln, die Sie betreffen" }
+    ]
+  },
+  "midcta": {
+    "h2": "Finden Sie es heraus, bevor es ein Anwalt tut.",
+    "button": "Kostenlosen Scan anfordern",
+    "note": "3-seitiges PDF · 48 Stunden · kein Anruf, kein Pitch"
+  },
+  "pricing": {
+    "kicker": "Preise",
+    "h2": "Einfach. Keine Retainer, keine Überraschungen.",
+    "lead": "Gratis starten. Einmal zahlen, um konform zu werden. Monatlich zahlen, um es zu bleiben.",
+    "plans": [
+      { "cls": "p-free", "tier": "Der Scan", "priceHtml": "0 €", "forText": "Sehen, wo Sie stehen", "items": ["Checkout geprüft gegen WCAG 2.1 AA", "3-seitiges PDF mit Ihren schwersten Verstößen", "Prüfung der Barrierefreiheitserklärung", "Lieferung in 48 Stunden"], "btnText": "Gratis-Scan holen", "btnAlt": true },
+      { "cls": "p-audit", "tier": "Audit &amp; Maßnahmenplan", "priceHtml": "999 € <small>einmalig</small>", "forText": "Konform werden", "items": ["Vollständiges manuelles Audit: Screenreader + Tastatur", "Umsetzbare Fix-Tickets mit Code", "Barrierefreiheitserklärung geschrieben &amp; veröffentlicht", "Ihr datiertes Basis-Nachweispaket"], "btnText": "Mit dem Gratis-Scan starten", "btnAlt": false },
+      { "cls": "p-mon", "tier": "Der Nachweis", "priceHtml": "99 € <small>/ Monat</small>", "forText": "Konform bleiben", "items": ["Monatliche Scans Ihres Shops", "Regressions-Alarme bei jedem Release", "Datiertes Konformitätszertifikat pro Monat", "Jederzeit kündbar"], "btnText": "Mit dem Gratis-Scan starten", "btnAlt": true }
+    ],
+    "noteHtml": "Größerer Shop, mehrere Marken oder alles als Komplettservice — inkl. Umsetzung, festem Ansprechpartner und Priority-Support? <a href='mailto:hello@keepcite.com?subject=Done-for-you%20Compliance'>Fragen Sie nach unserem Done-for-you-Plan →</a>"
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      { "q": "Gilt das BFSG für meinen Shop?", "a": "Verkaufen Sie über Website oder App an Verbraucher in Deutschland? Dann ja. Das BFSG gilt seit dem 28. Juni 2025 — E-Commerce, Banking, Telekommunikation, Ticketing, E-Books. Der Standard ist WCAG 2.1 AA (EN 301 549). Ausgenommen sind nur echte Kleinstunternehmen — unter 10 Mitarbeitende UND unter 2 Mio. € Umsatz. Beides muss zutreffen." },
+      { "q": "Wie hoch sind die Bußgelder?", "a": "Nach § 37 BFSG bis zu <b>100.000 €</b> bei schweren Verstößen, bis zu 10.000 € in den übrigen Fällen. Zusätzlich kann die Marktüberwachungsbehörde die Bereitstellung Ihres Dienstes untersagen. Die konkrete Höhe richtet sich nach Art, Schwere und Dauer des Verstoßes." },
+      { "q": "Reicht nicht ein Overlay-Widget?", "a": "Nein. Overlays ändern nicht den Code, den der Standard misst. Über 800 Fachleute für Barrierefreiheit erklären öffentlich, dass sie nicht funktionieren, und die US-Handelsbehörde FTC verurteilte den Anbieter accessiBe zu 1 Mio. $ wegen irreführender Aussagen. Schlimmer: Ein Widget zeigt, dass Sie es wussten — ohne etwas zu beheben." },
+      { "q": "Was bekomme ich jeden Monat?", "a": "Wöchentliche automatische Scans, monatliche manuelle Screenreader-Tests, umsetzbare Fix-Tickets, Ihre stets aktuelle Barrierefreiheitserklärung und ein datiertes Konformitätszertifikat — die Nachweisakte, die Sie jeder Behörde, jedem Verband oder Anwalt vorlegen." },
+      { "q": "Warum Monitoring statt eines einmaligen Audits?", "a": "Weil jedes Deployment die Konformität wieder brechen kann. Ein Audit ist eine Momentaufnahme. Ein Nachweis muss aktuell sein, um Sie zu schützen." },
+      { "q": "Ist das eine Rechtsberatung?", "a": "Nein — es ist der technische Nachweis, über den sich Ihre Rechtsberatung freuen wird. Wir prüfen, beheben, dokumentieren. Über die Strategie entscheidet Ihre Anwältin oder Ihr Anwalt." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Budapest, EU",
+    "otherCountries": [ { "label": "EU / English", "href": "/" } ],
+    "noteHtml": "Diese Seite besteht das Audit, das sie verkauft: WCAG 2.1 AA, tastaturbedienbar, mit Screenreader getestet. · © 2026 keepcite · Impressum · Datenschutz · Barrierefreiheitserklärung",
+    "sourcesLabel": "Quellen:",
+    "sources": [
+      { "label": "§ 37 BFSG (gesetze-im-internet.de)", "href": "https://www.gesetze-im-internet.de/bfsg/__37.html" },
+      { "label": "Richtlinie (EU) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32019L0882" }
+    ]
+  }
+}
