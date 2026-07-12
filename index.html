@@ -14,6 +14,8 @@
 <link rel="alternate" hreflang="it" href="https://keepcite.com/it/">
 <link rel="alternate" hreflang="nl" href="https://keepcite.com/nl/">
 <link rel="alternate" hreflang="en-IE" href="https://keepcite.com/ie/">
+<link rel="alternate" hreflang="sv" href="https://keepcite.com/se/">
+<link rel="alternate" hreflang="de-AT" href="https://keepcite.com/at/">
 <meta property="og:title" content="keepcite — EAA compliance evidence for EU e-commerce">
 <meta property="og:description" content="Free checkout accessibility scan. Fines up to €1,000,000 are on the books. Build your evidence trail before the letter arrives.">
 <meta property="og:type" content="website">
@@ -366,6 +368,28 @@
   .plan .btn.alt:hover{background:var(--blue);}
   .plan-note{margin-top:20px;font-size:14px;color:var(--muted);font-weight:500;max-width:64ch;}
   .plan-note a{color:var(--blue);font-weight:600;}
+
+  /* column footer (shared by index.html + all generated pages) */
+  .footcols{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 28px;padding-bottom:30px;border-bottom:1px solid var(--navy-line);}
+  @media(max-width:820px){.footcols{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:460px){.footcols{grid-template-columns:1fr;}}
+  .footcol{display:flex;flex-direction:column;gap:8px;min-width:0;}
+  .footcol h3{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#7E92BE;font-weight:600;margin:0 0 2px;}
+  .footcol h3 a{color:#fff;text-decoration:none;}
+  .footcol h3 a:hover{color:#6E93FF;}
+  .footcol a{color:var(--navy-text);text-decoration:none;font-size:13px;line-height:1.4;}
+  .footcol a:hover{color:#fff;}
+  footer .foot-row{margin-top:26px;}
+
+  /* suggested-region banner (dismissible; not a redirect) */
+  .regionbar{background:var(--blue-tint);border-bottom:1px solid #C9D8FB;font-size:14px;}
+  .regionbar[hidden]{display:none;}
+  .regionbar .wrap{display:flex;align-items:center;gap:10px 14px;padding:10px 24px;flex-wrap:wrap;}
+  .regionbar span{color:var(--ink);font-weight:600;}
+  .regionbar a{color:var(--blue);font-weight:700;text-decoration:none;}
+  .regionbar a:hover{text-decoration:underline;}
+  .regionbar button{margin-left:auto;background:none;border:1px solid transparent;color:var(--muted);font-size:15px;line-height:1;cursor:pointer;padding:5px 9px;border-radius:6px;}
+  .regionbar button:hover{color:var(--ink);background:#fff;}
 </style>
 <script defer data-domain="keepcite.com" src="https://plausible.io/js/script.js"></script>
 </head>
@@ -388,6 +412,14 @@
 </header>
 
 <main id="main">
+
+<div class="regionbar" id="regionbar" data-market="" hidden>
+  <div class="wrap">
+    <span id="regionbar-text"></span>
+    <a id="regionbar-link" href="#"></a>
+    <button type="button" id="regionbar-x" aria-label="Dismiss">&#10005;</button>
+  </div>
+</div>
 
 <!-- HERO -->
 <section class="hero" id="top">
@@ -652,6 +684,8 @@
       <nav class="footcol" aria-label="Italia"><h3><a href="/it/">Italia</a></h3></nav>
       <nav class="footcol" aria-label="Nederland"><h3><a href="/nl/">Nederland</a></h3></nav>
       <nav class="footcol" aria-label="Ireland"><h3><a href="/ie/">Ireland</a></h3></nav>
+      <nav class="footcol" aria-label="Sverige"><h3><a href="/se/">Sverige</a></h3></nav>
+      <nav class="footcol" aria-label="Österreich"><h3><a href="/at/">Österreich</a></h3></nav>
       <div class="footcol"><h3>Legal</h3><a href="/imprint/">Imprint</a><a href="/privacy/">Privacy</a><a href="/accessibility-statement/">Accessibility statement</a><a href="mailto:hello@keepcite.com">hello@keepcite.com</a></div>
     </div>
     <div class="foot-row">
@@ -727,10 +761,30 @@
     var t = document.getElementById('geo-text');
     if(f && t){ f.innerHTML = g.flag; t.innerHTML = g.text; }
   }
+  // Suggested-region banner (NOT a redirect) — reuses this same ipapi.co detection.
+  function regionBanner(cc){
+    var host=document.getElementById('regionbar'); if(!host) return;
+    try{ if(sessionStorage.getItem('kc_region_x')) return; }catch(e){}
+    var HUB={DE:'/de/',FR:'/fr/',ES:'/es/',IT:'/it/',NL:'/nl/',IE:'/ie/',SE:'/se/',AT:'/at/'};
+    var NAME={DE:'Deutschland',FR:'France',ES:'España',IT:'Italia',NL:'Nederland',IE:'Ireland',SE:'Sverige',AT:'Österreich'};
+    var MKT={DE:'de',FR:'fr',ES:'es',IT:'it',NL:'nl',IE:'ie',SE:'se',AT:'at'};
+    if(!cc||!HUB[cc]) return;
+    if(MKT[cc]===(host.dataset.market||'')) return;
+    var lang=(document.documentElement.lang||'en').slice(0,2);
+    var T={en:['Looks like you’re in','See our %C page','Dismiss'],de:['Sie sind offenbar in','Zur Seite für %C','Schließen'],fr:['Vous semblez être en','Voir notre page %C','Fermer'],es:['Parece que estás en','Ver nuestra página de %C','Cerrar'],it:['Sembra che tu sia in','Vai alla pagina %C','Chiudi'],nl:['Je bevindt je vermoedelijk in','Bekijk onze %C-pagina','Sluiten'],sv:['Du verkar vara i','Se vår %C-sida','Stäng']};
+    var t=T[lang]||T.en, name=NAME[cc];
+    document.getElementById('regionbar-text').textContent=t[0]+' '+name+' —';
+    var lk=document.getElementById('regionbar-link'); lk.textContent=t[1].replace('%C',name)+' →'; lk.href=HUB[cc];
+    var x=document.getElementById('regionbar-x'); x.setAttribute('aria-label',t[2]);
+    function dismiss(){ host.hidden=true; try{sessionStorage.setItem('kc_region_x','1');}catch(e){} }
+    x.addEventListener('click',dismiss);
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!host.hidden) dismiss(); });
+    host.hidden=false;
+  }
   try{
     fetch('https://ipapi.co/json/',{signal:AbortSignal.timeout ? AbortSignal.timeout(2500) : undefined})
       .then(function(r){ return r.json(); })
-      .then(function(d){ if(d && d.country_code){ applyGeo(d.country_code); } })
+      .then(function(d){ if(d && d.country_code){ applyGeo(d.country_code); regionBanner(d.country_code); } })
       .catch(function(){
         var l = (navigator.language||'').toLowerCase();
         applyGeo(LANG2CC[l] || LANG2CC[l.split('-')[0]]);

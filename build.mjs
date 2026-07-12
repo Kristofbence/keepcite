@@ -44,17 +44,9 @@ const extraCss = `
   .kwsection p{color:#3C4452;font-weight:500;margin-bottom:12px;}
   .kwscan{max-width:560px;margin:0 auto;}
   .kwscanband{padding:16px 0 60px;}
-  /* column footer */
-  .footcols{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 28px;padding-bottom:30px;border-bottom:1px solid var(--navy-line);}
-  @media(max-width:820px){.footcols{grid-template-columns:repeat(2,1fr);}}
-  @media(max-width:460px){.footcols{grid-template-columns:1fr;}}
-  .footcol{display:flex;flex-direction:column;gap:8px;min-width:0;}
-  .footcol h3{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#7E92BE;font-weight:600;margin:0 0 2px;}
-  .footcol h3 a{color:#fff;text-decoration:none;}
-  .footcol h3 a:hover{color:#6E93FF;}
-  .footcol a{color:var(--navy-text);text-decoration:none;font-size:13px;line-height:1.4;}
-  .footcol a:hover{color:#fff;}
-  footer .foot-row{margin-top:26px;}
+  /* NOTE: the column-footer and region-banner CSS live in index.html's <style>
+     (the shared stylesheet), so index.html and every generated page get them
+     from one source. Do not re-add them here. */
   /* legal pages */
   .legalwrap{padding:34px 0 64px;}
   .legal{max-width:820px;}
@@ -68,6 +60,36 @@ const extraCss = `
   .legal address{font-style:normal;color:#28324A;font-weight:600;line-height:1.8;margin-bottom:12px;}
   .legal .todo{background:#FFF0C2;color:#7A5B00;padding:1px 7px;border-radius:5px;font-weight:700;font-size:14px;}
 `;
+
+// Suggested-region banner (NOT a redirect): if the visitor's country has a hub and
+// they aren't already in that market, show a small dismissible bar. Same ipapi.co
+// detection as the hero badge; graceful fallback (no banner on failure). Used on
+// every generated page and, verbatim, in index.html.
+const BANNER_JS = `(function(){
+  var host=document.getElementById('regionbar'); if(!host) return;
+  try{ if(sessionStorage.getItem('kc_region_x')) return; }catch(e){}
+  var HUB={DE:'/de/',FR:'/fr/',ES:'/es/',IT:'/it/',NL:'/nl/',IE:'/ie/',SE:'/se/',AT:'/at/'};
+  var NAME={DE:'Deutschland',FR:'France',ES:'España',IT:'Italia',NL:'Nederland',IE:'Ireland',SE:'Sverige',AT:'Österreich'};
+  var MKT={DE:'de',FR:'fr',ES:'es',IT:'it',NL:'nl',IE:'ie',SE:'se',AT:'at'};
+  var T={en:['Looks like you’re in','See our %C page','Dismiss'],de:['Sie sind offenbar in','Zur Seite für %C','Schließen'],fr:['Vous semblez être en','Voir notre page %C','Fermer'],es:['Parece que estás en','Ver nuestra página de %C','Cerrar'],it:['Sembra che tu sia in','Vai alla pagina %C','Chiudi'],nl:['Je bevindt je vermoedelijk in','Bekijk onze %C-pagina','Sluiten'],sv:['Du verkar vara i','Se vår %C-sida','Stäng']};
+  function show(cc){
+    if(!cc||!HUB[cc]) return;
+    if(MKT[cc]===(host.dataset.market||'')) return;
+    var lang=(document.documentElement.lang||'en').slice(0,2);
+    var t=T[lang]||T.en, name=NAME[cc];
+    document.getElementById('regionbar-text').textContent=t[0]+' '+name+' —';
+    var lk=document.getElementById('regionbar-link'); lk.textContent=t[1].replace('%C',name)+' →'; lk.href=HUB[cc];
+    var x=document.getElementById('regionbar-x'); x.setAttribute('aria-label',t[2]);
+    function dismiss(){ host.hidden=true; try{sessionStorage.setItem('kc_region_x','1');}catch(e){} }
+    x.addEventListener('click',dismiss);
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!host.hidden) dismiss(); });
+    host.hidden=false;
+  }
+  try{
+    fetch('https://ipapi.co/json/',{signal:(typeof AbortSignal!=='undefined'&&AbortSignal.timeout)?AbortSignal.timeout(2500):undefined})
+      .then(function(r){return r.json();}).then(function(d){ if(d&&d.country_code) show(d.country_code); }).catch(function(){});
+  }catch(e){}
+})();`;
 
 // reveal + count-up only (no geo fetch — country pages hardcode their country)
 const script = (sep) => `
@@ -91,16 +113,21 @@ const script = (sep) => `
     entries.forEach(function(e){ if(e.isIntersecting){ countUp(e.target); cio.unobserve(e.target); } });
   },{threshold:.5});
   document.querySelectorAll('.count').forEach(function(el){ cio.observe(el); });
-})();`;
+})();
+${BANNER_JS}`;
 
 // ---------- helpers ----------
 const esc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const raw = (s = '') => s; // content authored as trusted HTML in our own JSON
 
 function financeSpan(f) {
+  const small = f.small ? `<small>${esc(f.small)}</small>` : '';
+  // Non-numeric amount (e.g. Sweden's case-by-case "vite" — no fixed statutory max).
+  if (f.amountText) {
+    return `<div class="amount" style="font-size:clamp(26px,2.8vw,34px);">${esc(f.amountText)}${small}</div>`;
+  }
   const pre = f.prefix ?? '', suf = f.suffix ?? '';
   const init = `${pre}0${suf}`;
-  const small = f.small ? `<small>${esc(f.small)}</small>` : '';
   return `<div class="amount"><span class="count" data-to="${f.to}" data-prefix="${esc(pre)}" data-suffix="${esc(suf)}">${esc(init)}</span>${small}</div>`;
 }
 
@@ -121,7 +148,7 @@ function faqSchema(items, langName) {
 }
 
 // ---------- shared column footer ----------
-const MARKET_ORDER = ['de', 'fr', 'es', 'it', 'nl', 'ie'];
+const MARKET_ORDER = ['de', 'fr', 'es', 'it', 'nl', 'ie', 'se', 'at'];
 let FOOTER_COLS = ''; // assigned in the build step once markets + keywords are loaded
 
 function footerColumns(markets, keywords) {
@@ -192,6 +219,13 @@ ${ANALYTICS}
 </header>
 
 <main id="main">
+  <div class="regionbar" id="regionbar" data-market="" hidden>
+    <div class="wrap">
+      <span id="regionbar-text"></span>
+      <a id="regionbar-link" href="#"></a>
+      <button type="button" id="regionbar-x" aria-label="Dismiss">&#10005;</button>
+    </div>
+  </div>
   <section class="legalwrap">
     <div class="wrap">
       <div class="legal reveal">
@@ -264,6 +298,14 @@ ${ANALYTICS}
 </header>
 
 <main id="main">
+
+<div class="regionbar" id="regionbar" data-market="${d.cc}" hidden>
+  <div class="wrap">
+    <span id="regionbar-text"></span>
+    <a id="regionbar-link" href="#"></a>
+    <button type="button" id="regionbar-x" aria-label="Dismiss">&#10005;</button>
+  </div>
+</div>
 
 <section class="hero" id="top">
   <div class="wrap hero-grid">
@@ -473,6 +515,13 @@ ${ANALYTICS}
 </header>
 
 <main id="main">
+  <div class="regionbar" id="regionbar" data-market="${kw.cc}" hidden>
+    <div class="wrap">
+      <span id="regionbar-text"></span>
+      <a id="regionbar-link" href="#"></a>
+      <button type="button" id="regionbar-x" aria-label="Dismiss">&#10005;</button>
+    </div>
+  </div>
   <div class="wrap"><nav class="crumb" aria-label="Breadcrumb">${kw.breadcrumb.map((b, i) => i < kw.breadcrumb.length - 1 ? `<a href="${b.href}">${esc(b.name)}</a> / ` : `<span>${esc(b.name)}</span>`).join('')}</nav></div>
 
   <section class="kwhero">

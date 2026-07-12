@@ -1,0 +1,130 @@
+{
+  "cc": "at",
+  "lang": "de",
+  "hreflang": "de-AT",
+  "switchLabel": "Österreich",
+  "ogLocale": "de_AT",
+  "thousandsSep": ".",
+  "canonical": "https://keepcite.com/at/",
+  "title": "BaFG Österreich: ist Ihr Online-Shop konform? | keepcite",
+  "metaDescription": "Das Barrierefreiheitsgesetz (BaFG) gilt seit 28. Juni 2025 in Österreich. keepcite prüft Ihren Checkout gegen WCAG 2.1 AA — mit datiertem Nachweis. Gratis-Scan.",
+  "ogTitle": "BaFG-Konformität für Online-Shops in Österreich — keepcite",
+  "ogDescription": "Kostenloser Barrierefreiheits-Scan. Verwaltungsstrafen bis 80.000 €. Bauen Sie Ihren Nachweis auf, bevor das Sozialministeriumservice prüft.",
+  "schema": {
+    "serviceName": "keepcite",
+    "serviceDesc": "Barrierefreiheits-Audit nach BaFG / WCAG 2.1 AA und laufender Konformitätsnachweis für Online-Shops in Österreich.",
+    "areaServed": "Austria",
+    "email": "scan@keepcite.com",
+    "inLanguage": "de"
+  },
+  "skip": "Zum Hauptinhalt springen",
+  "nav": { "ariaLabel": "Hauptnavigation", "whyNow": "Warum jetzt", "how": "Ablauf", "pricing": "Preise", "faq": "FAQ", "cta": "Gratis-Scan" },
+  "kicker": "Barrierefreiheitsgesetz (BaFG)",
+  "geoFlagSvg": "<svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='90' height='20' fill='#ED2939'/><rect y='20' width='90' height='20' fill='#fff'/><rect y='40' width='90' height='20' fill='#ED2939'/></svg>",
+  "geoText": "Sie verkaufen in <b>Österreich</b>? Das BaFG gilt — Verwaltungsstrafen bis 80.000 €, zuständig ist das Sozialministeriumservice.",
+  "h1Html": "Verstößt Ihr Checkout <span class='hl'>gegen das BaFG?</span>",
+  "heroSubHtml": "Jeder Online-Shop in Österreich muss den Barrierefreiheitsstandard erfüllen. Die meisten tun es nicht. Verwaltungsstrafen bis <b style='color:var(--ink)'>80.000 €</b>.",
+  "scan": {
+    "h2": "Sind Sie konform?",
+    "free": "Gratis",
+    "sub2": "Ihr Shop, geprüft gegen den Standard des Gesetzes.",
+    "formAria": "Kostenlosen Barrierefreiheits-Scan anfordern",
+    "subject": "Neue Scan-Anfrage — keepcite (AT)",
+    "urlLabel": "Ihre Shop-URL",
+    "urlPh": "https://ihrshop.at",
+    "emailLabel": "Geschäftliche E-Mail",
+    "emailPh": "sie@firma.at",
+    "button": "Prüfen, ob ich konform bin",
+    "note": "Verstöße · Screenshots · Gesetzesklauseln. Kein Anruf. Kein Spam."
+  },
+  "trust": [
+    "Standard: <b>WCAG 2.1 AA</b>",
+    "Grundlage: <b>EN 301 549</b>",
+    "Ergebnis: <b>in 48 Stunden</b>"
+  ],
+  "keyFacts": {
+    "title": "Das BaFG auf einen Blick",
+    "items": [
+      { "label": "Gesetz", "value": "Barrierefreiheitsgesetz (BaFG) — Umsetzung der EU-Richtlinie 2019/882" },
+      { "label": "Gilt seit", "value": "28. Juni 2025" },
+      { "label": "Für wen", "value": "Online-Shops und digitale Dienste für Verbraucher in Österreich" },
+      { "label": "Standard", "value": "EN 301 549 → WCAG 2.1 Stufe AA" },
+      { "label": "Strafe", "value": "bis <b>80.000 €</b> (große U.); 50.000 € (KMU), 25.000 € (Kleinst)" },
+      { "label": "Behörde", "value": "Sozialministeriumservice" },
+      { "label": "Ausnahme", "value": "Kleinstunternehmen bei Dienstleistungen (< 10 MA und < 2 Mio. €)" }
+    ]
+  },
+  "law": {
+    "titleHtml": "Was ist das <span style='color:var(--blue)'>Barrierefreiheitsgesetz?</span>",
+    "pill": "Das Gesetz in 30 Sekunden",
+    "cells": [
+      { "h3Html": "Was <span>es ist</span>", "bodyHtml": "Ein österreichisches Gesetz, <b>in Kraft seit 28. Juni 2025</b>, das die EU-Richtlinie 2019/882 umsetzt. Digitale Dienste für Verbraucher müssen für Menschen mit Behinderungen nutzbar sein. E-Commerce ist ausdrücklich erfasst." },
+      { "h3Html": "Wer <span>betroffen ist</span>", "bodyHtml": "Alle, die Produkte <b>oder Dienstleistungen</b> online an Verbraucher in Österreich verkaufen — Shops, SaaS, Buchung &amp; Ticketing, Banking, E-Books. Kleinstunternehmen, die Dienstleistungen erbringen, sind ausgenommen (< 10 MA <b>und</b> < 2 Mio. €)." },
+      { "h3Html": "Was <span>gefordert ist</span>", "bodyHtml": "Ihre Website muss <b>WCAG 2.1 AA</b> erfüllen — rund 50 prüfbare Kriterien. Checkout und Bezahlvorgang sind am risikoreichsten. Eine Barrierefreiheitserklärung ist Pflicht." }
+    ]
+  },
+  "fines": {
+    "h2Html": "Sind Sie konform? <span class='u'>Die Durchsetzung hat begonnen.</span>",
+    "lead": "Behörden und Wettbewerber sind in Bewegung. Bereiten Sie sich vor.",
+    "items": [
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flagge Österreichs'><rect width='90' height='20' fill='#ED2939'/><rect y='20' width='90' height='20' fill='#fff'/><rect y='40' width='90' height='20' fill='#ED2939'/></svg>", "tagline": "Große Unternehmen", "to": 80000, "prefix": "", "suffix": " €", "small": "MAX", "what": "Verwaltungsstrafe für große Unternehmen nach dem BaFG. Zuständig: Sozialministeriumservice." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flagge Österreichs'><rect width='90' height='20' fill='#ED2939'/><rect y='20' width='90' height='20' fill='#fff'/><rect y='40' width='90' height='20' fill='#ED2939'/></svg>", "tagline": "KMU", "to": 50000, "prefix": "", "suffix": " €", "what": "Höchststrafe für kleine und mittlere Unternehmen; Kleinstunternehmen bis 25.000 €." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flagge Spaniens'><rect width='90' height='60' fill='#AA151B'/><rect y='15' width='90' height='30' fill='#F1BF00'/></svg>", "to": 1000000, "prefix": "", "suffix": " €", "what": "Höchststrafe · Spanien — die höchste der EU." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flagge Deutschlands'><rect width='90' height='20' fill='#000'/><rect y='20' width='90' height='20' fill='#DD0000'/><rect y='40' width='90' height='20' fill='#FFCE00'/></svg>", "to": 100000, "prefix": "", "suffix": " €", "what": "Höchststrafe · Deutschland (§ 37 BFSG)." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flagge Frankreichs'><rect width='30' height='60' fill='#0055A4'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#EF4135'/></svg>", "to": 50000, "prefix": "", "suffix": " €", "small": "/ DIENST", "what": "Frankreich — ARCOM, pro Dienst, alle 6 Monate erneuerbar." },
+      { "flagSvg": "<svg class='flag' viewBox='0 0 90 60' role='img' aria-label='Flagge Irlands'><rect width='30' height='60' fill='#169B62'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#FF883E'/></svg>", "to": 60000, "prefix": "", "suffix": " €", "small": "+ HAFT", "what": "Irland — strafrechtliche Haftung, bis 18 Monate." }
+    ]
+  },
+  "value": {
+    "kicker": "So funktioniert's",
+    "h2": "Wir scannen. Wir beheben. Wir halten es konform.",
+    "lead": "Drei konkrete Ergebnisse — farblich codiert, damit Sie immer wissen, was Sie bekommen.",
+    "steps": [
+      { "ofClass": "of-scan", "tagchip": "48 Stunden", "n": "1", "h3Html": "Der Scan", "p": "Automatischer WCAG-2.1-AA-Scan Ihres Checkouts. Sie erhalten ein 3-seitiges PDF: Ihre schwersten Verstöße, Screenshots, die genauen Klauseln — und ob Ihre Pflicht-Erklärung existiert.", "chipClass": "pc-free", "chipText": "GRATIS" },
+      { "ofClass": "of-fix", "tagchip": "2–3 Wochen", "n": "2", "h3Html": "Audit &amp; Maßnahmenplan", "p": "Vollständiges manuelles Audit — Screenreader, Tastatur, die rund 2/3 der Fehler, die kein Tool findet. Ihre Entwickler erhalten umsetzbare Tickets mit Code. Wir schreiben und veröffentlichen Ihre Barrierefreiheitserklärung.", "chipClass": "pc-blue", "chipText": "999 € einmalig" },
+      { "ofClass": "of-mon", "tagchip": "Monatlich", "n": "3", "h3Html": "Der Nachweis", "p": "Monatliche Scans Ihres Shops, Regressions-Alarme, wenn ein Release etwas bricht, und ein datiertes Konformitätszertifikat für Ihre Nachweisakte. Jederzeit kündbar.", "chipClass": "pc-navy", "chipText": "99 € / Monat" }
+    ],
+    "proof": [
+      { "b": "Datiertes Zertifikat", "span": "monatlich, für Ihre Nachweisakte" },
+      { "b": "Regressionsprüfung", "span": "bei jedem Release, bevor es schadet" },
+      { "b": "Fester Ansprechpartner", "span": "wenn eine Behörde oder Kanzlei schreibt" },
+      { "b": "Verständliche Briefings", "span": "Urteile &amp; Regeln, die Sie betreffen" }
+    ]
+  },
+  "midcta": {
+    "h2": "Finden Sie es heraus, bevor es ein Anwalt tut.",
+    "button": "Kostenlosen Scan anfordern",
+    "note": "3-seitiges PDF · 48 Stunden · kein Anruf, kein Pitch"
+  },
+  "pricing": {
+    "kicker": "Preise",
+    "h2": "Einfach. Keine Retainer, keine Überraschungen.",
+    "lead": "Gratis starten. Einmal zahlen, um konform zu werden. Monatlich zahlen, um es zu bleiben.",
+    "plans": [
+      { "cls": "p-free", "tier": "Der Scan", "priceHtml": "0 €", "forText": "Sehen, wo Sie stehen", "items": ["Checkout geprüft gegen WCAG 2.1 AA", "3-seitiges PDF mit Ihren schwersten Verstößen", "Prüfung der Barrierefreiheitserklärung", "Lieferung in 48 Stunden"], "btnText": "Gratis-Scan holen", "btnAlt": true },
+      { "cls": "p-audit", "tier": "Audit &amp; Maßnahmenplan", "priceHtml": "999 € <small>einmalig</small>", "forText": "Konform werden", "items": ["Vollständiges manuelles Audit: Screenreader + Tastatur", "Umsetzbare Fix-Tickets mit Code", "Barrierefreiheitserklärung geschrieben &amp; veröffentlicht", "Ihr datiertes Basis-Nachweispaket"], "btnText": "Mit dem Gratis-Scan starten", "btnAlt": false },
+      { "cls": "p-mon", "tier": "Der Nachweis", "priceHtml": "99 € <small>/ Monat</small>", "forText": "Konform bleiben", "items": ["Monatliche Scans Ihres Shops", "Regressions-Alarme bei jedem Release", "Datiertes Konformitätszertifikat pro Monat", "Jederzeit kündbar"], "btnText": "Mit dem Gratis-Scan starten", "btnAlt": true }
+    ],
+    "noteHtml": "Größerer Shop, mehrere Marken oder alles als Komplettservice — inkl. Umsetzung, festem Ansprechpartner und Priority-Support? <a href='mailto:hello@keepcite.com?subject=Done-for-you%20Compliance'>Fragen Sie nach unserem Done-for-you-Plan →</a>"
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      { "q": "Gilt das BaFG für meinen Shop?", "a": "Verkaufen Sie über Website oder App an Verbraucher in Österreich? Dann ja. Das BaFG gilt seit dem 28. Juni 2025 — E-Commerce, Banking, Telekommunikation, Ticketing, E-Books. Der Standard ist WCAG 2.1 AA (EN 301 549). Kleinstunternehmen, die Dienstleistungen erbringen, sind ausgenommen (unter 10 Mitarbeitende UND unter 2 Mio. € Umsatz)." },
+      { "q": "Wie hoch sind die Strafen?", "a": "Die Verwaltungsstrafen sind nach Unternehmensgröße gestaffelt: bis <b>80.000 €</b> für große Unternehmen, bis 50.000 € für KMU und bis 25.000 € für Kleinstunternehmen. Zuständig ist das Sozialministeriumservice; bei erstmaligen oder geringfügigen Verstößen gilt der Grundsatz „Beraten vor Strafen“." },
+      { "q": "Reicht ein Overlay-Widget?", "a": "Nein. Overlays ändern nicht den Code, den der Standard misst. Über 800 Fachleute für Barrierefreiheit erklären öffentlich, dass sie nicht funktionieren, und die US-Handelsbehörde FTC verurteilte den Anbieter accessiBe zu 1 Mio. $ wegen irreführender Aussagen. Schlimmer: Ein Widget zeigt, dass Sie es wussten — ohne etwas zu beheben." },
+      { "q": "Was bekomme ich jeden Monat?", "a": "Wöchentliche automatische Scans, monatliche manuelle Screenreader-Tests, umsetzbare Fix-Tickets, Ihre stets aktuelle Barrierefreiheitserklärung und ein datiertes Konformitätszertifikat — die Nachweisakte, die Sie jeder Behörde, jedem Verband oder Anwalt vorlegen." },
+      { "q": "Ist das eine Rechtsberatung?", "a": "Nein — es ist der technische Nachweis, über den sich Ihre Rechtsberatung freuen wird. Wir prüfen, beheben, dokumentieren. Über die Strategie entscheidet Ihre Anwältin oder Ihr Anwalt." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, EU",
+    "noteHtml": "Diese Seite besteht das Audit, das sie verkauft: WCAG 2.1 AA, tastaturbedienbar, mit Screenreader getestet. · © 2026 keepcite",
+    "sourcesLabel": "Quellen:",
+    "sources": [
+      { "label": "Barrierefreiheitsgesetz — Sozialministerium", "href": "https://www.sozialministerium.gv.at/Themen/Soziales/Menschen-mit-Behinderungen/Barrierefreiheitsgesetz.html" },
+      { "label": "Informationen zum BaFG — WKO", "href": "https://www.wko.at/ce-kennzeichnung-normen/informationen-zum-barrierefreiheitsgesetz" },
+      { "label": "Richtlinie (EU) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32019L0882" }
+    ]
+  }
+}

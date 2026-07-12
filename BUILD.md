@@ -72,6 +72,22 @@ node build.mjs && node validate.mjs
 unique meta description < 160, exactly one `<h1>`, a canonical tag, a self-referencing
 hreflang, and parseable JSON-LD. It exits non-zero on any failure.
 
+## Shared CSS lives in index.html
+
+`build.mjs` extracts `index.html`'s `<style>` as `sharedCss` and appends `extraCss`
+(keyword/legal-only rules) for generated pages. **CSS for components that appear on
+every page — the column footer and the region banner — must live in index.html's
+`<style>`, not in `extraCss`.** If you put a global component's CSS only in `extraCss`,
+index.html renders it unstyled (this caused the footer links to run together). Keep
+shared-component CSS in index.html; keep page-type-specific CSS in `extraCss`.
+
+## Region banner
+
+`BANNER_JS` in `build.mjs` (and an equivalent block in index.html's geo script) shows a
+dismissible "suggested region" bar — NOT a redirect — when ipapi.co detects a country
+that has a hub and the visitor isn't already in that market. Country → hub/name/market
+maps are in that snippet; add new markets there too.
+
 ## Notes
 
 - The Web3Forms key is shared; each page adds a hidden `market` field (e.g. `DE`)
