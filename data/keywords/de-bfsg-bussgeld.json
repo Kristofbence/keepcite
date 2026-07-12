@@ -1,0 +1,74 @@
+{
+  "cc": "de",
+  "lang": "de",
+  "slug": "bfsg-bussgeld",
+  "ogLocale": "de_DE",
+  "thousandsSep": ".",
+  "canonical": "https://keepcite.com/de/bfsg-bussgeld/",
+  "hubHref": "/de/",
+  "hubLabel": "BFSG-Übersicht",
+  "title": "BFSG-Bußgeld: Wie hoch sind die Strafen? (§ 37 BFSG) | keepcite",
+  "metaDescription": "BFSG-Bußgelder reichen bis 100.000 € (§ 37 BFSG), bei übrigen Verstößen bis 10.000 €. Wer haftet, wann Abmahnungen drohen und wie Sie sich schützen. Kostenloser Checkout-Scan in 48 Stunden.",
+  "ogTitle": "BFSG-Bußgeld: bis zu 100.000 € — wer haftet?",
+  "ogDescription": "§ 37 BFSG: Bußgelder bis 100.000 €, dazu Abmahnungen und Vertriebsuntersagung. So bauen Sie einen datierten Nachweis auf.",
+  "schema": { "inLanguage": "de" },
+  "skip": "Zum Scan springen",
+  "nav": { "ariaLabel": "Hauptnavigation", "pricing": "Preise", "faq": "FAQ", "cta": "Gratis-Scan" },
+  "breadcrumb": [
+    { "name": "keepcite", "href": "/", "item": "https://keepcite.com/" },
+    { "name": "Deutschland (BFSG)", "href": "/de/", "item": "https://keepcite.com/de/" },
+    { "name": "BFSG-Bußgeld", "href": "/de/bfsg-bussgeld/", "item": "https://keepcite.com/de/bfsg-bussgeld/" }
+  ],
+  "kicker": "BFSG · Bußgeld & Sanktionen",
+  "h1Html": "BFSG-Bußgeld: <span class='hl'>wie hoch sind die Strafen?</span>",
+  "answerHtml": "Nach <b>§ 37 BFSG</b> drohen Bußgelder bis zu <b>100.000 €</b> bei schweren Verstößen und bis zu <b>10.000 €</b> in den übrigen Fällen. Zusätzlich kann die Marktüberwachungsbehörde den Vertrieb Ihres Dienstes <b>untersagen</b>. Am schnellsten treffen Unternehmen in der Praxis jedoch wettbewerbsrechtliche <b>Abmahnungen</b> — mit Kosten von typischerweise 1.500–5.000 € pro Fall.",
+  "keyFacts": {
+    "title": "BFSG-Bußgeld auf einen Blick",
+    "items": [
+      { "label": "Höchstbußgeld", "value": "bis <b>100.000 €</b> (§ 37 BFSG, schwere Verstöße)" },
+      { "label": "Übrige Verstöße", "value": "bis 10.000 €" },
+      { "label": "Zusätzlich", "value": "Untersagung des Vertriebs durch die Marktüberwachung" },
+      { "label": "Wer haftet", "value": "das Unternehmen — Hersteller, Importeur, Händler oder Dienstleister" },
+      { "label": "Schnellstes Risiko", "value": "wettbewerbsrechtliche Abmahnungen (ca. 1.500–5.000 € pro Fall)" },
+      { "label": "Seit wann", "value": "28. Juni 2025" },
+      { "label": "Rechtsgrundlage", "value": "§ 37 BFSG i. V. m. Richtlinie (EU) 2019/882" }
+    ]
+  },
+  "sections": [
+    { "h2": "Wie hoch ist das BFSG-Bußgeld genau?", "bodyHtml": "<p>§ 37 BFSG unterscheidet zwei Stufen. Für schwere Verstöße beträgt das Bußgeld <b>bis zu 100.000 €</b>. Für die übrigen Ordnungswidrigkeiten liegt der Rahmen bei <b>bis zu 10.000 €</b>.</p><p>Die konkrete Höhe bemisst sich nach Art, Schwere und Dauer des Verstoßes sowie der Gefahr der Wiederholung. Es handelt sich um Höchstgrenzen, nicht um Pauschalen.</p>" },
+    { "h2": "Wer haftet für einen Verstoß?", "bodyHtml": "<p>Verantwortlich ist das <b>Unternehmen</b>, das den Dienst für Verbraucher bereitstellt — je nach Rolle Hersteller, Importeur, Händler oder Dienstleister. Für Online-Shops heißt das: Betreiber des Shops und der Zahlungsstrecke tragen die Pflicht zur Konformität mit WCAG 2.1 AA.</p>" },
+    { "h2": "Drohen Abmahnungen wegen Barrierefreiheit?", "bodyHtml": "<p>Ja — und in der Praxis oft schneller als ein behördliches Bußgeld. Wettbewerber und Verbände können Verstöße abmahnen; die Kosten liegen typischerweise bei <b>1.500–5.000 € pro Fall</b>, zuzüglich der Pflicht, den Mangel zu beheben. Ein dokumentierter, datierter Nachweis Ihrer Bemühungen ist die beste Verteidigung.</p>" },
+    { "h2": "Wie vermeiden Sie ein BFSG-Bußgeld?", "bodyHtml": "<p>Drei Schritte: (1) Ihren Checkout gegen <b>WCAG 2.1 AA</b> prüfen und die Verstöße beheben, (2) eine <b>Barrierefreiheitserklärung</b> veröffentlichen, (3) einen <b>datierten Nachweis</b> führen, der belegt, dass Ihr Shop zum jeweiligen Zeitpunkt konform war. Genau dafür ist keepcite gebaut — starten Sie mit dem kostenlosen Scan unten.</p>" }
+  ],
+  "scan": {
+    "h2": "Ist Ihr Shop konform?",
+    "free": "Gratis",
+    "sub2": "Prüfen Sie Ihren Checkout gegen § 37 BFSG / WCAG 2.1 AA.",
+    "formAria": "Kostenlosen BFSG-Scan anfordern",
+    "subject": "Neue Scan-Anfrage — keepcite (DE · BFSG-Bußgeld)",
+    "urlLabel": "Ihre Shop-URL",
+    "urlPh": "https://ihrshop.de",
+    "emailLabel": "Geschäftliche E-Mail",
+    "emailPh": "sie@firma.de",
+    "button": "Prüfen, ob ich konform bin",
+    "note": "Verstöße · Screenshots · Gesetzesklauseln. Kein Anruf. Kein Spam."
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      { "q": "Ab wann drohen BFSG-Bußgelder?", "a": "Das BFSG gilt seit dem 28. Juni 2025. Seitdem können die Marktüberwachungsbehörden Verstöße verfolgen und Bußgelder nach § 37 BFSG verhängen." },
+      { "q": "Gibt es schon hohe BFSG-Bußgelder?", "a": "Öffentlich bekannt gewordene hohe Bußgelder gibt es bislang kaum — die Durchsetzung läuft an. Das reale, unmittelbare Risiko sind derzeit wettbewerbsrechtliche Abmahnungen und die mögliche Untersagung des Vertriebs." },
+      { "q": "Schützt eine Barrierefreiheitserklärung vor Bußgeldern?", "a": "Sie ist Pflicht, aber allein kein Schutz. Entscheidend ist die tatsächliche Konformität mit WCAG 2.1 AA — und ein datierter Nachweis, der sie belegt. Eine Erklärung ohne Umsetzung kann sogar belegen, dass der Mangel bekannt war." },
+      { "q": "Was kostet eine Abmahnung wegen Barrierefreiheit?", "a": "Typischerweise 1.500–5.000 € pro Fall, plus die Pflicht, den Verstoß zu beheben. Bei mehreren Abmahnern summiert sich das schnell." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Budapest, EU",
+    "noteHtml": "Diese Seite besteht das Audit, das sie verkauft: WCAG 2.1 AA, tastaturbedienbar, mit Screenreader getestet. · © 2026 keepcite",
+    "sourcesLabel": "Quellen:",
+    "sources": [
+      { "label": "§ 37 BFSG (gesetze-im-internet.de)", "href": "https://www.gesetze-im-internet.de/bfsg/__37.html" },
+      { "label": "BFSG — Gesamttext (gesetze-im-internet.de)", "href": "https://www.gesetze-im-internet.de/bfsg/" }
+    ]
+  }
+}

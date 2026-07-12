@@ -3,7 +3,7 @@
 // → /<cc>/index.html, all sharing index.html's exact CSS. Also emits sitemap.xml.
 // Run: `node build.mjs`   (Node 18+, no dependencies)
 
-import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -26,6 +26,21 @@ const extraCss = `
   .sources a{color:#fff;}
   .countryswitch{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:13.5px;}
   .countryswitch a{color:#fff;}
+  /* keyword sub-page */
+  .crumb{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);padding:20px 0 0;}
+  .crumb a{color:var(--blue);text-decoration:none;}
+  .crumb a:hover{text-decoration:underline;}
+  .kwhero{padding:14px 0 8px;}
+  .kwhero h1{font-size:clamp(30px,4.4vw,48px);max-width:22ch;margin:14px 0 18px;letter-spacing:-.02em;}
+  .answerbox{background:#fff;border:1.5px solid #C9D8FB;border-left:4px solid var(--blue);border-radius:14px;padding:22px 24px;font-size:17.5px;font-weight:500;color:#28324A;max-width:72ch;box-shadow:0 22px 50px -32px rgba(20,80,240,.4);}
+  .answerbox b{color:var(--ink);}
+  .kwbody{padding:8px 0 20px;}
+  .kwbody .col{max-width:74ch;}
+  .kwsection{margin-top:34px;}
+  .kwsection h2{font-size:clamp(21px,2.8vw,28px);font-weight:800;letter-spacing:-.015em;margin-bottom:10px;}
+  .kwsection p{color:#3C4452;font-weight:500;margin-bottom:12px;}
+  .kwscan{max-width:560px;margin:0 auto;}
+  .kwscanband{padding:16px 0 60px;}
 `;
 
 // reveal + count-up only (no geo fetch — country pages hardcode their country)
@@ -292,6 +307,156 @@ ${d.fines.items.map(fineCard).join('\n')}
 `;
 }
 
+// ---------- keyword sub-page template ----------
+function breadcrumbSchema(items) {
+  return {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: items.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.name, item: b.item })),
+  };
+}
+
+function renderKeyword(kw, sep) {
+  const faq = {
+    '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: kw.schema.inLanguage,
+    mainEntity: kw.faqSection.items.map(i => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a.replace(/<[^>]+>/g, '') } })),
+  };
+  return `<!DOCTYPE html>
+<html lang="${kw.lang}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${esc(kw.title)}</title>
+<meta name="description" content="${esc(kw.metaDescription)}">
+<link rel="canonical" href="${kw.canonical}">
+<meta property="og:title" content="${esc(kw.ogTitle)}">
+<meta property="og:description" content="${esc(kw.ogDescription)}">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="${kw.ogLocale}">
+<meta property="og:url" content="${kw.canonical}">
+<script type="application/ld+json">
+${JSON.stringify(breadcrumbSchema(kw.breadcrumb), null, 2)}
+</script>
+<script type="application/ld+json">
+${JSON.stringify(faq, null, 2)}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>${sharedCss}${extraCss}</style>
+</head>
+<body>
+<a class="skip" href="#scan">${esc(kw.skip)}</a>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="${kw.hubHref}">keep<em>cite</em></a>
+    <nav aria-label="${esc(kw.nav.ariaLabel)}">
+      <ul class="nav-links">
+        <li><a href="${kw.hubHref}">${esc(kw.hubLabel)}</a></li>
+        <li><a href="${kw.hubHref}#pricing">${esc(kw.nav.pricing)}</a></li>
+        <li><a href="#faq">${esc(kw.nav.faq)}</a></li>
+        <li><a class="btn" href="#scan" style="padding:11px 20px;font-size:14.5px;">${esc(kw.nav.cta)}</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap"><nav class="crumb" aria-label="Breadcrumb">${kw.breadcrumb.map((b, i) => i < kw.breadcrumb.length - 1 ? `<a href="${b.href}">${esc(b.name)}</a> / ` : `<span>${esc(b.name)}</span>`).join('')}</nav></div>
+
+  <section class="kwhero">
+    <div class="wrap">
+      <span class="kicker"><span class="pulse" aria-hidden="true"></span>${esc(kw.kicker)}</span>
+      <h1 class="display">${raw(kw.h1Html)}</h1>
+      <div class="answerbox reveal">${raw(kw.answerHtml)}</div>
+    </div>
+  </section>
+
+  <section class="keyfactsband">
+    <div class="wrap">
+      <div class="keyfacts reveal">
+        <h2>${esc(kw.keyFacts.title)}</h2>
+        <dl>
+          ${kw.keyFacts.items.map(i => `<dt>${esc(i.label)}</dt><dd>${raw(i.value)}</dd>`).join('\n          ')}
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="kwbody">
+    <div class="wrap">
+      <div class="col">
+        ${kw.sections.map(s => `<div class="kwsection reveal">
+          <h2>${esc(s.h2)}</h2>
+          ${s.bodyHtml}
+        </div>`).join('\n        ')}
+      </div>
+    </div>
+  </section>
+
+  <section class="kwscanband" id="scan">
+    <div class="wrap">
+      <div class="scanform kwscan">
+        <div class="head">
+          <h2>${esc(kw.scan.h2)}</h2>
+          <span class="free">${esc(kw.scan.free)}</span>
+        </div>
+        <p class="sub2">${esc(kw.scan.sub2)}</p>
+        <form action="https://api.web3forms.com/submit" method="POST" aria-label="${esc(kw.scan.formAria)}">
+          <input type="hidden" name="access_key" value="c5401409-96ce-4c81-b144-bba532372fdd">
+          <input type="hidden" name="subject" value="${esc(kw.scan.subject)}">
+          <input type="hidden" name="market" value="${kw.cc.toUpperCase()}">
+          <input type="hidden" name="page" value="${kw.slug}">
+          <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" aria-hidden="true">
+          <div class="row">
+            <div>
+              <label for="url">${esc(kw.scan.urlLabel)}</label>
+              <input id="url" name="store_url" type="url" placeholder="${esc(kw.scan.urlPh)}" required autocomplete="url">
+            </div>
+            <div>
+              <label for="email">${esc(kw.scan.emailLabel)}</label>
+              <input id="email" name="email" type="email" placeholder="${esc(kw.scan.emailPh)}" required autocomplete="email">
+            </div>
+            <button class="btn btn-lg" type="submit">${esc(kw.scan.button)}</button>
+          </div>
+          <p class="note">${esc(kw.scan.note)}</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="faqsec" id="faq">
+    <div class="wrap">
+      <h2 class="display reveal">${esc(kw.faqSection.h2)}</h2>
+      <div class="faq reveal">
+        ${kw.faqSection.items.map(i => `<details>
+          <summary>${esc(i.q)}</summary>
+          <p>${raw(i.a)}</p>
+        </details>`).join('\n        ')}
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row">
+      <a class="logo" href="${kw.hubHref}">keep<em>cite</em></a>
+      <p>${raw(kw.footer.contactHtml)}</p>
+    </div>
+    <div class="countryswitch"><a href="${kw.hubHref}">${esc(kw.hubLabel)}</a><a href="/">EU / English</a></div>
+    <p class="foot-note">${raw(kw.footer.noteHtml)}</p>
+    <p class="sources">${kw.footer.sourcesLabel} ${kw.footer.sources.map(s => `<a href="${s.href}" rel="nofollow">${esc(s.label)}</a>`).join(' · ')}</p>
+  </div>
+</footer>
+
+<script>${script(sep)}
+</script>
+</body>
+</html>
+`;
+}
+
 // ---------- build ----------
 const dataDir = join(ROOT, 'data');
 const files = readdirSync(dataDir).filter(f => f.endsWith('.json'));
@@ -322,8 +487,22 @@ for (const m of markets) {
   console.log(`built /${m.cc}/index.html`);
 }
 
-// sitemap.xml (root + every market)
-const urls = [`${BASE}/`, ...markets.map(m => m.canonical)];
+// keyword sub-pages: data/keywords/<cc>-<slug>.json → /<cc>/<slug>/index.html
+const kwDir = join(dataDir, 'keywords');
+const keywords = existsSync(kwDir)
+  ? readdirSync(kwDir).filter(f => f.endsWith('.json')).map(f => JSON.parse(readFileSync(join(kwDir, f), 'utf8')))
+  : [];
+for (const kw of keywords) {
+  const html = renderKeyword(kw, kw.thousandsSep || '.');
+  const dir = join(ROOT, kw.cc, kw.slug);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, 'index.html'), html);
+  built.push(`/${kw.cc}/${kw.slug}/`);
+  console.log(`built /${kw.cc}/${kw.slug}/index.html`);
+}
+
+// sitemap.xml (root + every market + every keyword page)
+const urls = [`${BASE}/`, ...markets.map(m => m.canonical), ...keywords.map(k => k.canonical)];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}
