@@ -163,7 +163,12 @@
     color:var(--blue);
     background:linear-gradient(transparent 68%, var(--blue-tint) 68%);
   }
-  .hero .sub{font-size:clamp(17px,1.9vw,19px);font-weight:500;color:var(--muted);max-width:42ch;}
+  .hero .sub{font-size:clamp(18px,2.1vw,23px);font-weight:600;color:var(--ink);max-width:31rem;line-height:1.65;}
+  /* light-blue inline highlight for the law name in the 3-line subhead */
+  .hlbox{background:#D9E5FE;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:.06em .24em;border-radius:4px;}
+  /* one-line lead-in inside the scan card (replaces the old h2 + subline) */
+  .scanlead{font-size:16px;font-weight:600;color:var(--ink);line-height:1.4;margin-bottom:18px;}
+  .scanlead .free{margin-left:6px;vertical-align:middle;}
 
   /* geo strip — country-specific warning, clickable to the scan */
   .geo{
@@ -425,22 +430,12 @@
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <span class="kicker"><span class="pulse" aria-hidden="true"></span>European Accessibility Act</span>
-      <a class="geo" id="geo" href="#scan" style="display:flex;margin:18px 0 4px;">
-        <svg class="gflag" id="geo-flag" viewBox="0 0 90 60" aria-hidden="true"><rect width="90" height="60" fill="#003399"/><text x="45" y="38" text-anchor="middle" font-family="Archivo,sans-serif" font-size="24" font-weight="800" fill="#FFCC00">EU</text></svg>
-        <span id="geo-text">Selling online to EU consumers? The European Accessibility Act now applies to your store.</span>
-        <span class="geo-cta" aria-hidden="true">&rarr;</span>
-      </a>
-      <h1 class="display">Is your checkout <span class="hl">breaking EU law?</span></h1>
-      <p class="sub">Every EU webshop must now meet the EU's accessibility standard. Most don't. Fines reach <b style="color:var(--ink)">€1,000,000</b>.</p>
+      <h1 class="display">Is your webshop <span class="hl">breaking EU law?</span></h1>
+      <p class="sub">Every webshop must meet the<br><span class="hlbox">European Accessibility Act</span><br>Fines reach <b style="color:var(--blue)">€1,000,000</b>.</p>
     </div>
 
     <div class="scanform" id="scan">
-      <div class="head">
-        <h2>See if you're compliant</h2>
-        <span class="free">Free</span>
-      </div>
-      <p class="sub2">Your webshop, scanned against the law's standard.</p>
+      <p class="scanlead">Selling online to EU customers? The European Accessibility Act applies to you. <span class="free">Free</span></p>
       <!-- Submissions handled by Web3Forms — static form, no backend required. -->
 
       <form action="https://api.web3forms.com/submit" method="POST" aria-label="Request a free compliance scan">
@@ -450,21 +445,16 @@
         <div class="row">
           <div>
             <label for="url">Your webshop URL</label>
-            <input id="url" name="store_url" type="url" placeholder="https://yourwebshop.eu" required autocomplete="url">
+            <input id="url" name="store_url" type="url" placeholder="website.com" required autocomplete="url">
           </div>
           <div>
             <label for="email">Work email</label>
-            <input id="email" name="email" type="email" placeholder="you@company.eu" required autocomplete="email">
+            <input id="email" name="email" type="email" placeholder="email@contact.com" required autocomplete="email">
           </div>
           <button class="btn btn-lg" type="submit">See if I'm compliant</button>
         </div>
-        <p class="note">Violations · screenshots · legal clauses. No call. No spam.</p>
+        <p class="note">Free report. No spam.</p>
       </form>
-      <div class="trust">
-        <span>Standard: <b>WCAG 2.1 AA</b></span>
-        <span>Basis: <b>EN 301 549</b></span>
-        <span>Result: <b>in 48 hours</b></span>
-      </div>
     </div>
   </div>
 </section>

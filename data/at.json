@@ -23,19 +23,20 @@
   "geoFlagSvg": "<svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='90' height='20' fill='#ED2939'/><rect y='20' width='90' height='20' fill='#fff'/><rect y='40' width='90' height='20' fill='#ED2939'/></svg>",
   "geoText": "Sie verkaufen in <b>Österreich</b>? Das BaFG gilt — Verwaltungsstrafen bis 80.000 €, zuständig ist das Sozialministeriumservice.",
   "h1Html": "Verstößt Ihr Checkout <span class='hl'>gegen das BaFG?</span>",
-  "heroSubHtml": "Jeder Online-Shop in Österreich muss den Barrierefreiheitsstandard erfüllen. Die meisten tun es nicht. Verwaltungsstrafen bis <b style='color:var(--ink)'>80.000 €</b>.",
+  "heroSubHtml": "Jeder Webshop muss das<br><span class='hlbox'>Barrierefreiheitsgesetz</span><br>erfüllen. Strafen bis <b style='color:var(--blue)'>80.000 €</b>.",
   "scan": {
     "h2": "Sind Sie konform?",
+    "leadHtml": "Verkaufen Sie online in der EU? Das BaFG gilt für Sie.",
     "free": "Gratis",
     "sub2": "Ihr Shop, geprüft gegen den Standard des Gesetzes.",
     "formAria": "Kostenlosen Barrierefreiheits-Scan anfordern",
     "subject": "Neue Scan-Anfrage — keepcite (AT)",
     "urlLabel": "Ihre Shop-URL",
-    "urlPh": "https://ihrshop.at",
+    "urlPh": "website.com",
     "emailLabel": "Geschäftliche E-Mail",
-    "emailPh": "sie@firma.at",
+    "emailPh": "email@contact.com",
     "button": "Prüfen, ob ich konform bin",
-    "note": "Verstöße · Screenshots · Gesetzesklauseln. Kein Anruf. Kein Spam."
+    "note": "Kostenloser Report. Kein Spam."
   },
   "trust": [
     "Standard: <b>WCAG 2.1 AA</b>",

@@ -22,19 +22,20 @@
   "geoFlagSvg": "<svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='90' height='60' fill='#006AA7'/><rect x='24' width='12' height='60' fill='#FECC00'/><rect y='24' width='90' height='12' fill='#FECC00'/></svg>",
   "geoText": "Säljer du i <b>Sverige</b>? Tillgänglighetslagen gäller — PTS är tillsynsmyndighet och kan förelägga vite.",
   "h1Html": "Bryter din kassa <span class='hl'>mot lagen?</span>",
-  "heroSubHtml": "Varje webbutik i Sverige måste nu uppfylla tillgänglighetskraven. De flesta gör det inte. Standarden är <b style='color:var(--ink)'>WCAG 2.1 AA</b>.",
+  "heroSubHtml": "Varje webbutik måste följa<br><span class='hlbox'>tillgänglighetslagen</span><br>Tillsyn av <b style='color:var(--blue)'>PTS</b>.",
   "scan": {
     "h2": "Uppfyller du kraven?",
+    "leadHtml": "Säljer du online i EU? Tillgänglighetslagen gäller dig.",
     "free": "Gratis",
     "sub2": "Din butik, testad mot lagens standard.",
     "formAria": "Begär en gratis tillgänglighetsskanning",
     "subject": "Ny skanningsförfrågan — keepcite (SE)",
     "urlLabel": "Din butiks-URL",
-    "urlPh": "https://dinbutik.se",
+    "urlPh": "website.com",
     "emailLabel": "Jobbmejl",
-    "emailPh": "du@foretag.se",
+    "emailPh": "email@contact.com",
     "button": "Kontrollera om jag uppfyller kraven",
-    "note": "Brister · skärmbilder · lagparagrafer. Inget samtal. Ingen spam."
+    "note": "Gratis rapport. Ingen spam."
   },
   "trust": [
     "Standard: <b>WCAG 2.1 AA</b>",

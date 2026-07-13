@@ -29,19 +29,20 @@
   "geoFlagSvg": "<svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='90' height='60' fill='#AA151B'/><rect y='15' width='90' height='30' fill='#F1BF00'/></svg>",
   "geoText": "¿Vendes en <b>España</b>? La Ley 11/2023 ya se aplica — multas hasta 1.000.000 € para las infracciones muy graves.",
   "h1Html": "¿Tu checkout <span class='hl'>incumple la ley?</span>",
-  "heroSubHtml": "Toda tienda online en España debe cumplir ya el estándar de accesibilidad. La mayoría no lo hace. Multas hasta <b style='color:var(--ink)'>1.000.000 €</b>.",
+  "heroSubHtml": "Toda tienda online debe cumplir la<br><span class='hlbox'>Ley 11/2023</span><br>Multas hasta <b style='color:var(--blue)'>1.000.000 €</b>.",
   "scan": {
     "h2": "¿Cumples la ley?",
+    "leadHtml": "¿Vendes online en la UE? La Ley 11/2023 te aplica.",
     "free": "Gratis",
     "sub2": "Tu tienda, analizada frente al estándar de la ley.",
     "formAria": "Solicitar un escaneo de accesibilidad gratuito",
     "subject": "Nueva solicitud de escaneo — keepcite (ES)",
     "urlLabel": "URL de tu tienda",
-    "urlPh": "https://tutienda.es",
+    "urlPh": "website.com",
     "emailLabel": "Correo profesional",
-    "emailPh": "tu@empresa.es",
+    "emailPh": "email@contact.com",
     "button": "Comprobar si cumplo",
-    "note": "Incumplimientos · capturas · artículos legales. Sin llamadas. Sin spam."
+    "note": "Informe gratis. Sin spam."
   },
   "trust": [
     "Estándar: <b>WCAG 2.1 AA</b>",

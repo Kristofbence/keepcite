@@ -181,7 +181,12 @@
     color:var(--blue);
     background:linear-gradient(transparent 68%, var(--blue-tint) 68%);
   }
-  .hero .sub{font-size:clamp(17px,1.9vw,19px);font-weight:500;color:var(--muted);max-width:42ch;}
+  .hero .sub{font-size:clamp(18px,2.1vw,23px);font-weight:600;color:var(--ink);max-width:31rem;line-height:1.65;}
+  /* light-blue inline highlight for the law name in the 3-line subhead */
+  .hlbox{background:#D9E5FE;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:.06em .24em;border-radius:4px;}
+  /* one-line lead-in inside the scan card (replaces the old h2 + subline) */
+  .scanlead{font-size:16px;font-weight:600;color:var(--ink);line-height:1.4;margin-bottom:18px;}
+  .scanlead .free{margin-left:6px;vertical-align:middle;}
 
   /* geo strip — country-specific warning, clickable to the scan */
   .geo{
@@ -484,22 +489,12 @@
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <span class="kicker"><span class="pulse" aria-hidden="true"></span>Europese Toegankelijkheidswet · EAA</span>
-      <a class="geo" id="geo" href="#scan" style="display:flex;margin:18px 0 4px;">
-        <svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='90' height='20' fill='#AE1C28'/><rect y='20' width='90' height='20' fill='#fff'/><rect y='40' width='90' height='20' fill='#21468B'/></svg>
-        <span id="geo-text">Verkoop je in <b>Nederland</b>? De EAA geldt — boetes tot €900.000, en de ACM publiceert al een lijst van niet-nalevers.</span>
-        <span class="geo-cta" aria-hidden="true">&rarr;</span>
-      </a>
       <h1 class="display">Overtreedt jouw checkout <span class='hl'>de wet?</span></h1>
-      <p class="sub">Elke webshop in Nederland moet nu voldoen aan de toegankelijkheidsnorm. De meeste doen dat niet. Boetes tot <b style='color:var(--ink)'>€900.000</b>.</p>
+      <p class="sub">Elke webshop moet voldoen aan de<br><span class='hlbox'>European Accessibility Act</span><br>Boetes tot <b style='color:var(--blue)'>€900.000</b>.</p>
     </div>
 
     <div class="scanform" id="scan">
-      <div class="head">
-        <h2>Ben je conform?</h2>
-        <span class="free">Gratis</span>
-      </div>
-      <p class="sub2">Jouw webshop, getest tegen de norm van de wet.</p>
+      <p class="scanlead">Verkoop je online in de EU? De EAA geldt voor jou. <span class="free">Gratis</span></p>
       <form action="https://api.web3forms.com/submit" method="POST" aria-label="Vraag een gratis toegankelijkheidsscan aan">
         <input type="hidden" name="access_key" value="c5401409-96ce-4c81-b144-bba532372fdd">
         <input type="hidden" name="subject" value="Nieuwe scanaanvraag — keepcite (NL)">
@@ -508,21 +503,16 @@
         <div class="row">
           <div>
             <label for="url">URL van je webshop</label>
-            <input id="url" name="store_url" type="url" placeholder="https://jouwwebshop.nl" required autocomplete="url">
+            <input id="url" name="store_url" type="url" placeholder="website.com" required autocomplete="url">
           </div>
           <div>
             <label for="email">Zakelijk e-mailadres</label>
-            <input id="email" name="email" type="email" placeholder="jij@bedrijf.nl" required autocomplete="email">
+            <input id="email" name="email" type="email" placeholder="email@contact.com" required autocomplete="email">
           </div>
           <button class="btn btn-lg" type="submit">Check of ik voldoe</button>
         </div>
-        <p class="note">Overtredingen · screenshots · wetsartikelen. Geen telefoontje. Geen spam.</p>
+        <p class="note">Gratis rapport. Geen spam.</p>
       </form>
-      <div class="trust">
-        <span>Norm: <b>WCAG 2.1 AA</b></span>
-        <span>Basis: <b>EN 301 549</b></span>
-        <span>Resultaat: <b>binnen 48 uur</b></span>
-      </div>
     </div>
   </div>
 </section>

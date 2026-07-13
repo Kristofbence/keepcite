@@ -29,19 +29,20 @@
   "geoFlagSvg": "<svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='30' height='60' fill='#009246'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#CE2B37'/></svg>",
   "geoText": "Vendi in <b>Italia</b>? L'European Accessibility Act si applica — sanzioni fino a 40.000 € e fino al 5% del fatturato per i grandi operatori.",
   "h1Html": "Il tuo checkout <span class='hl'>viola la legge?</span>",
-  "heroSubHtml": "Ogni e-commerce in Italia deve ora rispettare lo standard di accessibilità. La maggior parte non lo fa. Sanzioni fino a <b style='color:var(--ink)'>40.000 €</b>.",
+  "heroSubHtml": "Ogni e-commerce deve rispettare il<br><span class='hlbox'>D.Lgs. 82/2022</span><br>Sanzioni fino a <b style='color:var(--blue)'>40.000 €</b>.",
   "scan": {
     "h2": "Sei conforme?",
+    "leadHtml": "Vendi online nell'UE? Il D.Lgs. 82/2022 si applica a te.",
     "free": "Gratis",
     "sub2": "Il tuo negozio, testato secondo lo standard della legge.",
     "formAria": "Richiedi una scansione di accessibilità gratuita",
     "subject": "Nuova richiesta di scansione — keepcite (IT)",
     "urlLabel": "URL del tuo negozio",
-    "urlPh": "https://iltuonegozio.it",
+    "urlPh": "website.com",
     "emailLabel": "Email aziendale",
-    "emailPh": "tu@azienda.it",
+    "emailPh": "email@contact.com",
     "button": "Verifica se sono conforme",
-    "note": "Violazioni · screenshot · articoli di legge. Nessuna chiamata. Nessuno spam."
+    "note": "Report gratuito. Niente spam."
   },
   "trust": [
     "Standard: <b>WCAG 2.1 AA</b>",

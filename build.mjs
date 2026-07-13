@@ -310,22 +310,12 @@ ${ANALYTICS}
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <span class="kicker"><span class="pulse" aria-hidden="true"></span>${esc(d.kicker)}</span>
-      <a class="geo" id="geo" href="#scan" style="display:flex;margin:18px 0 4px;">
-        ${d.geoFlagSvg}
-        <span id="geo-text">${raw(d.geoText)}</span>
-        <span class="geo-cta" aria-hidden="true">&rarr;</span>
-      </a>
       <h1 class="display">${raw(d.h1Html)}</h1>
       <p class="sub">${raw(d.heroSubHtml)}</p>
     </div>
 
     <div class="scanform" id="scan">
-      <div class="head">
-        <h2>${esc(d.scan.h2)}</h2>
-        <span class="free">${esc(d.scan.free)}</span>
-      </div>
-      <p class="sub2">${esc(d.scan.sub2)}</p>
+      <p class="scanlead">${raw(d.scan.leadHtml)} <span class="free">${esc(d.scan.free)}</span></p>
       <form action="https://api.web3forms.com/submit" method="POST" aria-label="${esc(d.scan.formAria)}">
         <input type="hidden" name="access_key" value="c5401409-96ce-4c81-b144-bba532372fdd">
         <input type="hidden" name="subject" value="${esc(d.scan.subject)}">
@@ -344,9 +334,6 @@ ${ANALYTICS}
         </div>
         <p class="note">${esc(d.scan.note)}</p>
       </form>
-      <div class="trust">
-        ${d.trust.map(t => `<span>${raw(t)}</span>`).join('\n        ')}
-      </div>
     </div>
   </div>
 </section>

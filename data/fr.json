@@ -29,19 +29,20 @@
   "geoFlagSvg": "<svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='30' height='60' fill='#0055A4'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#EF4135'/></svg>",
   "geoText": "Vous vendez en <b>France</b>? Carrefour a déjà été condamné : 500 €/jour d'astreinte, et l'ARCOM peut sanctionner jusqu'à 50 000 €.",
   "h1Html": "Votre tunnel de commande <span class='hl'>enfreint-il la loi ?</span>",
-  "heroSubHtml": "Tout site e-commerce en France doit désormais respecter la norme d'accessibilité. La plupart ne le font pas. Sanctions jusqu'à <b style='color:var(--ink)'>50 000 € par service</b>.",
+  "heroSubHtml": "Chaque e-commerce doit respecter l'<br><span class='hlbox'>European Accessibility Act</span><br>Sanctions jusqu'à <b style='color:var(--blue)'>50 000 €</b>.",
   "scan": {
     "h2": "Êtes-vous conforme ?",
+    "leadHtml": "Vous vendez en ligne dans l'UE ? L'EAA s'applique à vous.",
     "free": "Gratuit",
     "sub2": "Votre boutique, testée selon la norme de la loi.",
     "formAria": "Demander un scan d'accessibilité gratuit",
     "subject": "Nouvelle demande de scan — keepcite (FR)",
     "urlLabel": "URL de votre boutique",
-    "urlPh": "https://votreboutique.fr",
+    "urlPh": "website.com",
     "emailLabel": "E-mail professionnel",
-    "emailPh": "vous@entreprise.fr",
+    "emailPh": "email@contact.com",
     "button": "Vérifier ma conformité",
-    "note": "Violations · captures d'écran · articles de loi. Sans appel. Sans spam."
+    "note": "Rapport gratuit. Sans spam."
   },
   "trust": [
     "Norme : <b>WCAG 2.1 AA</b>",

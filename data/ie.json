@@ -30,19 +30,20 @@
   "geoFlagSvg": "<svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='30' height='60' fill='#169B62'/><rect x='30' width='30' height='60' fill='#fff'/><rect x='60' width='30' height='60' fill='#FF883E'/></svg>",
   "geoText": "Selling in <b>Ireland</b>? Non-compliance is a <b>criminal offence</b> under S.I. 636/2023 — fines to €60,000, up to 18 months, and directors are personally liable.",
   "h1Html": "Is your checkout <span class='hl'>breaking Irish law?</span>",
-  "heroSubHtml": "Every online store serving Ireland must now meet the accessibility standard. Most don't. Ireland is the <b style='color:var(--ink)'>only EU state with criminal liability</b>.",
+  "heroSubHtml": "Every online store must meet the<br><span class='hlbox'>European Accessibility Act</span><br>Fines reach <b style='color:var(--blue)'>€60,000</b> + jail.",
   "scan": {
     "h2": "See if you're compliant",
+    "leadHtml": "Selling online in the EU? The European Accessibility Act applies to you.",
     "free": "Free",
     "sub2": "Your store, scanned against the law's standard.",
     "formAria": "Request a free compliance scan",
     "subject": "New scan request — keepcite (IE)",
     "urlLabel": "Your store URL",
-    "urlPh": "https://yourstore.ie",
+    "urlPh": "website.com",
     "emailLabel": "Work email",
-    "emailPh": "you@company.ie",
+    "emailPh": "email@contact.com",
     "button": "See if I'm compliant",
-    "note": "Violations · screenshots · legal clauses. No call. No spam."
+    "note": "Free report. No spam."
   },
   "trust": [
     "Standard: <b>WCAG 2.1 AA</b>",

@@ -181,7 +181,12 @@
     color:var(--blue);
     background:linear-gradient(transparent 68%, var(--blue-tint) 68%);
   }
-  .hero .sub{font-size:clamp(17px,1.9vw,19px);font-weight:500;color:var(--muted);max-width:42ch;}
+  .hero .sub{font-size:clamp(18px,2.1vw,23px);font-weight:600;color:var(--ink);max-width:31rem;line-height:1.65;}
+  /* light-blue inline highlight for the law name in the 3-line subhead */
+  .hlbox{background:#D9E5FE;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:.06em .24em;border-radius:4px;}
+  /* one-line lead-in inside the scan card (replaces the old h2 + subline) */
+  .scanlead{font-size:16px;font-weight:600;color:var(--ink);line-height:1.4;margin-bottom:18px;}
+  .scanlead .free{margin-left:6px;vertical-align:middle;}
 
   /* geo strip — country-specific warning, clickable to the scan */
   .geo{
@@ -484,22 +489,12 @@
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <span class="kicker"><span class="pulse" aria-hidden="true"></span>Accesibilidad web · Ley 11/2023</span>
-      <a class="geo" id="geo" href="#scan" style="display:flex;margin:18px 0 4px;">
-        <svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='90' height='60' fill='#AA151B'/><rect y='15' width='90' height='30' fill='#F1BF00'/></svg>
-        <span id="geo-text">¿Vendes en <b>España</b>? La Ley 11/2023 ya se aplica — multas hasta 1.000.000 € para las infracciones muy graves.</span>
-        <span class="geo-cta" aria-hidden="true">&rarr;</span>
-      </a>
       <h1 class="display">¿Tu checkout <span class='hl'>incumple la ley?</span></h1>
-      <p class="sub">Toda tienda online en España debe cumplir ya el estándar de accesibilidad. La mayoría no lo hace. Multas hasta <b style='color:var(--ink)'>1.000.000 €</b>.</p>
+      <p class="sub">Toda tienda online debe cumplir la<br><span class='hlbox'>Ley 11/2023</span><br>Multas hasta <b style='color:var(--blue)'>1.000.000 €</b>.</p>
     </div>
 
     <div class="scanform" id="scan">
-      <div class="head">
-        <h2>¿Cumples la ley?</h2>
-        <span class="free">Gratis</span>
-      </div>
-      <p class="sub2">Tu tienda, analizada frente al estándar de la ley.</p>
+      <p class="scanlead">¿Vendes online en la UE? La Ley 11/2023 te aplica. <span class="free">Gratis</span></p>
       <form action="https://api.web3forms.com/submit" method="POST" aria-label="Solicitar un escaneo de accesibilidad gratuito">
         <input type="hidden" name="access_key" value="c5401409-96ce-4c81-b144-bba532372fdd">
         <input type="hidden" name="subject" value="Nueva solicitud de escaneo — keepcite (ES)">
@@ -508,21 +503,16 @@
         <div class="row">
           <div>
             <label for="url">URL de tu tienda</label>
-            <input id="url" name="store_url" type="url" placeholder="https://tutienda.es" required autocomplete="url">
+            <input id="url" name="store_url" type="url" placeholder="website.com" required autocomplete="url">
           </div>
           <div>
             <label for="email">Correo profesional</label>
-            <input id="email" name="email" type="email" placeholder="tu@empresa.es" required autocomplete="email">
+            <input id="email" name="email" type="email" placeholder="email@contact.com" required autocomplete="email">
           </div>
           <button class="btn btn-lg" type="submit">Comprobar si cumplo</button>
         </div>
-        <p class="note">Incumplimientos · capturas · artículos legales. Sin llamadas. Sin spam.</p>
+        <p class="note">Informe gratis. Sin spam.</p>
       </form>
-      <div class="trust">
-        <span>Estándar: <b>WCAG 2.1 AA</b></span>
-        <span>Base: <b>EN 301 549</b></span>
-        <span>Resultado: <b>en 48 horas</b></span>
-      </div>
     </div>
   </div>
 </section>

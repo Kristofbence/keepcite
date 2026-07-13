@@ -171,7 +171,12 @@
     color:var(--blue);
     background:linear-gradient(transparent 68%, var(--blue-tint) 68%);
   }
-  .hero .sub{font-size:clamp(17px,1.9vw,19px);font-weight:500;color:var(--muted);max-width:42ch;}
+  .hero .sub{font-size:clamp(18px,2.1vw,23px);font-weight:600;color:var(--ink);max-width:31rem;line-height:1.65;}
+  /* light-blue inline highlight for the law name in the 3-line subhead */
+  .hlbox{background:#D9E5FE;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:.06em .24em;border-radius:4px;}
+  /* one-line lead-in inside the scan card (replaces the old h2 + subline) */
+  .scanlead{font-size:16px;font-weight:600;color:var(--ink);line-height:1.4;margin-bottom:18px;}
+  .scanlead .free{margin-left:6px;vertical-align:middle;}
 
   /* geo strip — country-specific warning, clickable to the scan */
   .geo{

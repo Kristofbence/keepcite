@@ -173,7 +173,12 @@
     color:var(--blue);
     background:linear-gradient(transparent 68%, var(--blue-tint) 68%);
   }
-  .hero .sub{font-size:clamp(17px,1.9vw,19px);font-weight:500;color:var(--muted);max-width:42ch;}
+  .hero .sub{font-size:clamp(18px,2.1vw,23px);font-weight:600;color:var(--ink);max-width:31rem;line-height:1.65;}
+  /* light-blue inline highlight for the law name in the 3-line subhead */
+  .hlbox{background:#D9E5FE;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:.06em .24em;border-radius:4px;}
+  /* one-line lead-in inside the scan card (replaces the old h2 + subline) */
+  .scanlead{font-size:16px;font-weight:600;color:var(--ink);line-height:1.4;margin-bottom:18px;}
+  .scanlead .free{margin-left:6px;vertical-align:middle;}
 
   /* geo strip — country-specific warning, clickable to the scan */
   .geo{
@@ -476,22 +481,12 @@
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <span class="kicker"><span class="pulse" aria-hidden="true"></span>Barrierefreiheitsgesetz (BaFG)</span>
-      <a class="geo" id="geo" href="#scan" style="display:flex;margin:18px 0 4px;">
-        <svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='90' height='20' fill='#ED2939'/><rect y='20' width='90' height='20' fill='#fff'/><rect y='40' width='90' height='20' fill='#ED2939'/></svg>
-        <span id="geo-text">Sie verkaufen in <b>Österreich</b>? Das BaFG gilt — Verwaltungsstrafen bis 80.000 €, zuständig ist das Sozialministeriumservice.</span>
-        <span class="geo-cta" aria-hidden="true">&rarr;</span>
-      </a>
       <h1 class="display">Verstößt Ihr Checkout <span class='hl'>gegen das BaFG?</span></h1>
-      <p class="sub">Jeder Online-Shop in Österreich muss den Barrierefreiheitsstandard erfüllen. Die meisten tun es nicht. Verwaltungsstrafen bis <b style='color:var(--ink)'>80.000 €</b>.</p>
+      <p class="sub">Jeder Webshop muss das<br><span class='hlbox'>Barrierefreiheitsgesetz</span><br>erfüllen. Strafen bis <b style='color:var(--blue)'>80.000 €</b>.</p>
     </div>
 
     <div class="scanform" id="scan">
-      <div class="head">
-        <h2>Sind Sie konform?</h2>
-        <span class="free">Gratis</span>
-      </div>
-      <p class="sub2">Ihr Shop, geprüft gegen den Standard des Gesetzes.</p>
+      <p class="scanlead">Verkaufen Sie online in der EU? Das BaFG gilt für Sie. <span class="free">Gratis</span></p>
       <form action="https://api.web3forms.com/submit" method="POST" aria-label="Kostenlosen Barrierefreiheits-Scan anfordern">
         <input type="hidden" name="access_key" value="c5401409-96ce-4c81-b144-bba532372fdd">
         <input type="hidden" name="subject" value="Neue Scan-Anfrage — keepcite (AT)">
@@ -500,21 +495,16 @@
         <div class="row">
           <div>
             <label for="url">Ihre Shop-URL</label>
-            <input id="url" name="store_url" type="url" placeholder="https://ihrshop.at" required autocomplete="url">
+            <input id="url" name="store_url" type="url" placeholder="website.com" required autocomplete="url">
           </div>
           <div>
             <label for="email">Geschäftliche E-Mail</label>
-            <input id="email" name="email" type="email" placeholder="sie@firma.at" required autocomplete="email">
+            <input id="email" name="email" type="email" placeholder="email@contact.com" required autocomplete="email">
           </div>
           <button class="btn btn-lg" type="submit">Prüfen, ob ich konform bin</button>
         </div>
-        <p class="note">Verstöße · Screenshots · Gesetzesklauseln. Kein Anruf. Kein Spam.</p>
+        <p class="note">Kostenloser Report. Kein Spam.</p>
       </form>
-      <div class="trust">
-        <span>Standard: <b>WCAG 2.1 AA</b></span>
-        <span>Grundlage: <b>EN 301 549</b></span>
-        <span>Ergebnis: <b>in 48 Stunden</b></span>
-      </div>
     </div>
   </div>
 </section>

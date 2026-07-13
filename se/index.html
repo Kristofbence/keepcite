@@ -181,7 +181,12 @@
     color:var(--blue);
     background:linear-gradient(transparent 68%, var(--blue-tint) 68%);
   }
-  .hero .sub{font-size:clamp(17px,1.9vw,19px);font-weight:500;color:var(--muted);max-width:42ch;}
+  .hero .sub{font-size:clamp(18px,2.1vw,23px);font-weight:600;color:var(--ink);max-width:31rem;line-height:1.65;}
+  /* light-blue inline highlight for the law name in the 3-line subhead */
+  .hlbox{background:#D9E5FE;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:.06em .24em;border-radius:4px;}
+  /* one-line lead-in inside the scan card (replaces the old h2 + subline) */
+  .scanlead{font-size:16px;font-weight:600;color:var(--ink);line-height:1.4;margin-bottom:18px;}
+  .scanlead .free{margin-left:6px;vertical-align:middle;}
 
   /* geo strip — country-specific warning, clickable to the scan */
   .geo{
@@ -484,22 +489,12 @@
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <span class="kicker"><span class="pulse" aria-hidden="true"></span>Tillgänglighetslagen (2023:254)</span>
-      <a class="geo" id="geo" href="#scan" style="display:flex;margin:18px 0 4px;">
-        <svg class='gflag' id='geo-flag' viewBox='0 0 90 60' aria-hidden='true'><rect width='90' height='60' fill='#006AA7'/><rect x='24' width='12' height='60' fill='#FECC00'/><rect y='24' width='90' height='12' fill='#FECC00'/></svg>
-        <span id="geo-text">Säljer du i <b>Sverige</b>? Tillgänglighetslagen gäller — PTS är tillsynsmyndighet och kan förelägga vite.</span>
-        <span class="geo-cta" aria-hidden="true">&rarr;</span>
-      </a>
       <h1 class="display">Bryter din kassa <span class='hl'>mot lagen?</span></h1>
-      <p class="sub">Varje webbutik i Sverige måste nu uppfylla tillgänglighetskraven. De flesta gör det inte. Standarden är <b style='color:var(--ink)'>WCAG 2.1 AA</b>.</p>
+      <p class="sub">Varje webbutik måste följa<br><span class='hlbox'>tillgänglighetslagen</span><br>Tillsyn av <b style='color:var(--blue)'>PTS</b>.</p>
     </div>
 
     <div class="scanform" id="scan">
-      <div class="head">
-        <h2>Uppfyller du kraven?</h2>
-        <span class="free">Gratis</span>
-      </div>
-      <p class="sub2">Din butik, testad mot lagens standard.</p>
+      <p class="scanlead">Säljer du online i EU? Tillgänglighetslagen gäller dig. <span class="free">Gratis</span></p>
       <form action="https://api.web3forms.com/submit" method="POST" aria-label="Begär en gratis tillgänglighetsskanning">
         <input type="hidden" name="access_key" value="c5401409-96ce-4c81-b144-bba532372fdd">
         <input type="hidden" name="subject" value="Ny skanningsförfrågan — keepcite (SE)">
@@ -508,21 +503,16 @@
         <div class="row">
           <div>
             <label for="url">Din butiks-URL</label>
-            <input id="url" name="store_url" type="url" placeholder="https://dinbutik.se" required autocomplete="url">
+            <input id="url" name="store_url" type="url" placeholder="website.com" required autocomplete="url">
           </div>
           <div>
             <label for="email">Jobbmejl</label>
-            <input id="email" name="email" type="email" placeholder="du@foretag.se" required autocomplete="email">
+            <input id="email" name="email" type="email" placeholder="email@contact.com" required autocomplete="email">
           </div>
           <button class="btn btn-lg" type="submit">Kontrollera om jag uppfyller kraven</button>
         </div>
-        <p class="note">Brister · skärmbilder · lagparagrafer. Inget samtal. Ingen spam.</p>
+        <p class="note">Gratis rapport. Ingen spam.</p>
       </form>
-      <div class="trust">
-        <span>Standard: <b>WCAG 2.1 AA</b></span>
-        <span>Grund: <b>EN 301 549</b></span>
-        <span>Resultat: <b>inom 48 timmar</b></span>
-      </div>
     </div>
   </div>
 </section>
