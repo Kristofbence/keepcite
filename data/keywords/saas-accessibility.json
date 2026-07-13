@@ -1,0 +1,75 @@
+{
+  "cc": "",
+  "lang": "en",
+  "slug": "saas-accessibility",
+  "cluster": "saas",
+  "ogLocale": "en",
+  "thousandsSep": ",",
+  "canonical": "https://keepcite.com/saas-accessibility/",
+  "hubHref": "/",
+  "hubLabel": "EU / English",
+  "title": "SaaS accessibility and the EAA: is your app compliant?",
+  "metaDescription": "The EAA covers B2C and prosumer SaaS. The specific WCAG 2.1 AA failures in sign-up flows, dashboards, data tables and SPAs — and how keepcite audits them.",
+  "ogTitle": "SaaS accessibility under the European Accessibility Act",
+  "ogDescription": "Sign-up flows, dashboards, data tables, modals, SPA focus management — the WCAG 2.1 AA failure points specific to SaaS, and how keepcite audits them.",
+  "schema": { "inLanguage": "en" },
+  "skip": "Skip to the scan",
+  "nav": { "ariaLabel": "Main", "pricing": "Pricing", "faq": "FAQ", "cta": "Free scan" },
+  "breadcrumb": [
+    { "name": "keepcite", "href": "/", "item": "https://keepcite.com/" },
+    { "name": "SaaS accessibility", "href": "/saas-accessibility/", "item": "https://keepcite.com/saas-accessibility/" }
+  ],
+  "kicker": "European Accessibility Act · SaaS",
+  "h1Html": "Is your <span class='hl'>SaaS accessible?</span>",
+  "answerHtml": "The <b>European Accessibility Act</b> applies to SaaS sold to consumers — <b>B2C and B2B2C / prosumer</b> products — since <b>28 June 2025</b>, measured against <b>WCAG 2.1 AA</b>. SaaS fails it in specific places: the sign-up and onboarding flow, dashboards and complex data tables, filter and sort controls, modal dialogs, and focus management in single-page apps. Pure B2B-only tools may fall outside consumer scope — but most SaaS has consumer or prosumer users.",
+  "keyFacts": {
+    "title": "SaaS & the EAA at a glance",
+    "items": [
+      { "label": "Law", "value": "European Accessibility Act — Directive (EU) 2019/882" },
+      { "label": "In force", "value": "28 June 2025" },
+      { "label": "Applies to SaaS", "value": "yes — B2C and B2B2C / prosumer; <b>pure B2B-only may be out of scope</b>" },
+      { "label": "Standard", "value": "EN 301 549 → WCAG 2.1 Level AA" },
+      { "label": "Highest-risk areas", "value": "sign-up, dashboards, data tables, modals, SPA focus" },
+      { "label": "Exemption", "value": "microenterprises (under 10 staff AND under €2M turnover)" }
+    ]
+  },
+  "sections": [
+    { "h2": "Where does a SaaS product fail WCAG 2.1 AA?", "bodyHtml": "<p>The failures cluster in the parts of an app a marketing site doesn't have:</p><ul><li><b>Sign-up & onboarding:</b> inputs without programmatic labels, validation errors shown only in colour and never announced, multi-step wizards with no progress semantics.</li><li><b>Dashboards:</b> no landmark regions, illogical tab order, widgets that can't be reached or operated by keyboard.</li><li><b>Data tables:</b> missing <code>&lt;th&gt;</code> scope, no caption, and sortable columns that don't announce their sort state.</li><li><b>Filter & sort controls:</b> custom dropdowns and comboboxes built from <code>&lt;div&gt;</code>s with no ARIA, unusable without a mouse.</li><li><b>Modals:</b> focus not trapped, background still reachable, and focus not returned to the trigger on close.</li><li><b>Charts & data-viz:</b> canvas/SVG charts with no text alternative or data table fallback.</li><li><b>Session timeout:</b> sessions that expire with no warning and no way to extend — a WCAG 2.2.1 problem that hits long dashboard sessions hardest.</li></ul>" },
+    { "h2": "Does the EAA apply to B2B SaaS?", "bodyHtml": "<p>The EAA covers services provided to <b>consumers</b>. Clearly in scope: B2C apps and <b>B2B2C / prosumer</b> tools where individuals (freelancers, sole traders, end users of your customers) sign up and use the product. A <b>pure B2B-only</b> product with no consumer-facing surface may fall outside consumer scope — but check honestly: a public self-serve sign-up, a free tier, or prosumer users usually pull a tool back in. We don't advise over-claiming an exemption you can't defend.</p>" },
+    { "h2": "What breaks in single-page apps (React, Vue, Angular)?", "bodyHtml": "<p>SPAs introduce failures a server-rendered site doesn't have. Client-side <b>route changes</b> don't move focus or update the accessibility tree, so screen-reader users are left on a stale page with no announcement — fix it by moving focus to the new view's heading and announcing the change via an ARIA live region. Custom widgets frequently create <b>keyboard traps</b> or lose focus when content re-renders. Content injected asynchronously (toasts, loaded rows) must be exposed to assistive tech, not just painted to the DOM.</p>" },
+    { "h2": "How do you audit a SaaS product behind a login?", "bodyHtml": "<p>An automated scan only sees public pages, so it catches a fraction of the problems. We combine it with a <b>manual audit of the authenticated flows</b> — sign-up, onboarding, the core task flows, key dashboard and settings screens — using a screen reader (NVDA / VoiceOver) and keyboard-only navigation, with test credentials or a staging environment you provide. You get developer-ready fix tickets and a dated compliance certificate. Start with the free scan below.</p>" }
+  ],
+  "scan": {
+    "h2": "Is your app compliant?",
+    "free": "Free",
+    "sub2": "Your app, checked against WCAG 2.1 AA.",
+    "leadHtml": "Selling SaaS to EU users? The European Accessibility Act applies to you.",
+    "formAria": "Request a free accessibility scan",
+    "subject": "New scan request — keepcite (SaaS)",
+    "urlLabel": "Your app URL",
+    "urlPh": "website.com",
+    "emailLabel": "Work email",
+    "emailPh": "email@contact.com",
+    "button": "See if I'm compliant",
+    "note": "Free report. No spam."
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      { "q": "Does the EAA cover my SaaS app?", "a": "If consumers or prosumers can sign up and use it, yes — since 28 June 2025, against WCAG 2.1 AA. B2C and B2B2C products are in scope. A pure B2B-only tool with no consumer-facing users may be outside consumer scope, but a public self-serve sign-up or free tier usually brings it back in." },
+      { "q": "Our app is behind a login — is that still covered?", "a": "Yes. The obligation covers the whole service, including authenticated flows. In practice the login-gated screens (onboarding, dashboards, settings) are where most failures live and where enforcement risk is highest." },
+      { "q": "What are the most common SaaS accessibility failures?", "a": "Unlabelled form fields and colour-only validation errors, keyboard-inoperable custom dropdowns and modals, data tables without header semantics, and single-page-app route changes that never move focus or announce the new view." },
+      { "q": "How do you test flows behind authentication?", "a": "With test credentials or a staging environment you provide, we manually drive the real authenticated journeys with a screen reader and keyboard — the ~2/3 of issues no automated scanner can find — and deliver fix tickets plus a dated certificate." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, EU",
+    "noteHtml": "This page passes the audit it sells: WCAG 2.1 AA, keyboard-navigable, screen-reader tested. · © 2026 keepcite",
+    "sourcesLabel": "Sources:",
+    "sources": [
+      { "label": "Directive (EU) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L0882" },
+      { "label": "WCAG 2.1 (W3C)", "href": "https://www.w3.org/TR/WCAG21/" },
+      { "label": "EN 301 549 (ETSI)", "href": "https://www.etsi.org/deliver/etsi_en/301500_301599/301549/" }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "cc": "nl",
+  "lang": "nl",
+  "slug": "boetes-toegankelijkheid",
+  "cluster": "fines",
+  "ogLocale": "nl_NL",
+  "thousandsSep": ".",
+  "canonical": "https://keepcite.com/nl/boetes-toegankelijkheid/",
+  "hubHref": "/nl/",
+  "hubLabel": "European Accessibility Act",
+  "title": "Boetes toegankelijkheid: tot €900.000 (ACM)",
+  "metaDescription": "De ACM kan boetes tot €900.000 of 1% van de jaaromzet opleggen. Meldplicht en publieke niet-nalevers-lijst. Zo bescherm je je. Gratis scan.",
+  "ogTitle": "Boetes voor ontoegankelijkheid in Nederland: tot €900.000",
+  "ogDescription": "ACM: boetes tot €900.000 of 1% van de jaaromzet, meldplicht vóór 15 oktober 2025 en een publieke lijst van niet-nalevers. Bouw je gedateerde bewijs op.",
+  "schema": { "inLanguage": "nl" },
+  "skip": "Naar de scan",
+  "nav": { "ariaLabel": "Hoofdnavigatie", "pricing": "Prijzen", "faq": "Veelgestelde vragen", "cta": "Gratis scan" },
+  "breadcrumb": [
+    { "name": "keepcite", "href": "/", "item": "https://keepcite.com/" },
+    { "name": "Nederland (EAA)", "href": "/nl/", "item": "https://keepcite.com/nl/" },
+    { "name": "Boetes toegankelijkheid", "href": "/nl/boetes-toegankelijkheid/", "item": "https://keepcite.com/nl/boetes-toegankelijkheid/" }
+  ],
+  "kicker": "EAA · Boetes",
+  "h1Html": "Boetes voor ontoegankelijkheid: <span class='hl'>hoeveel riskeer je?</span>",
+  "answerHtml": "In Nederland houdt de <b>ACM</b> toezicht op de European Accessibility Act. Boetes lopen op tot <b>€900.000 of 1% van de jaaromzet</b>. Bedrijven moesten zich vóór <b>15 oktober 2025</b> bij de ACM melden, en de ACM publiceert een lijst van niet-nalevers. Een gedateerd bewijs van naleving is je beste bescherming.",
+  "keyFacts": {
+    "title": "De boetes in het kort",
+    "items": [
+      { "label": "Toezicht", "value": "ACM (Autoriteit Consument &amp; Markt)" },
+      { "label": "Maximale boete", "value": "tot <b>€900.000</b> of 1% van de jaaromzet" },
+      { "label": "Meldplicht", "value": "bedrijven moesten zich vóór 15 oktober 2025 melden" },
+      { "label": "Niet-nalevers", "value": "de ACM publiceert een openbare lijst" },
+      { "label": "Basis", "value": "Implementatiewet toegankelijkheidsvoorschriften (Stb. 2024, 87)" },
+      { "label": "Van kracht", "value": "28 juni 2025" }
+    ]
+  },
+  "sections": [
+    { "h2": "Hoe hoog zijn de boetes?", "bodyHtml": "<p>De ACM kan bestuurlijke boetes opleggen tot <b>€900.000 of 1% van de jaaromzet</b> (het hoogste van de twee kan van toepassing zijn). De ACM hanteert een sectoraal boetemodel: de exacte hoogte hangt af van de sector, de ernst en duur van de overtreding, de omvang van je bedrijf en of je eerder bent gewaarschuwd.</p>" },
+    { "h2": "Wie handhaaft in Nederland?", "bodyHtml": "<p>De <b>ACM</b> is aangewezen als toezichthouder voor webshops en digitale diensten. Zij kan onderzoek doen, een last onder dwangsom opleggen en beboeten. Een melding door een consument of belangenorganisatie kan een onderzoek in gang zetten.</p>" },
+    { "h2": "Wat is de meldplicht en de lijst?", "bodyHtml": "<p>Onder de wet moesten bedrijven zich <b>vóór 15 oktober 2025</b> bij de ACM melden. De ACM is bovendien begonnen met het publiceren van een <b>lijst van niet-nalevers</b> — een reputatierisico dat losstaat van de boete zelf. Op de lijst staan betekent zichtbaar zijn voor klanten, concurrenten en pers.</p>" },
+    { "h2": "Hoe voorkom je een boete?", "bodyHtml": "<p>Drie stappen: test je checkout tegen <b>WCAG 2.1 AA</b> en los de overtredingen op, publiceer je <b>toegankelijkheidsverklaring</b> en bewaar een <b>gedateerd bewijs</b> van naleving. Daar is keepcite voor gemaakt — begin met de gratis scan hieronder.</p>" }
+  ],
+  "scan": {
+    "h2": "Ben je conform?",
+    "free": "Gratis",
+    "sub2": "Jouw webshop, getest tegen de norm van de wet.",
+    "leadHtml": "Verkoop je online in de EU? De EAA geldt voor jou.",
+    "formAria": "Vraag een gratis toegankelijkheidsscan aan",
+    "subject": "Nieuwe scanaanvraag — keepcite (NL · boetes)",
+    "urlLabel": "URL van je webshop",
+    "urlPh": "website.com",
+    "emailLabel": "Zakelijk e-mailadres",
+    "emailPh": "email@contact.com",
+    "button": "Check of ik voldoe",
+    "note": "Gratis rapport. Geen spam."
+  },
+  "faqSection": {
+    "h2": "Veelgestelde vragen",
+    "items": [
+      { "q": "Zijn er al boetes opgelegd?", "a": "De handhaving begint net; grote openbare boetes zijn nog schaars. Het regime (tot €900.000 of 1% van de omzet) is echter van kracht sinds 28 juni 2025, en de ACM publiceert al een lijst van niet-nalevers." },
+      { "q": "Is een toegankelijkheidsverklaring genoeg?", "a": "Ze is verplicht, maar biedt op zichzelf geen bescherming. Wat telt is echte naleving van WCAG 2.1 AA en een gedateerd bewijs daarvan. Een verklaring zonder herstel kan zelfs aantonen dat je het probleem kende." },
+      { "q": "Beschermt een widget of overlay mij?", "a": "Nee. Overlays veranderen de code die de norm meet niet. Meer dan 800 experts stellen dat ze niet werken, en de Amerikaanse FTC beboette accessiBe met 1 mln $ wegens misleidende claims." },
+      { "q": "Wat moet ik als bewijs bewaren?", "a": "Een actuele toegankelijkheidsverklaring en een gedateerd bewijs van naleving (audit, herstel, schermlezertests). keepcite levert elke maand een gedateerd certificaat voor dat dossier." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, EU",
+    "noteHtml": "Deze pagina doorstaat de audit die ze verkoopt: WCAG 2.1 AA, bedienbaar met toetsenbord, getest met schermlezer. · © 2026 keepcite",
+    "sourcesLabel": "Bronnen:",
+    "sources": [
+      { "label": "Implementatiewet toegankelijkheidsvoorschriften (Staatsblad 2024, 87)", "href": "https://zoek.officielebekendmakingen.nl/stb-2024-87.html" },
+      { "label": "Richtlijn (EU) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32019L0882" }
+    ]
+  }
+}

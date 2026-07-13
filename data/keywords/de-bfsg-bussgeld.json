@@ -2,6 +2,7 @@
   "cc": "de",
   "lang": "de",
   "slug": "bfsg-bussgeld",
+  "cluster": "fines",
   "ogLocale": "de_DE",
   "thousandsSep": ".",
   "canonical": "https://keepcite.com/de/bfsg-bussgeld/",

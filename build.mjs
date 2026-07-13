@@ -42,6 +42,9 @@ const extraCss = `
   .kwsection{margin-top:34px;}
   .kwsection h2{font-size:clamp(21px,2.8vw,28px);font-weight:800;letter-spacing:-.015em;margin-bottom:10px;}
   .kwsection p{color:#3C4452;font-weight:500;margin-bottom:12px;}
+  .kwsection ul{margin:2px 0 14px 22px;}
+  .kwsection li{color:#3C4452;font-weight:500;margin-bottom:7px;line-height:1.55;}
+  .kwsection code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:var(--blue-tint);color:var(--blue-dark);padding:1px 5px;border-radius:4px;}
   .kwscan{max-width:560px;margin:0 auto;}
   .kwscanband{padding:16px 0 60px;}
   /* NOTE: the column-footer and region-banner CSS live in index.html's <style>
@@ -156,11 +159,13 @@ function footerColumns(markets, keywords) {
     const ai = MARKET_ORDER.indexOf(a.cc), bi = MARKET_ORDER.indexOf(b.cc);
     return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi);
   });
-  const cols = [`<nav class="footcol" aria-label="EU / English"><h3><a href="/">EU / English</a></h3></nav>`];
+  const kwLink = k => `<a href="${k.canonical.replace(BASE, '')}">${esc(k.breadcrumb[k.breadcrumb.length - 1].name)}</a>`;
+  // root-level (English, cc "") keyword pages live under the EU / English column
+  const rootKws = keywords.filter(k => !k.cc).map(kwLink).join('');
+  const cols = [`<nav class="footcol" aria-label="EU / English"><h3><a href="/">EU / English</a></h3>${rootKws}</nav>`];
   for (const m of sorted) {
     const path = m.canonical.replace(BASE, '');
-    const kws = keywords.filter(k => k.cc === m.cc)
-      .map(k => `<a href="/${k.cc}/${k.slug}/">${esc(k.breadcrumb[k.breadcrumb.length - 1].name)}</a>`).join('');
+    const kws = keywords.filter(k => k.cc === m.cc).map(kwLink).join('');
     cols.push(`<nav class="footcol" aria-label="${esc(m.switchLabel)}"><h3><a href="${path}">${esc(m.switchLabel)}</a></h3>${kws}</nav>`);
   }
   cols.push(`<div class="footcol"><h3>Legal</h3><a href="/imprint/">Imprint</a><a href="/privacy/">Privacy</a><a href="/accessibility-statement/">Accessibility statement</a><a href="mailto:hello@keepcite.com">hello@keepcite.com</a></div>`);
@@ -453,11 +458,14 @@ function breadcrumbSchema(items) {
   };
 }
 
-function renderKeyword(kw, sep) {
+function renderKeyword(kw, sep, alts) {
   const faq = {
     '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: kw.schema.inLanguage,
     mainEntity: kw.faqSection.items.map(i => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a.replace(/<[^>]+>/g, '') } })),
   };
+  // Translation cluster (or self-reference if the page stands alone).
+  const hreflangs = (alts && alts.length ? alts : [{ lang: kw.hreflang || kw.lang, href: kw.canonical }])
+    .map(a => `<link rel="alternate" hreflang="${a.lang}" href="${a.href}">`).join('\n');
   return `<!DOCTYPE html>
 <html lang="${kw.lang}">
 <head>
@@ -466,7 +474,7 @@ function renderKeyword(kw, sep) {
 <title>${esc(kw.title)}</title>
 <meta name="description" content="${esc(kw.metaDescription)}">
 <link rel="canonical" href="${kw.canonical}">
-<link rel="alternate" hreflang="${kw.hreflang || kw.lang}" href="${kw.canonical}">
+${hreflangs}
 <meta property="og:title" content="${esc(kw.ogTitle)}">
 <meta property="og:description" content="${esc(kw.ogDescription)}">
 <meta property="og:type" content="article">
@@ -637,13 +645,23 @@ for (const m of markets) {
   built.push(`/${m.cc}/`);
   console.log(`built /${m.cc}/index.html`);
 }
+// translation clusters: keyword pages sharing a `cluster` value cross-link via hreflang
+const clusterAltsFor = (kw) => {
+  if (!kw.cluster) return null;
+  const members = keywords.filter(k => k.cluster === kw.cluster);
+  const alts = members.map(k => ({ lang: k.hreflang || k.lang, href: k.canonical }));
+  const root = members.find(k => !k.cc); // English root variant, if any → x-default
+  if (root) alts.unshift({ lang: 'x-default', href: root.canonical });
+  return alts;
+};
 for (const kw of keywords) {
-  const html = renderKeyword(kw, kw.thousandsSep || '.');
-  const dir = join(ROOT, kw.cc, kw.slug);
+  const html = renderKeyword(kw, kw.thousandsSep || '.', clusterAltsFor(kw));
+  const dir = join(ROOT, kw.cc || '', kw.slug);
   mkdirSync(dir, { recursive: true });
   writeFileSync(join(dir, 'index.html'), html);
-  built.push(`/${kw.cc}/${kw.slug}/`);
-  console.log(`built /${kw.cc}/${kw.slug}/index.html`);
+  const path = kw.canonical.replace(BASE, '');
+  built.push(path);
+  console.log(`built ${path}index.html`);
 }
 for (const pg of legals) {
   const html = renderLegal(pg);
@@ -670,7 +688,7 @@ else {
 const entries = [
   { loc: `${BASE}/`, file: 'index.html' },
   ...markets.map(m => ({ loc: m.canonical, file: `${m.cc}/index.html` })),
-  ...keywords.map(k => ({ loc: k.canonical, file: `${k.cc}/${k.slug}/index.html` })),
+  ...keywords.map(k => ({ loc: k.canonical, file: k.canonical.replace(BASE + '/', '') + 'index.html' })),
   ...legals.map(l => ({ loc: l.canonical, file: `${l.slug}/index.html` })),
 ];
 const lastmod = f => statSync(join(ROOT, f)).mtime.toISOString().slice(0, 10);

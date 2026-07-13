@@ -65,7 +65,7 @@
     "pill": "Das Gesetz in 30 Sekunden",
     "cells": [
       { "h3Html": "Was <span>es ist</span>", "bodyHtml": "Ein deutsches Gesetz, <b>in Kraft seit 28. Juni 2025</b>, das die EU-Richtlinie 2019/882 umsetzt. Digitale Dienste für Verbraucher müssen für Menschen mit Behinderungen nutzbar sein. E-Commerce ist ausdrücklich erfasst." },
-      { "h3Html": "Wer <span>betroffen ist</span>", "bodyHtml": "Alle, die Produkte <b>oder Dienstleistungen</b> online an Verbraucher in Deutschland verkaufen — Shops, SaaS, Buchung &amp; Ticketing, Banking, E-Books. Ausgenommen sind nur echte Kleinstunternehmen: unter 10 Mitarbeitende <b>und</b> unter 2 Mio. € Umsatz." },
+      { "h3Html": "Wer <span>betroffen ist</span>", "bodyHtml": "Alle, die Produkte <b>oder Dienstleistungen</b> online an Verbraucher in Deutschland verkaufen — Shops, <a href='/de/barrierefreiheit-saas/'>SaaS</a>, Buchung &amp; Ticketing, Banking, E-Books. Ausgenommen sind nur echte Kleinstunternehmen: unter 10 Mitarbeitende <b>und</b> unter 2 Mio. € Umsatz." },
       { "h3Html": "Was <span>gefordert ist</span>", "bodyHtml": "Ihre Website muss <b>WCAG 2.1 AA</b> erfüllen — ein technischer Standard mit rund 50 prüfbaren Kriterien. Checkout und Bezahlvorgang sind die risikoreichsten Seiten. Eine öffentliche Barrierefreiheitserklärung ist Pflicht." }
     ]
   },
