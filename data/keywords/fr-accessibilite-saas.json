@@ -1,0 +1,146 @@
+{
+  "cc": "fr",
+  "lang": "fr",
+  "slug": "accessibilite-saas",
+  "cluster": "saas",
+  "ogLocale": "fr_FR",
+  "thousandsSep": " ",
+  "canonical": "https://keepcite.com/fr/accessibilite-saas/",
+  "hubHref": "/fr/",
+  "hubLabel": "Accessibilité (RGAA)",
+  "title": "Accessibilité SaaS : votre application est-elle conforme ?",
+  "metaDescription": "L'EAA couvre les SaaS B2C et prosumer. Points de rupture WCAG : inscription, tableaux de bord, tableaux de données, SPA — et comment les corriger.",
+  "ogTitle": "Accessibilité SaaS sous l'European Accessibility Act",
+  "ogDescription": "Inscription, tableaux de bord, tables de données, modales, focus dans les SPA — les points de non-conformité WCAG 2.1 AA propres au SaaS, et comment keepcite les audite.",
+  "schema": {
+    "inLanguage": "fr"
+  },
+  "skip": "Aller au scan",
+  "nav": {
+    "ariaLabel": "Navigation principale",
+    "pricing": "Tarifs",
+    "faq": "FAQ",
+    "cta": "Scan gratuit"
+  },
+  "breadcrumb": [
+    {
+      "name": "keepcite",
+      "href": "/",
+      "item": "https://keepcite.com/"
+    },
+    {
+      "name": "France (RGAA)",
+      "href": "/fr/",
+      "item": "https://keepcite.com/fr/"
+    },
+    {
+      "name": "SaaS",
+      "href": "/fr/accessibilite-saas/",
+      "item": "https://keepcite.com/fr/accessibilite-saas/"
+    }
+  ],
+  "kicker": "RGAA · SaaS",
+  "h1Html": "Votre <span class='hl'>SaaS est-il accessible ?</span>",
+  "answerHtml": "L'<b>European Accessibility Act</b> s'applique aux SaaS vendus aux consommateurs — produits <b>B2C et B2B2C/prosumer</b> — depuis le <b>28 juin 2025</b>, mesurés selon <b>WCAG 2.1 AA</b>. Le SaaS échoue à des endroits précis : l'inscription et l'onboarding, les tableaux de bord et tables de données, les filtres et tris, les modales, et la gestion du focus dans les single-page apps. Un outil <b>purement B2B</b> peut sortir du champ « consommateur » — mais la plupart des SaaS ont des utilisateurs consommateurs ou prosumer.",
+  "keyFacts": {
+    "title": "SaaS & EAA en un coup d’œil",
+    "items": [
+      {
+        "label": "Loi",
+        "value": "European Accessibility Act — ordonnance 2023-859"
+      },
+      {
+        "label": "En vigueur",
+        "value": "28 juin 2025"
+      },
+      {
+        "label": "S’applique au SaaS",
+        "value": "oui — B2C et B2B2C/prosumer ; le B2B pur peut être hors champ"
+      },
+      {
+        "label": "Norme",
+        "value": "EN 301 549 → WCAG 2.1 AA"
+      },
+      {
+        "label": "Zones à risque",
+        "value": "inscription, tableaux de bord, tables de données, modales, focus SPA"
+      },
+      {
+        "label": "Exception",
+        "value": "microentreprises (moins de 10 salariés ET moins de 2 M€)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "h2": "Où un SaaS échoue-t-il à WCAG 2.1 AA ?",
+      "bodyHtml": "<p>Les défauts se concentrent là où un site vitrine n'a rien :</p><ul><li><b>Inscription & onboarding :</b> champs sans étiquette programmatique, erreurs de validation uniquement en couleur et jamais annoncées, assistants multi-étapes sans sémantique de progression.</li><li><b>Tableaux de bord :</b> pas de régions de repère, ordre de tabulation illogique, widgets inaccessibles au clavier.</li><li><b>Tables de données :</b> <code>&lt;th&gt;</code>/<code>scope</code> manquants, colonnes triables qui n'annoncent pas leur état de tri.</li><li><b>Filtres & tris :</b> listes déroulantes personnalisées en <code>&lt;div&gt;</code> sans ARIA, inutilisables sans souris.</li><li><b>Modales :</b> focus non piégé, arrière-plan encore accessible, focus non restitué à la fermeture.</li><li><b>Graphiques :</b> canvas/SVG sans alternative textuelle.</li><li><b>Expiration de session :</b> sessions qui expirent sans avertissement ni prolongation (WCAG 2.2.1).</li></ul>"
+    },
+    {
+      "h2": "L'EAA s'applique-t-il aux SaaS B2B ?",
+      "bodyHtml": "<p>L'EAA vise les services destinés aux <b>consommateurs</b>. Clairement concernés : les SaaS B2C et <b>B2B2C/prosumer</b> où des particuliers (freelances, indépendants, utilisateurs finaux de vos clients) s'inscrivent. Un produit <b>purement B2B</b> sans surface grand public peut être hors champ — mais une inscription libre ou une offre gratuite l'y ramène souvent. Ne revendiquez pas une exemption indéfendable.</p>"
+    },
+    {
+      "h2": "Que casse-t-il dans les single-page apps (React, Vue) ?",
+      "bodyHtml": "<p>Les changements de route côté client ne déplacent pas le focus et ne mettent pas à jour l'arbre d'accessibilité : les utilisateurs de lecteur d'écran restent sur une page obsolète, sans annonce. Corrigez en déplaçant le focus vers le titre de la nouvelle vue et en annonçant via une région ARIA live. Les widgets personnalisés créent souvent des <b>pièges au clavier</b>.</p>"
+    },
+    {
+      "h2": "Comment auditer un SaaS derrière une authentification ?",
+      "bodyHtml": "<p>Un scan automatique ne voit que les pages publiques. Nous le combinons avec un <b>audit manuel des parcours authentifiés</b> — inscription, onboarding, tâches clés, tableaux de bord — au lecteur d'écran et au clavier, via des identifiants de test ou un environnement de préproduction. Vous obtenez des tickets de correction et une preuve datée. Commencez par le scan gratuit ci-dessous.</p>"
+    }
+  ],
+  "scan": {
+    "h2": "Votre application est-elle conforme ?",
+    "free": "Gratuit",
+    "sub2": "Votre application, testée selon WCAG 2.1 AA.",
+    "leadHtml": "Vous vendez du SaaS à des utilisateurs de l'UE ? L'EAA s'applique à vous.",
+    "formAria": "Demander un scan d'accessibilité gratuit",
+    "subject": "New scan request — keepcite (FR · SaaS)",
+    "urlLabel": "URL de votre application",
+    "urlPh": "website.com",
+    "emailLabel": "E-mail professionnel",
+    "emailPh": "email@contact.com",
+    "button": "Vérifier ma conformité",
+    "note": "Rapport gratuit. Sans spam."
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      {
+        "q": "L’EAA couvre-t-il mon SaaS ?",
+        "a": "Si des consommateurs ou prosumers peuvent s'inscrire et l'utiliser, oui — depuis le 28 juin 2025, selon WCAG 2.1 AA. Le B2C et le B2B2C sont concernés ; une inscription libre ramène souvent un outil « B2B » dans le champ."
+      },
+      {
+        "q": "Mon app est derrière un login — est-ce couvert ?",
+        "a": "Oui. L’obligation couvre tout le service, y compris les parcours authentifiés — là où vivent la plupart des défauts."
+      },
+      {
+        "q": "Quels sont les défauts SaaS les plus fréquents ?",
+        "a": "Champs non étiquetés, erreurs en couleur seule, listes déroulantes et modales non opérables au clavier, tables sans sémantique d’en-tête, et changements de route SPA sans déplacement de focus."
+      },
+      {
+        "q": "Comment testez-vous derrière l’authentification ?",
+        "a": "Avec des identifiants de test ou un environnement de préproduction, nous parcourons manuellement les vrais flux au lecteur d’écran et au clavier, puis livrons des tickets et un certificat daté."
+      }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, EU",
+    "noteHtml": "Cette page réussit l'audit qu'elle vend : WCAG 2.1 AA, navigable au clavier, testée au lecteur d'écran. · © 2026 keepcite",
+    "sourcesLabel": "Sources :",
+    "sources": [
+      {
+        "label": "Directive (UE) 2019/882 (EUR-Lex)",
+        "href": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32019L0882"
+      },
+      {
+        "label": "WCAG 2.1 (W3C)",
+        "href": "https://www.w3.org/TR/WCAG21/"
+      },
+      {
+        "label": "RGAA — accessibilite.numerique.gouv.fr",
+        "href": "https://accessibilite.numerique.gouv.fr/"
+      }
+    ]
+  }
+}

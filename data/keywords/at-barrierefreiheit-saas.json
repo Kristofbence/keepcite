@@ -1,0 +1,147 @@
+{
+  "cc": "at",
+  "lang": "de",
+  "hreflang": "de-AT",
+  "slug": "barrierefreiheit-saas",
+  "cluster": "saas",
+  "ogLocale": "de_AT",
+  "thousandsSep": ".",
+  "canonical": "https://keepcite.com/at/barrierefreiheit-saas/",
+  "hubHref": "/at/",
+  "hubLabel": "Österreich (BaFG)",
+  "title": "Barrierefreiheit für SaaS (BaFG Österreich)",
+  "metaDescription": "Das BaFG gilt für B2C- und Prosumer-SaaS. Die typischen WCAG-Fehler in Registrierung, Dashboards, Datentabellen und SPAs — und wie keepcite sie prüft.",
+  "ogTitle": "Barrierefreiheit für SaaS unter dem BaFG",
+  "ogDescription": "Registrierung, Dashboards, Datentabellen, Modals, Fokus in SPAs — die SaaS-spezifischen WCAG-2.1-AA-Schwachstellen und wie keepcite sie auditiert.",
+  "schema": {
+    "inLanguage": "de"
+  },
+  "skip": "Zum Scan springen",
+  "nav": {
+    "ariaLabel": "Hauptnavigation",
+    "pricing": "Preise",
+    "faq": "FAQ",
+    "cta": "Gratis-Scan"
+  },
+  "breadcrumb": [
+    {
+      "name": "keepcite",
+      "href": "/",
+      "item": "https://keepcite.com/"
+    },
+    {
+      "name": "Österreich (BaFG)",
+      "href": "/at/",
+      "item": "https://keepcite.com/at/"
+    },
+    {
+      "name": "SaaS",
+      "href": "/at/barrierefreiheit-saas/",
+      "item": "https://keepcite.com/at/barrierefreiheit-saas/"
+    }
+  ],
+  "kicker": "BaFG · SaaS",
+  "h1Html": "Ist Ihr <span class='hl'>SaaS barrierefrei?</span>",
+  "answerHtml": "Das <b>Barrierefreiheitsgesetz (BaFG)</b> gilt seit dem <b>28. Juni 2025</b> auch für SaaS, das an Verbraucher verkauft wird — <b>B2C und B2B2C/Prosumer</b>. Maßstab ist <b>WCAG 2.1 AA</b>. SaaS scheitert an bestimmten Stellen: Registrierung und Onboarding, Dashboards und komplexe Datentabellen, Filter und Sortierung, Modals und Fokus-Management in Single-Page-Apps. Reine B2B-Tools können außerhalb des Anwendungsbereichs liegen — die meisten SaaS-Produkte haben jedoch Verbraucher- oder Prosumer-Nutzer. Verwaltungsstrafen bis <b>80.000 €</b>.",
+  "keyFacts": {
+    "title": "SaaS & BaFG auf einen Blick",
+    "items": [
+      {
+        "label": "Gesetz",
+        "value": "BaFG — Richtlinie (EU) 2019/882"
+      },
+      {
+        "label": "Gilt seit",
+        "value": "28. Juni 2025"
+      },
+      {
+        "label": "Gilt für SaaS",
+        "value": "ja — B2C und B2B2C/Prosumer; reines B2B evtl. außerhalb"
+      },
+      {
+        "label": "Standard",
+        "value": "EN 301 549 → WCAG 2.1 Stufe AA"
+      },
+      {
+        "label": "Strafe",
+        "value": "bis 80.000 € (Sozialministeriumservice)"
+      },
+      {
+        "label": "Risikoreichste Stellen",
+        "value": "Registrierung, Dashboards, Datentabellen, Modals, SPA-Fokus"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "h2": "Wo scheitert ein SaaS-Produkt an WCAG 2.1 AA?",
+      "bodyHtml": "<p>Die Fehler häufen sich dort, wo eine Marketing-Seite nichts hat:</p><ul><li><b>Registrierung & Onboarding:</b> Felder ohne programmatische Labels, Fehlermeldungen nur über Farbe und ohne Ansage, mehrstufige Assistenten ohne Fortschritts-Semantik.</li><li><b>Dashboards:</b> keine Landmark-Regionen, unlogische Tab-Reihenfolge, per Tastatur nicht bedienbare Widgets.</li><li><b>Datentabellen:</b> fehlendes <code>&lt;th&gt;</code>-<code>scope</code>, sortierbare Spalten ohne Ansage des Zustands.</li><li><b>Filter & Sortierung:</b> Custom-Dropdowns aus <code>&lt;div&gt;</code>s ohne ARIA, ohne Maus unbedienbar.</li><li><b>Modals:</b> Fokus nicht gefangen, Hintergrund erreichbar, Fokus beim Schließen nicht zurückgegeben.</li><li><b>Charts:</b> Canvas-/SVG-Diagramme ohne Textalternative.</li><li><b>Session-Timeout:</b> Sitzungen, die ohne Warnung ablaufen (WCAG 2.2.1).</li></ul>"
+    },
+    {
+      "h2": "Gilt das BaFG für B2B-SaaS?",
+      "bodyHtml": "<p>Das BaFG erfasst Dienste für <b>Verbraucher</b>. Klar erfasst: B2C-Apps und <b>B2B2C-/Prosumer</b>-Tools, bei denen sich Einzelpersonen registrieren. Ein <b>reines B2B-Produkt</b> ohne verbraucherseitige Oberfläche kann außerhalb liegen — eine öffentliche Selbstregistrierung oder ein Free-Tier holen es meist zurück. Berufen Sie sich nicht auf eine Ausnahme, die Sie nicht belegen können.</p>"
+    },
+    {
+      "h2": "Was bricht in Single-Page-Apps (React, Vue)?",
+      "bodyHtml": "<p>Client-seitige Routenwechsel verschieben den Fokus nicht und aktualisieren den Accessibility-Baum nicht — Screenreader-Nutzer bleiben ohne Ansage auf einer veralteten Seite. Lösung: Fokus auf die Überschrift der neuen Ansicht setzen und über eine ARIA-Live-Region ansagen. Custom-Widgets erzeugen häufig <b>Tastaturfallen</b>.</p>"
+    },
+    {
+      "h2": "Wie prüft man ein SaaS hinter dem Login?",
+      "bodyHtml": "<p>Ein automatischer Scan sieht nur öffentliche Seiten. Wir kombinieren ihn mit einem <b>manuellen Audit der authentifizierten Flows</b> — Registrierung, Onboarding, zentrale Aufgaben, Dashboards — mit Screenreader und Tastatur, per Testzugang oder Staging. Sie erhalten Fix-Tickets und einen datierten Nachweis. Starten Sie mit dem kostenlosen Scan unten.</p>"
+    }
+  ],
+  "scan": {
+    "h2": "Ist Ihre App konform?",
+    "free": "Gratis",
+    "sub2": "Ihre App, geprüft gegen WCAG 2.1 AA.",
+    "leadHtml": "Verkaufen Sie SaaS an EU-Nutzer? Das BaFG gilt für Sie.",
+    "formAria": "Kostenlosen Barrierefreiheits-Scan anfordern",
+    "subject": "New scan request — keepcite (AT · SaaS)",
+    "urlLabel": "Ihre App-URL",
+    "urlPh": "website.com",
+    "emailLabel": "Geschäftliche E-Mail",
+    "emailPh": "email@contact.com",
+    "button": "Prüfen, ob ich konform bin",
+    "note": "Kostenloser Report. Kein Spam."
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      {
+        "q": "Gilt das BaFG für meine SaaS-App?",
+        "a": "Wenn sich Verbraucher oder Prosumer registrieren und die App nutzen können, ja — seit 28. Juni 2025, gemessen an WCAG 2.1 AA. B2C und B2B2C sind erfasst; eine öffentliche Selbstregistrierung holt ein „B2B“-Tool meist zurück."
+      },
+      {
+        "q": "Unsere App ist hinter dem Login — trotzdem erfasst?",
+        "a": "Ja. Die Pflicht gilt für den gesamten Dienst, einschließlich der authentifizierten Flows — wo die meisten Barrieren leben."
+      },
+      {
+        "q": "Was sind die häufigsten SaaS-Barrieren?",
+        "a": "Unbeschriftete Felder und rein farbliche Fehler, tastatur-unbedienbare Dropdowns und Modals, Datentabellen ohne Kopf-Semantik und SPA-Routenwechsel ohne Fokusverschiebung."
+      },
+      {
+        "q": "Wie testen Sie hinter der Anmeldung?",
+        "a": "Per Testzugang oder Staging fahren wir die echten authentifizierten Abläufe manuell mit Screenreader und Tastatur ab und liefern Fix-Tickets plus einen datierten Nachweis."
+      }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, EU",
+    "noteHtml": "Diese Seite besteht das Audit, das sie verkauft: WCAG 2.1 AA, tastaturbedienbar, mit Screenreader getestet. · © 2026 keepcite",
+    "sourcesLabel": "Quellen:",
+    "sources": [
+      {
+        "label": "Barrierefreiheitsgesetz — Sozialministerium",
+        "href": "https://www.sozialministerium.gv.at/Themen/Soziales/Menschen-mit-Behinderungen/Barrierefreiheitsgesetz.html"
+      },
+      {
+        "label": "Richtlinie (EU) 2019/882 (EUR-Lex)",
+        "href": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32019L0882"
+      },
+      {
+        "label": "WCAG 2.1 (W3C)",
+        "href": "https://www.w3.org/TR/WCAG21/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "cc": "es",
+  "lang": "es",
+  "slug": "accesibilidad-saas",
+  "cluster": "saas",
+  "ogLocale": "es_ES",
+  "thousandsSep": ".",
+  "canonical": "https://keepcite.com/es/accesibilidad-saas/",
+  "hubHref": "/es/",
+  "hubLabel": "Ley 11/2023",
+  "title": "Accesibilidad SaaS: ¿tu aplicación cumple la ley?",
+  "metaDescription": "La Ley 11/2023 cubre el SaaS B2C y prosumer. Los puntos de fallo WCAG específicos: registro, paneles, tablas de datos, SPA — y cómo corregirlos.",
+  "ogTitle": "Accesibilidad SaaS bajo la Ley 11/2023",
+  "ogDescription": "Registro, paneles, tablas de datos, modales, foco en SPA — los puntos de incumplimiento WCAG 2.1 AA propios del SaaS, y cómo los audita keepcite.",
+  "schema": {
+    "inLanguage": "es"
+  },
+  "skip": "Ir al escaneo",
+  "nav": {
+    "ariaLabel": "Navegación principal",
+    "pricing": "Precios",
+    "faq": "Preguntas frecuentes",
+    "cta": "Escaneo gratis"
+  },
+  "breadcrumb": [
+    {
+      "name": "keepcite",
+      "href": "/",
+      "item": "https://keepcite.com/"
+    },
+    {
+      "name": "España (Ley 11/2023)",
+      "href": "/es/",
+      "item": "https://keepcite.com/es/"
+    },
+    {
+      "name": "SaaS",
+      "href": "/es/accesibilidad-saas/",
+      "item": "https://keepcite.com/es/accesibilidad-saas/"
+    }
+  ],
+  "kicker": "Ley 11/2023 · SaaS",
+  "h1Html": "¿Tu <span class='hl'>SaaS es accesible?</span>",
+  "answerHtml": "La <b>Ley 11/2023</b> se aplica al SaaS vendido a consumidores — productos <b>B2C y B2B2C/prosumer</b> — desde el <b>28 de junio de 2025</b>, medido según <b>WCAG 2.1 AA</b>. El SaaS falla en puntos concretos: registro y onboarding, paneles y tablas de datos complejas, filtros y ordenación, modales, y gestión del foco en las single-page apps. Una herramienta <b>puramente B2B</b> puede quedar fuera del ámbito de consumo — pero la mayoría del SaaS tiene usuarios consumidores o prosumer.",
+  "keyFacts": {
+    "title": "SaaS y la Ley 11/2023 de un vistazo",
+    "items": [
+      {
+        "label": "Ley",
+        "value": "Ley 11/2023 — Directiva (UE) 2019/882"
+      },
+      {
+        "label": "En vigor",
+        "value": "28 de junio de 2025"
+      },
+      {
+        "label": "Aplica al SaaS",
+        "value": "sí — B2C y B2B2C/prosumer; el B2B puro puede quedar fuera"
+      },
+      {
+        "label": "Estándar",
+        "value": "EN 301 549 → WCAG 2.1 AA"
+      },
+      {
+        "label": "Zonas de riesgo",
+        "value": "registro, paneles, tablas de datos, modales, foco SPA"
+      },
+      {
+        "label": "Excepción",
+        "value": "microempresas (menos de 10 empleados Y menos de 2 M€)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "h2": "¿Dónde falla un SaaS en WCAG 2.1 AA?",
+      "bodyHtml": "<p>Los fallos se concentran donde una web de marketing no tiene nada:</p><ul><li><b>Registro y onboarding:</b> campos sin etiqueta programática, errores de validación solo por color y nunca anunciados, asistentes de varios pasos sin semántica de progreso.</li><li><b>Paneles:</b> sin regiones de referencia, orden de tabulación ilógico, widgets no operables por teclado.</li><li><b>Tablas de datos:</b> falta de <code>&lt;th&gt;</code>/<code>scope</code>, columnas ordenables que no anuncian su estado.</li><li><b>Filtros y orden:</b> desplegables personalizados en <code>&lt;div&gt;</code> sin ARIA, inservibles sin ratón.</li><li><b>Modales:</b> foco no atrapado, fondo aún accesible, foco no devuelto al cerrar.</li><li><b>Gráficos:</b> canvas/SVG sin alternativa textual.</li><li><b>Caducidad de sesión:</b> sesiones que expiran sin aviso ni prórroga (WCAG 2.2.1).</li></ul>"
+    },
+    {
+      "h2": "¿La Ley 11/2023 se aplica al SaaS B2B?",
+      "bodyHtml": "<p>La ley cubre servicios a <b>consumidores</b>. Claramente incluidos: SaaS B2C y <b>B2B2C/prosumer</b> donde se registran particulares (autónomos, usuarios finales de tus clientes). Un producto <b>puramente B2B</b> sin superficie de consumo puede quedar fuera — pero un registro libre o un plan gratuito suele devolverlo al ámbito. No reclames una exención que no puedas defender.</p>"
+    },
+    {
+      "h2": "¿Qué se rompe en las single-page apps (React, Vue)?",
+      "bodyHtml": "<p>Los cambios de ruta del lado del cliente no mueven el foco ni actualizan el árbol de accesibilidad: quien usa lector de pantalla se queda en una página obsoleta, sin aviso. Solución: mover el foco al encabezado de la nueva vista y anunciarlo con una región ARIA live. Los widgets personalizados crean a menudo <b>trampas de teclado</b>.</p>"
+    },
+    {
+      "h2": "¿Cómo se audita un SaaS tras el inicio de sesión?",
+      "bodyHtml": "<p>Un escaneo automático solo ve páginas públicas. Lo combinamos con una <b>auditoría manual de los flujos autenticados</b> — registro, onboarding, tareas clave, paneles — con lector de pantalla y teclado, mediante credenciales de prueba o un entorno de staging. Recibes tickets de corrección y una prueba fechada. Empieza con el escaneo gratuito de abajo.</p>"
+    }
+  ],
+  "scan": {
+    "h2": "¿Tu aplicación cumple?",
+    "free": "Gratis",
+    "sub2": "Tu aplicación, comprobada según WCAG 2.1 AA.",
+    "leadHtml": "¿Vendes SaaS a usuarios de la UE? La Ley 11/2023 te aplica.",
+    "formAria": "Solicitar un escaneo de accesibilidad gratuito",
+    "subject": "New scan request — keepcite (ES · SaaS)",
+    "urlLabel": "URL de tu aplicación",
+    "urlPh": "website.com",
+    "emailLabel": "Correo profesional",
+    "emailPh": "email@contact.com",
+    "button": "Comprobar si cumplo",
+    "note": "Informe gratis. Sin spam."
+  },
+  "faqSection": {
+    "h2": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿La ley cubre mi SaaS?",
+        "a": "Si consumidores o prosumers pueden registrarse y usarlo, sí — desde el 28 de junio de 2025, según WCAG 2.1 AA. El B2C y el B2B2C están dentro; un registro libre suele devolver una herramienta «B2B» al ámbito."
+      },
+      {
+        "q": "Mi app está tras un login — ¿sigue cubierta?",
+        "a": "Sí. La obligación cubre todo el servicio, incluidos los flujos autenticados — donde vive la mayoría de los fallos."
+      },
+      {
+        "q": "¿Cuáles son los fallos SaaS más comunes?",
+        "a": "Campos sin etiqueta, errores solo por color, desplegables y modales no operables por teclado, tablas sin semántica de cabecera, y cambios de ruta SPA que no mueven el foco."
+      },
+      {
+        "q": "¿Cómo probáis tras la autenticación?",
+        "a": "Con credenciales de prueba o un entorno de staging recorremos manualmente los flujos reales con lector de pantalla y teclado, y entregamos tickets y un certificado fechado."
+      }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, EU",
+    "noteHtml": "Esta página supera la auditoría que vende: WCAG 2.1 AA, navegable por teclado, probada con lector de pantalla. · © 2026 keepcite",
+    "sourcesLabel": "Fuentes:",
+    "sources": [
+      {
+        "label": "Directiva (UE) 2019/882 (EUR-Lex)",
+        "href": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32019L0882"
+      },
+      {
+        "label": "WCAG 2.1 (W3C)",
+        "href": "https://www.w3.org/TR/WCAG21/"
+      },
+      {
+        "label": "RD 193/2023 (BOE)",
+        "href": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-7417"
+      }
+    ]
+  }
+}

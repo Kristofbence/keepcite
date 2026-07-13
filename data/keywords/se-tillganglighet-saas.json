@@ -1,0 +1,146 @@
+{
+  "cc": "se",
+  "lang": "sv",
+  "slug": "tillganglighet-saas",
+  "cluster": "saas",
+  "ogLocale": "sv_SE",
+  "thousandsSep": " ",
+  "canonical": "https://keepcite.com/se/tillganglighet-saas/",
+  "hubHref": "/se/",
+  "hubLabel": "Tillgänglighetslagen",
+  "title": "Tillgänglighet för SaaS: uppfyller din app kraven?",
+  "metaDescription": "Tillgänglighetslagen omfattar B2C- och prosumer-SaaS. De specifika WCAG-bristerna: registrering, dashboards, datatabeller, SPA:er — och hur du åtgärdar dem.",
+  "ogTitle": "SaaS-tillgänglighet enligt tillgänglighetslagen",
+  "ogDescription": "Registrering, dashboards, datatabeller, modaler, fokus i SPA:er — de SaaS-specifika WCAG 2.1 AA-bristerna, och hur keepcite granskar dem.",
+  "schema": {
+    "inLanguage": "sv"
+  },
+  "skip": "Hoppa till skanningen",
+  "nav": {
+    "ariaLabel": "Huvudnavigering",
+    "pricing": "Priser",
+    "faq": "Vanliga frågor",
+    "cta": "Gratis skanning"
+  },
+  "breadcrumb": [
+    {
+      "name": "keepcite",
+      "href": "/",
+      "item": "https://keepcite.com/"
+    },
+    {
+      "name": "Tillgänglighetslagen",
+      "href": "/se/",
+      "item": "https://keepcite.com/se/"
+    },
+    {
+      "name": "SaaS",
+      "href": "/se/tillganglighet-saas/",
+      "item": "https://keepcite.com/se/tillganglighet-saas/"
+    }
+  ],
+  "kicker": "Tillgänglighetslagen · SaaS",
+  "h1Html": "Är din <span class='hl'>SaaS tillgänglig?</span>",
+  "answerHtml": "<b>Tillgänglighetslagen</b> gäller SaaS som säljs till konsumenter — <b>B2C- och B2B2C/prosumer</b>-produkter — sedan <b>28 juni 2025</b>, mätt mot <b>WCAG 2.1 AA</b>. SaaS brister på specifika ställen: registrering och onboarding, dashboards och komplexa datatabeller, filter och sortering, modaler, och fokushantering i single-page-appar. Ett <b>renodlat B2B</b>-verktyg kan falla utanför konsumentområdet — men de flesta SaaS har konsument- eller prosumer-användare.",
+  "keyFacts": {
+    "title": "SaaS & tillgänglighetslagen i korthet",
+    "items": [
+      {
+        "label": "Lag",
+        "value": "Lag (2023:254) — direktiv (EU) 2019/882"
+      },
+      {
+        "label": "Gäller sedan",
+        "value": "28 juni 2025"
+      },
+      {
+        "label": "Gäller SaaS",
+        "value": "ja — B2C och B2B2C/prosumer; renodlat B2B kan falla utanför"
+      },
+      {
+        "label": "Standard",
+        "value": "EN 301 549 → WCAG 2.1 nivå AA"
+      },
+      {
+        "label": "Tillsyn",
+        "value": "PTS — föreläggande förenat med vite"
+      },
+      {
+        "label": "Undantag",
+        "value": "mikroföretag (< 10 anställda och < 2 milj. €)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "h2": "Var brister en SaaS mot WCAG 2.1 AA?",
+      "bodyHtml": "<p>Bristerna samlas där en marknadssida inte har något:</p><ul><li><b>Registrering & onboarding:</b> fält utan programmatisk etikett, valideringsfel enbart i färg och aldrig aviserade, flerstegsguider utan förloppssemantik.</li><li><b>Dashboards:</b> inga landmärken, ologisk tab-ordning, widgets som inte går att nå eller styra med tangentbord.</li><li><b>Datatabeller:</b> saknade <code>&lt;th&gt;</code>/<code>scope</code>, sorterbara kolumner som inte aviserar sitt tillstånd.</li><li><b>Filter & sortering:</b> egna rullgardiner byggda av <code>&lt;div&gt;</code> utan ARIA, oanvändbara utan mus.</li><li><b>Modaler:</b> fokus inte fångat, bakgrunden fortfarande nåbar, fokus inte återlämnat vid stängning.</li><li><b>Diagram:</b> canvas/SVG utan textalternativ.</li><li><b>Session-timeout:</b> sessioner som går ut utan varning (WCAG 2.2.1).</li></ul>"
+    },
+    {
+      "h2": "Gäller lagen för B2B-SaaS?",
+      "bodyHtml": "<p>Lagen omfattar tjänster till <b>konsumenter</b>. Tydligt inom området: B2C-appar och <b>B2B2C/prosumer</b>-verktyg där enskilda (frilansare, dina kunders slutanvändare) registrerar sig. En <b>renodlad B2B</b>-produkt utan konsumentyta kan falla utanför — men en öppen självregistrering eller gratisnivå drar oftast in den igen. Hävda ingen undantag du inte kan försvara.</p>"
+    },
+    {
+      "h2": "Vad går sönder i single-page-appar (React, Vue)?",
+      "bodyHtml": "<p>Klientsidans ruttbyten flyttar inte fokus och uppdaterar inte tillgänglighetsträdet: skärmläsaranvändare blir kvar på en inaktuell sida, utan avisering. Åtgärda genom att flytta fokus till den nya vyns rubrik och avisera via en ARIA-live-region. Egna widgets skapar ofta <b>tangentbordsfällor</b>.</p>"
+    },
+    {
+      "h2": "Hur granskar man en SaaS bakom inloggning?",
+      "bodyHtml": "<p>En automatisk skanning ser bara publika sidor. Vi kombinerar den med en <b>manuell granskning av de inloggade flödena</b> — registrering, onboarding, centrala uppgifter, dashboards — med skärmläsare och tangentbord, via testinloggning eller en stagingmiljö. Du får åtgärdsärenden och ett daterat intyg. Börja med den gratis skanningen nedan.</p>"
+    }
+  ],
+  "scan": {
+    "h2": "Uppfyller din app kraven?",
+    "free": "Gratis",
+    "sub2": "Din app, testad mot WCAG 2.1 AA.",
+    "leadHtml": "Säljer du SaaS till EU-användare? Tillgänglighetslagen gäller dig.",
+    "formAria": "Begär en gratis tillgänglighetsskanning",
+    "subject": "New scan request — keepcite (SE · SaaS)",
+    "urlLabel": "Din app-URL",
+    "urlPh": "website.com",
+    "emailLabel": "Jobbmejl",
+    "emailPh": "email@contact.com",
+    "button": "Kontrollera om jag uppfyller kraven",
+    "note": "Gratis rapport. Ingen spam."
+  },
+  "faqSection": {
+    "h2": "Vanliga frågor",
+    "items": [
+      {
+        "q": "Omfattar lagen min SaaS?",
+        "a": "Om konsumenter eller prosumers kan registrera sig och använda den, ja — sedan 28 juni 2025, mot WCAG 2.1 AA. B2C och B2B2C omfattas; en öppen registrering drar ofta in ett «B2B»-verktyg igen."
+      },
+      {
+        "q": "Vår app är bakom inloggning — omfattas den ändå?",
+        "a": "Ja. Kravet omfattar hela tjänsten, inklusive de inloggade flödena — där de flesta bristerna finns."
+      },
+      {
+        "q": "Vilka är de vanligaste SaaS-bristerna?",
+        "a": "Omärkta fält och fel enbart i färg, tangentbordsstyrning som saknas i egna rullgardiner och modaler, tabeller utan rubriksemantik, och SPA-ruttbyten som inte flyttar fokus."
+      },
+      {
+        "q": "Hur testar ni bakom autentiseringen?",
+        "a": "Med testinloggning eller en stagingmiljö kör vi de riktiga flödena manuellt med skärmläsare och tangentbord, och levererar åtgärdsärenden och ett daterat intyg."
+      }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, EU",
+    "noteHtml": "Den här sidan klarar granskningen den säljer: WCAG 2.1 AA, tangentbordsnavigerbar, testad med skärmläsare. · © 2026 keepcite",
+    "sourcesLabel": "Källor:",
+    "sources": [
+      {
+        "label": "Lag (2023:254) (riksdagen.se)",
+        "href": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2023254-om-vissa-produkters-och-tjansters_sfs-2023-254/"
+      },
+      {
+        "label": "Direktiv (EU) 2019/882 (EUR-Lex)",
+        "href": "https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=CELEX:32019L0882"
+      },
+      {
+        "label": "WCAG 2.1 (W3C)",
+        "href": "https://www.w3.org/TR/WCAG21/"
+      }
+    ]
+  }
+}

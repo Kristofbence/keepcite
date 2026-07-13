@@ -66,7 +66,7 @@
     "pill": "La legge in 30 secondi",
     "cells": [
       { "h3Html": "Che cosa <span>è</span>", "bodyHtml": "Una direttiva europea (2019/882), recepita in Italia con il <b>D.Lgs. 82/2022 e in vigore dal 28 giugno 2025</b>. I servizi digitali rivolti ai consumatori devono essere utilizzabili dalle persone con disabilità. L'e-commerce è espressamente incluso." },
-      { "h3Html": "Chi <span>è obbligato</span>", "bodyHtml": "Chiunque venda prodotti <b>o servizi</b> online a consumatori in Italia — negozi, SaaS, prenotazioni e biglietteria, banche, e-book. Sono escluse solo le vere microimprese: meno di 10 dipendenti <b>e</b> meno di 2 mln € di fatturato." },
+      { "h3Html": "Chi <span>è obbligato</span>", "bodyHtml": "Chiunque venda prodotti <b>o servizi</b> online a consumatori in Italia — negozi, <a href='/it/accessibilita-saas/'>SaaS</a>, prenotazioni e biglietteria, banche, e-book. Sono escluse solo le vere microimprese: meno di 10 dipendenti <b>e</b> meno di 2 mln € di fatturato." },
       { "h3Html": "Che cosa <span>richiede</span>", "bodyHtml": "Il tuo sito deve rispettare <b>WCAG 2.1 AA</b> — uno standard tecnico con circa 50 criteri verificabili. Il checkout e il pagamento sono le pagine più a rischio. Una dichiarazione di accessibilità pubblica è obbligatoria." }
     ]
   },
@@ -117,7 +117,7 @@
   "faqSection": {
     "h2": "Domande frequenti",
     "items": [
-      { "q": "Questa legge si applica al mio negozio?", "a": "Vendi a consumatori in Italia tramite sito o app? Allora sì. Il D.Lgs. 82/2022 è in vigore dal 28 giugno 2025 — e-commerce, banche, telecomunicazioni, biglietteria, e-book. Lo standard è WCAG 2.1 AA (EN 301 549). Sono escluse solo le vere microimprese — meno di 10 dipendenti E meno di 2 mln € di fatturato. Devono valere entrambe." },
+      { "q": "Questa legge si applica al mio negozio?", "a": "Vendi a consumatori in Italia tramite sito o app? Allora sì. Il D.Lgs. 82/2022 è in vigore dal 28 giugno 2025 — e-commerce, banche, telecomunicazioni, biglietteria, e-book. Lo standard è WCAG 2.1 AA (EN 301 549). Sono escluse solo le vere microimprese — meno di 10 dipendenti E meno di 2 mln € di fatturato. Devono valere entrambe. <a href='/it/accessibilita-e-commerce/'>Accessibilità di un e-commerce →</a>" },
       { "q": "A quanto ammontano le sanzioni?", "a": "L'art. 24 del D.Lgs. 82/2022 prevede sanzioni amministrative da 5.000 € a <b>40.000 €</b> per la mancata conformità. Per i grandi fornitori (fatturato medio oltre 500 mln €) la sanzione può arrivare fino al 5% del fatturato. L'autorità competente per siti e servizi è AgID. <a href='/it/sanzioni-accessibilita/'>Dettaglio delle sanzioni →</a>" },
       { "q": "Non basta un widget di accessibilità?", "a": "No. Gli overlay non modificano il codice che lo standard misura. Oltre 800 professionisti dell'accessibilità dichiarano pubblicamente che non funzionano, e la FTC statunitense ha multato il fornitore accessiBe per 1 mln $ per affermazioni ingannevoli. Peggio: un widget dimostra che lo sapevi — senza correggere nulla." },
       { "q": "Cosa ricevo ogni mese?", "a": "Scansioni automatiche settimanali, test mensili con screen reader, ticket di correzione, la tua dichiarazione di accessibilità sempre aggiornata e un certificato di conformità datato — il fascicolo di prove da presentare a qualsiasi autorità, associazione o avvocato." },

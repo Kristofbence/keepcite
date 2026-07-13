@@ -1,0 +1,77 @@
+{
+  "cc": "at",
+  "lang": "de",
+  "hreflang": "de-AT",
+  "slug": "barrierefreiheit-strafen",
+  "cluster": "fines",
+  "ogLocale": "de_AT",
+  "thousandsSep": ".",
+  "canonical": "https://keepcite.com/at/barrierefreiheit-strafen/",
+  "hubHref": "/at/",
+  "hubLabel": "Österreich (BaFG)",
+  "title": "Barrierefreiheit-Strafen in Österreich: bis 80.000 €",
+  "metaDescription": "Das BaFG sieht Verwaltungsstrafen bis 80.000 € (große U.), 50.000 € (KMU) und 25.000 € (Kleinst) vor. Zuständig: Sozialministeriumservice. So schützen Sie sich.",
+  "ogTitle": "Barrierefreiheit-Strafen in Österreich (BaFG)",
+  "ogDescription": "Verwaltungsstrafen nach dem BaFG: bis 80.000 € für große Unternehmen, 50.000 € für KMU, 25.000 € für Kleinstunternehmen. Bauen Sie Ihren datierten Nachweis auf.",
+  "schema": { "inLanguage": "de" },
+  "skip": "Zum Scan springen",
+  "nav": { "ariaLabel": "Hauptnavigation", "pricing": "Preise", "faq": "FAQ", "cta": "Gratis-Scan" },
+  "breadcrumb": [
+    { "name": "keepcite", "href": "/", "item": "https://keepcite.com/" },
+    { "name": "Österreich (BaFG)", "href": "/at/", "item": "https://keepcite.com/at/" },
+    { "name": "Barrierefreiheit-Strafen", "href": "/at/barrierefreiheit-strafen/", "item": "https://keepcite.com/at/barrierefreiheit-strafen/" }
+  ],
+  "kicker": "BaFG · Strafen",
+  "h1Html": "Barrierefreiheit-Strafen: <span class='hl'>was droht in Österreich?</span>",
+  "answerHtml": "In Österreich ahndet das <b>Barrierefreiheitsgesetz (BaFG)</b> Verstöße mit Verwaltungsstrafen, gestaffelt nach Unternehmensgröße: bis <b>80.000 €</b> für große Unternehmen, bis <b>50.000 €</b> für KMU und bis <b>25.000 €</b> für Kleinstunternehmen. Zuständig ist das <b>Sozialministeriumservice</b>. Bei erstmaligen oder geringfügigen Verstößen gilt der Grundsatz „Beraten vor Strafen“.",
+  "keyFacts": {
+    "title": "Die Strafen auf einen Blick",
+    "items": [
+      { "label": "Große Unternehmen", "value": "bis <b>80.000 €</b>" },
+      { "label": "KMU", "value": "bis 50.000 €" },
+      { "label": "Kleinstunternehmen", "value": "bis 25.000 €" },
+      { "label": "Behörde", "value": "Sozialministeriumservice" },
+      { "label": "Grundsatz", "value": "„Beraten vor Strafen“ bei erstmaligen/geringfügigen Verstößen" },
+      { "label": "Rechtsgrundlage", "value": "BaFG (Umsetzung der Richtlinie (EU) 2019/882)" }
+    ]
+  },
+  "sections": [
+    { "h2": "Wie hoch sind die Strafen genau?", "bodyHtml": "<p>Die Verwaltungsstrafen des BaFG sind nach Unternehmensgröße gestaffelt: bis <b>80.000 €</b> für große Unternehmen, bis <b>50.000 €</b> für kleine und mittlere Unternehmen und bis <b>25.000 €</b> für Kleinstunternehmen. Die konkrete Höhe richtet sich nach Schwere und Dauer des Verstoßes.</p>" },
+    { "h2": "Wer verhängt die Strafen?", "bodyHtml": "<p>Zuständig ist das <b>Sozialministeriumservice</b> als Marktüberwachungs- und Verwaltungsstrafbehörde. Es prüft Beschwerden, kann Maßnahmen anordnen und Verwaltungsstrafverfahren einleiten. Bei erstmaligen oder geringfügigen Verstößen gilt zunächst „Beraten vor Strafen“.</p>" },
+    { "h2": "Für wen gilt das und ab wann?", "bodyHtml": "<p>Das BaFG gilt seit dem <b>28. Juni 2025</b> für Online-Shops und digitale Dienste für Verbraucher in Österreich. Kleinstunternehmen, die Dienstleistungen erbringen, sind ausgenommen (unter 10 Mitarbeitende <b>und</b> unter 2 Mio. € Umsatz).</p>" },
+    { "h2": "Wie vermeiden Sie eine Strafe?", "bodyHtml": "<p>Bringen Sie Ihren Checkout auf <b>WCAG 2.1 AA</b>, veröffentlichen Sie Ihre <b>Barrierefreiheitserklärung</b> und führen Sie einen <b>datierten Nachweis</b>. keepcite prüft, behebt und dokumentiert. Starten Sie mit dem kostenlosen Scan unten.</p>" }
+  ],
+  "scan": {
+    "h2": "Sind Sie konform?",
+    "free": "Gratis",
+    "sub2": "Ihr Shop, geprüft gegen den Standard des Gesetzes.",
+    "leadHtml": "Verkaufen Sie online in der EU? Das BaFG gilt für Sie.",
+    "formAria": "Kostenlosen Barrierefreiheits-Scan anfordern",
+    "subject": "Neue Scan-Anfrage — keepcite (AT · Strafen)",
+    "urlLabel": "Ihre Shop-URL",
+    "urlPh": "website.com",
+    "emailLabel": "Geschäftliche E-Mail",
+    "emailPh": "email@contact.com",
+    "button": "Prüfen, ob ich konform bin",
+    "note": "Kostenloser Report. Kein Spam."
+  },
+  "faqSection": {
+    "h2": "FAQ",
+    "items": [
+      { "q": "Gibt es schon Strafen?", "a": "Die Durchsetzung läuft an; hohe öffentliche Strafen sind noch selten. Der Strafrahmen (bis 80.000 €) gilt jedoch seit dem 28. Juni 2025 und steht dem Sozialministeriumservice zur Verfügung." },
+      { "q": "Was bedeutet „Beraten vor Strafen“?", "a": "Bei erstmaligen oder geringfügigen Verstößen setzt die Behörde zunächst auf Beratung und Fristsetzung statt auf sofortige Strafe. Wer trotz Aufforderung untätig bleibt, riskiert die volle Strafe." },
+      { "q": "Schützt ein Overlay-Widget?", "a": "Nein. Overlays ändern nicht den Code, den der Standard misst. Über 800 Fachleute erklären, dass sie nicht funktionieren, und die US-FTC verurteilte accessiBe zu 1 Mio. $. Ein Widget zeigt, dass Sie es wussten — ohne etwas zu beheben." },
+      { "q": "Was sollte ich als Nachweis aufbewahren?", "a": "Eine aktuelle Barrierefreiheitserklärung und einen datierten Nachweis der Konformität (Audit, Korrekturen, Screenreader-Tests). keepcite stellt dafür jeden Monat ein datiertes Zertifikat aus." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, EU",
+    "noteHtml": "Diese Seite besteht das Audit, das sie verkauft: WCAG 2.1 AA, tastaturbedienbar, mit Screenreader getestet. · © 2026 keepcite",
+    "sourcesLabel": "Quellen:",
+    "sources": [
+      { "label": "Barrierefreiheitsgesetz — Sozialministerium", "href": "https://www.sozialministerium.gv.at/Themen/Soziales/Menschen-mit-Behinderungen/Barrierefreiheitsgesetz.html" },
+      { "label": "Informationen zum BaFG — WKO", "href": "https://www.wko.at/ce-kennzeichnung-normen/informationen-zum-barrierefreiheitsgesetz" },
+      { "label": "Richtlinie (EU) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32019L0882" }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "cc": "it",
+  "lang": "it",
+  "slug": "accessibilita-saas",
+  "cluster": "saas",
+  "ogLocale": "it_IT",
+  "thousandsSep": ".",
+  "canonical": "https://keepcite.com/it/accessibilita-saas/",
+  "hubHref": "/it/",
+  "hubLabel": "D.Lgs. 82/2022",
+  "title": "Accessibilità SaaS: la tua app è conforme?",
+  "metaDescription": "Il D.Lgs. 82/2022 copre il SaaS B2C e prosumer. I punti di rottura WCAG specifici: registrazione, dashboard, tabelle di dati, SPA — e come correggerli.",
+  "ogTitle": "Accessibilità SaaS ai sensi del D.Lgs. 82/2022",
+  "ogDescription": "Registrazione, dashboard, tabelle di dati, modali, focus nelle SPA — i punti di non conformità WCAG 2.1 AA tipici del SaaS, e come li verifica keepcite.",
+  "schema": {
+    "inLanguage": "it"
+  },
+  "skip": "Vai alla scansione",
+  "nav": {
+    "ariaLabel": "Navigazione principale",
+    "pricing": "Prezzi",
+    "faq": "Domande frequenti",
+    "cta": "Scansione gratis"
+  },
+  "breadcrumb": [
+    {
+      "name": "keepcite",
+      "href": "/",
+      "item": "https://keepcite.com/"
+    },
+    {
+      "name": "Italia (D.Lgs. 82/2022)",
+      "href": "/it/",
+      "item": "https://keepcite.com/it/"
+    },
+    {
+      "name": "SaaS",
+      "href": "/it/accessibilita-saas/",
+      "item": "https://keepcite.com/it/accessibilita-saas/"
+    }
+  ],
+  "kicker": "D.Lgs. 82/2022 · SaaS",
+  "h1Html": "Il tuo <span class='hl'>SaaS è accessibile?</span>",
+  "answerHtml": "Il <b>D.Lgs. 82/2022</b> si applica al SaaS venduto ai consumatori — prodotti <b>B2C e B2B2C/prosumer</b> — dal <b>28 giugno 2025</b>, misurato secondo <b>WCAG 2.1 AA</b>. Il SaaS fallisce in punti precisi: registrazione e onboarding, dashboard e tabelle di dati complesse, filtri e ordinamento, modali, e gestione del focus nelle single-page app. Uno strumento <b>puramente B2B</b> può restare fuori dall’ambito consumatori — ma la maggior parte dei SaaS ha utenti consumatori o prosumer.",
+  "keyFacts": {
+    "title": "SaaS e il D.Lgs. 82/2022 in sintesi",
+    "items": [
+      {
+        "label": "Legge",
+        "value": "D.Lgs. 82/2022 — Direttiva (UE) 2019/882"
+      },
+      {
+        "label": "In vigore",
+        "value": "28 giugno 2025"
+      },
+      {
+        "label": "Si applica al SaaS",
+        "value": "sì — B2C e B2B2C/prosumer; il B2B puro può restare fuori"
+      },
+      {
+        "label": "Standard",
+        "value": "EN 301 549 → WCAG 2.1 AA"
+      },
+      {
+        "label": "Zone a rischio",
+        "value": "registrazione, dashboard, tabelle di dati, modali, focus SPA"
+      },
+      {
+        "label": "Esenzione",
+        "value": "microimprese (meno di 10 dipendenti E meno di 2 mln €)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "h2": "Dove fallisce un SaaS con WCAG 2.1 AA?",
+      "bodyHtml": "<p>I difetti si concentrano dove un sito vetrina non ha nulla:</p><ul><li><b>Registrazione e onboarding:</b> campi senza etichetta programmatica, errori di validazione solo a colori e mai annunciati, procedure a più passi senza semantica di avanzamento.</li><li><b>Dashboard:</b> nessuna regione landmark, ordine di tabulazione illogico, widget non operabili da tastiera.</li><li><b>Tabelle di dati:</b> <code>&lt;th&gt;</code>/<code>scope</code> mancanti, colonne ordinabili che non annunciano lo stato.</li><li><b>Filtri e ordinamento:</b> menu a discesa personalizzati in <code>&lt;div&gt;</code> senza ARIA, inutilizzabili senza mouse.</li><li><b>Modali:</b> focus non intrappolato, sfondo ancora raggiungibile, focus non restituito alla chiusura.</li><li><b>Grafici:</b> canvas/SVG senza alternativa testuale.</li><li><b>Timeout di sessione:</b> sessioni che scadono senza avviso né proroga (WCAG 2.2.1).</li></ul>"
+    },
+    {
+      "h2": "Il D.Lgs. 82/2022 si applica al SaaS B2B?",
+      "bodyHtml": "<p>La legge copre i servizi ai <b>consumatori</b>. Chiaramente inclusi: SaaS B2C e <b>B2B2C/prosumer</b> dove si registrano persone fisiche (freelance, utenti finali dei tuoi clienti). Un prodotto <b>puramente B2B</b> senza superficie al consumo può restare fuori — ma una registrazione libera o un piano gratuito spesso lo riportano nell’ambito. Non rivendicare un’esenzione indifendibile.</p>"
+    },
+    {
+      "h2": "Cosa si rompe nelle single-page app (React, Vue)?",
+      "bodyHtml": "<p>I cambi di rotta lato client non spostano il focus né aggiornano l’albero di accessibilità: chi usa lo screen reader resta su una pagina obsoleta, senza annuncio. Correggi spostando il focus sul titolo della nuova vista e annunciando con una regione ARIA live. I widget personalizzati creano spesso <b>trappole da tastiera</b>.</p>"
+    },
+    {
+      "h2": "Come si verifica un SaaS dietro autenticazione?",
+      "bodyHtml": "<p>Una scansione automatica vede solo le pagine pubbliche. La combiniamo con un <b>audit manuale dei flussi autenticati</b> — registrazione, onboarding, attività chiave, dashboard — con screen reader e tastiera, tramite credenziali di test o un ambiente di staging. Ricevi ticket di correzione e una prova datata. Inizia con la scansione gratuita qui sotto.</p>"
+    }
+  ],
+  "scan": {
+    "h2": "La tua app è conforme?",
+    "free": "Gratis",
+    "sub2": "La tua app, testata secondo WCAG 2.1 AA.",
+    "leadHtml": "Vendi SaaS a utenti dell'UE? Il D.Lgs. 82/2022 si applica a te.",
+    "formAria": "Richiedi una scansione di accessibilità gratuita",
+    "subject": "New scan request — keepcite (IT · SaaS)",
+    "urlLabel": "URL della tua app",
+    "urlPh": "website.com",
+    "emailLabel": "Email aziendale",
+    "emailPh": "email@contact.com",
+    "button": "Verifica se sono conforme",
+    "note": "Report gratuito. Niente spam."
+  },
+  "faqSection": {
+    "h2": "Domande frequenti",
+    "items": [
+      {
+        "q": "La legge copre il mio SaaS?",
+        "a": "Se consumatori o prosumer possono registrarsi e usarlo, sì — dal 28 giugno 2025, secondo WCAG 2.1 AA. B2C e B2B2C sono inclusi; una registrazione libera riporta spesso uno strumento «B2B» nell’ambito."
+      },
+      {
+        "q": "La mia app è dietro un login — è comunque coperta?",
+        "a": "Sì. L’obbligo copre l’intero servizio, inclusi i flussi autenticati — dove vive la maggior parte dei difetti."
+      },
+      {
+        "q": "Quali sono i difetti SaaS più comuni?",
+        "a": "Campi non etichettati, errori solo a colori, menu a discesa e modali non operabili da tastiera, tabelle senza semantica di intestazione, e cambi di rotta SPA che non spostano il focus."
+      },
+      {
+        "q": "Come testate dietro l’autenticazione?",
+        "a": "Con credenziali di test o un ambiente di staging percorriamo manualmente i flussi reali con screen reader e tastiera, e consegniamo ticket e un certificato datato."
+      }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, EU",
+    "noteHtml": "Questa pagina supera l'audit che vende: WCAG 2.1 AA, navigabile da tastiera, testata con screen reader. · © 2026 keepcite",
+    "sourcesLabel": "Fonti:",
+    "sources": [
+      {
+        "label": "Direttiva (UE) 2019/882 (EUR-Lex)",
+        "href": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32019L0882"
+      },
+      {
+        "label": "WCAG 2.1 (W3C)",
+        "href": "https://www.w3.org/TR/WCAG21/"
+      },
+      {
+        "label": "D.Lgs. 82/2022 (Gazzetta Ufficiale)",
+        "href": "https://www.gazzettaufficiale.it/eli/id/2022/06/29/22G00092/sg"
+      }
+    ]
+  }
+}

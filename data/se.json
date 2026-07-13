@@ -59,7 +59,7 @@
     "pill": "Lagen på 30 sekunder",
     "cells": [
       { "h3Html": "Vad <span>den är</span>", "bodyHtml": "En svensk lag, <b>i kraft sedan 28 juni 2025</b>, som genomför EU-direktiv 2019/882. Digitala tjänster till konsumenter ska kunna användas av personer med funktionsnedsättning. E-handel omfattas uttryckligen." },
-      { "h3Html": "Vem <span>berörs</span>", "bodyHtml": "Alla som säljer produkter <b>eller tjänster</b> online till konsumenter i Sverige — butiker, SaaS, bokning &amp; biljetter, bank, e-böcker. Endast riktiga mikroföretag undantas: färre än 10 anställda <b>och</b> under 2 milj. € omsättning." },
+      { "h3Html": "Vem <span>berörs</span>", "bodyHtml": "Alla som säljer produkter <b>eller tjänster</b> online till konsumenter i Sverige — butiker, <a href='/se/tillganglighet-saas/'>SaaS</a>, bokning &amp; biljetter, bank, e-böcker. Endast riktiga mikroföretag undantas: färre än 10 anställda <b>och</b> under 2 milj. € omsättning." },
       { "h3Html": "Vad <span>som krävs</span>", "bodyHtml": "Din webbplats ska uppfylla <b>WCAG 2.1 AA</b> — ett tekniskt regelverk med ett femtiotal testbara kriterier. Kassan och betalningen är de mest kritiska sidorna. En tillgänglighetsredogörelse är obligatorisk." }
     ]
   },
@@ -110,8 +110,8 @@
   "faqSection": {
     "h2": "Vanliga frågor",
     "items": [
-      { "q": "Gäller lagen min butik?", "a": "Säljer du till konsumenter i Sverige via webbplats eller app? Då ja. Tillgänglighetslagen (2023:254) gäller sedan 28 juni 2025 — e-handel, bank, telekom, biljetter, e-böcker. Standarden är WCAG 2.1 AA (EN 301 549). Endast riktiga mikroföretag — färre än 10 anställda OCH under 2 milj. € omsättning — undantas. Båda måste gälla." },
-      { "q": "Vad blir sanktionen?", "a": "PTS är tillsynsmyndighet och kan besluta om <b>föreläggande förenat med vite</b>. Vitet sätts i det enskilda fallet för att bli verkningsfullt — lagen anger ingen fast maxnivå. Ett daterat bevis på efterlevnad är det bästa skyddet." },
+      { "q": "Gäller lagen min butik?", "a": "Säljer du till konsumenter i Sverige via webbplats eller app? Då ja. Tillgänglighetslagen (2023:254) gäller sedan 28 juni 2025 — e-handel, bank, telekom, biljetter, e-böcker. Standarden är WCAG 2.1 AA (EN 301 549). Endast riktiga mikroföretag — färre än 10 anställda OCH under 2 milj. € omsättning — undantas. Båda måste gälla. <a href='/se/tillganglighet-webbutik/'>Tillgänglighet för webbutiker →</a>" },
+      { "q": "Vad blir sanktionen?", "a": "PTS är tillsynsmyndighet och kan besluta om <b>föreläggande förenat med vite</b>. Vitet sätts i det enskilda fallet för att bli verkningsfullt — lagen anger ingen fast maxnivå. Ett daterat bevis på efterlevnad är det bästa skyddet. <a href='/se/tillganglighet-viten/'>Mer om viten och tillsyn →</a>" },
       { "q": "Räcker en tillgänglighets-widget?", "a": "Nej. Overlays ändrar inte koden som standarden mäter. Över 800 experter säger offentligt att de inte fungerar, och amerikanska FTC bötfällde leverantören accessiBe på 1 miljon dollar. En widget visar snarare att du visste — utan att åtgärda något." },
       { "q": "Vad får jag varje månad?", "a": "Automatiska skanningar varje vecka, månatliga skärmläsartester, åtgärdsärenden, din tillgänglighetsredogörelse alltid uppdaterad och ett daterat efterlevnadsintyg — bevisakten du visar upp för myndighet, förening eller advokat." },
       { "q": "Varför övervakning i stället för en engångsgranskning?", "a": "För att varje release kan bryta tillgängligheten igen. En granskning är en ögonblicksbild. Beviset måste vara aktuellt för att skydda dig." },

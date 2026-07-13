@@ -66,7 +66,7 @@
     "pill": "De wet in 30 seconden",
     "cells": [
       { "h3Html": "Wat het <span>is</span>", "bodyHtml": "Een Europese richtlijn (2019/882), in Nederland omgezet in de Implementatiewet toegankelijkheidsvoorschriften en <b>van kracht sinds 28 juni 2025</b>. Digitale diensten voor consumenten moeten bruikbaar zijn voor mensen met een beperking. E-commerce valt er uitdrukkelijk onder." },
-      { "h3Html": "Wie moet <span>voldoen</span>", "bodyHtml": "Iedereen die producten <b>of diensten</b> online aan consumenten in Nederland verkoopt — webshops, SaaS, boeking &amp; ticketing, bankieren, e-books. Alleen echte micro-ondernemingen zijn vrijgesteld: minder dan 10 medewerkers <b>en</b> minder dan €2 mln omzet." },
+      { "h3Html": "Wie moet <span>voldoen</span>", "bodyHtml": "Iedereen die producten <b>of diensten</b> online aan consumenten in Nederland verkoopt — webshops, <a href='/nl/toegankelijkheid-saas/'>SaaS</a>, boeking &amp; ticketing, bankieren, e-books. Alleen echte micro-ondernemingen zijn vrijgesteld: minder dan 10 medewerkers <b>en</b> minder dan €2 mln omzet." },
       { "h3Html": "Wat het <span>vereist</span>", "bodyHtml": "Je site moet voldoen aan <b>WCAG 2.1 AA</b> — een technische norm met zo'n 50 toetsbare criteria. Je checkout en betaalproces zijn de pagina's met het hoogste risico. Een openbare toegankelijkheidsverklaring is verplicht." }
     ]
   },
@@ -117,7 +117,7 @@
   "faqSection": {
     "h2": "Veelgestelde vragen",
     "items": [
-      { "q": "Geldt deze wet voor mijn webshop?", "a": "Verkoop je via website of app aan consumenten in Nederland? Dan ja. De EAA geldt sinds 28 juni 2025 — e-commerce, bankieren, telecom, ticketing, e-books. De norm is WCAG 2.1 AA (EN 301 549). Alleen echte micro-ondernemingen — minder dan 10 medewerkers ÉN minder dan €2 mln omzet — zijn vrijgesteld. Beide moeten gelden." },
+      { "q": "Geldt deze wet voor mijn webshop?", "a": "Verkoop je via website of app aan consumenten in Nederland? Dan ja. De EAA geldt sinds 28 juni 2025 — e-commerce, bankieren, telecom, ticketing, e-books. De norm is WCAG 2.1 AA (EN 301 549). Alleen echte micro-ondernemingen — minder dan 10 medewerkers ÉN minder dan €2 mln omzet — zijn vrijgesteld. Beide moeten gelden. <a href='/nl/toegankelijkheid-webshop/'>Toegankelijkheid van een webshop →</a>" },
       { "q": "Hoe hoog zijn de boetes?", "a": "De ACM kan boetes opleggen tot <b>€900.000</b> of 1% van de jaaromzet. De exacte hoogte hangt af van de sector, de ernst, de omvang van je bedrijf en of je eerder bent gewaarschuwd. Bedrijven moesten zich bovendien vóór 15 oktober 2025 bij de ACM melden; de ACM publiceert een lijst van niet-nalevers. <a href='/nl/boetes-toegankelijkheid/'>Detail van de boetes →</a>" },
       { "q": "Is een toegankelijkheidswidget niet genoeg?", "a": "Nee. Overlays veranderen de code die de norm meet niet. Meer dan 800 toegankelijkheidsexperts stellen publiekelijk dat ze niet werken, en de Amerikaanse FTC beboette aanbieder accessiBe met 1 mln $ wegens misleidende claims. Erger: een widget bewijst dat je het wist — zonder iets op te lossen." },
       { "q": "Wat krijg ik elke maand?", "a": "Wekelijkse automatische scans, maandelijkse handmatige schermlezertests, hersteltickets, je steeds actuele toegankelijkheidsverklaring en een gedateerd conformiteitscertificaat — het bewijsdossier dat je aan elke toezichthouder, brancheorganisatie of advocaat overlegt." },

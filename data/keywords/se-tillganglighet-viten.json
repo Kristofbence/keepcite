@@ -1,0 +1,76 @@
+{
+  "cc": "se",
+  "lang": "sv",
+  "slug": "tillganglighet-viten",
+  "cluster": "fines",
+  "ogLocale": "sv_SE",
+  "thousandsSep": " ",
+  "canonical": "https://keepcite.com/se/tillganglighet-viten/",
+  "hubHref": "/se/",
+  "hubLabel": "Tillgänglighetslagen",
+  "title": "Tillgänglighet: viten och tillsyn av PTS",
+  "metaDescription": "PTS är tillsynsmyndighet för tillgänglighetslagen och kan besluta om föreläggande förenat med vite — beloppet sätts i det enskilda fallet. Så skyddar du dig.",
+  "ogTitle": "Tillgänglighet: viten och tillsyn i Sverige",
+  "ogDescription": "Ingen fast maxbot i lagen: PTS kan förelägga vite som sätts i det enskilda fallet. Bygg ett daterat bevis på efterlevnad innan tillsynen når dig.",
+  "schema": { "inLanguage": "sv" },
+  "skip": "Hoppa till skanningen",
+  "nav": { "ariaLabel": "Huvudnavigering", "pricing": "Priser", "faq": "Vanliga frågor", "cta": "Gratis skanning" },
+  "breadcrumb": [
+    { "name": "keepcite", "href": "/", "item": "https://keepcite.com/" },
+    { "name": "Tillgänglighetslagen", "href": "/se/", "item": "https://keepcite.com/se/" },
+    { "name": "Viten och tillsyn", "href": "/se/tillganglighet-viten/", "item": "https://keepcite.com/se/tillganglighet-viten/" }
+  ],
+  "kicker": "Tillgänglighetslagen · Tillsyn",
+  "h1Html": "Tillgänglighet: <span class='hl'>vad kostar det att bryta mot lagen?</span>",
+  "answerHtml": "I Sverige finns <b>ingen fast maxbot</b> i tillgänglighetslagen. Tillsynsmyndigheten <b>PTS</b> (Post- och telestyrelsen) kan i stället besluta om <b>föreläggande förenat med vite</b> — ett belopp som sätts i det enskilda fallet för att bli verkningsfullt. Ett daterat bevis på efterlevnad är därför det bästa skyddet: det visar att du agerade innan tillsynen började.",
+  "keyFacts": {
+    "title": "Tillsyn &amp; sanktion i korthet",
+    "items": [
+      { "label": "Tillsyn", "value": "PTS (Post- och telestyrelsen)" },
+      { "label": "Sanktion", "value": "föreläggande förenat med <b>vite</b>" },
+      { "label": "Belopp", "value": "sätts i det enskilda fallet — ingen fast maxnivå i lagen" },
+      { "label": "Lag", "value": "Lag (2023:254) om vissa produkters och tjänsters tillgänglighet" },
+      { "label": "Gäller sedan", "value": "28 juni 2025" },
+      { "label": "Undantag", "value": "mikroföretag (färre än 10 anställda och under 2 milj. € omsättning)" }
+    ]
+  },
+  "sections": [
+    { "h2": "Hur fungerar vite?", "bodyHtml": "<p>I stället för en fast administrativ bot använder svensk rätt ofta <b>föreläggande förenat med vite</b>: PTS förelägger dig att åtgärda bristerna och kopplar ett vitesbelopp till föreläggandet. Följer du inte föreläggandet kan vitet dömas ut. Beloppet sätts i det enskilda fallet så att det blir <b>verkningsfullt</b> i förhållande till bristen och företagets storlek — lagen anger ingen fast maxnivå.</p>" },
+    { "h2": "Vem utövar tillsyn?", "bodyHtml": "<p><b>PTS</b> är utsedd marknadskontroll- och tillsynsmyndighet för bland annat e-handel, bank och elektronisk kommunikation. Myndigheten kan granska, begära åtgärder och förelägga vite. En anmälan från en konsument eller organisation kan starta en granskning.</p>" },
+    { "h2": "Vem berörs och sedan när?", "bodyHtml": "<p>Sedan <b>28 juni 2025</b> gäller kraven webbutiker och digitala tjänster till konsumenter i Sverige. Endast riktiga mikroföretag undantas: färre än 10 anställda <b>och</b> under 2 milj. € omsättning.</p>" },
+    { "h2": "Hur undviker du ett föreläggande?", "bodyHtml": "<p>Testa din kassa mot <b>WCAG 2.1 AA</b>, åtgärda bristerna, publicera din <b>tillgänglighetsredogörelse</b> och spara ett <b>daterat bevis</b> på efterlevnad. keepcite granskar, åtgärdar och dokumenterar. Börja med den gratis skanningen nedan.</p>" }
+  ],
+  "scan": {
+    "h2": "Uppfyller du kraven?",
+    "free": "Gratis",
+    "sub2": "Din butik, testad mot lagens standard.",
+    "leadHtml": "Säljer du online i EU? Tillgänglighetslagen gäller dig.",
+    "formAria": "Begär en gratis tillgänglighetsskanning",
+    "subject": "Ny skanningsförfrågan — keepcite (SE · viten)",
+    "urlLabel": "Din butiks-URL",
+    "urlPh": "website.com",
+    "emailLabel": "Jobbmejl",
+    "emailPh": "email@contact.com",
+    "button": "Kontrollera om jag uppfyller kraven",
+    "note": "Gratis rapport. Ingen spam."
+  },
+  "faqSection": {
+    "h2": "Vanliga frågor",
+    "items": [
+      { "q": "Finns det en fast maxbot?", "a": "Nej. Tillgänglighetslagen anger ingen fast maxnivå. PTS arbetar med föreläggande förenat med vite, där beloppet sätts i det enskilda fallet för att bli verkningsfullt." },
+      { "q": "Har PTS agerat än?", "a": "Tillsynen har börjat och PTS har fått uppdraget som marknadskontrollmyndighet. Det omedelbara riskläget är ett föreläggande med vite samt den granskning en anmälan kan utlösa." },
+      { "q": "Räcker en tillgänglighetsredogörelse?", "a": "Den är obligatorisk men skyddar inte i sig. Det som räknas är verklig efterlevnad av WCAG 2.1 AA och ett daterat bevis på det. En redogörelse utan åtgärder kan tvärtom visa att du kände till problemet." },
+      { "q": "Vad ska jag spara som bevis?", "a": "En aktuell tillgänglighetsredogörelse och ett daterat bevis på efterlevnad (granskning, åtgärder, skärmläsartester). keepcite utfärdar ett daterat intyg varje månad för det ändamålet." }
+    ]
+  },
+  "footer": {
+    "contactHtml": "<a href='mailto:hello@keepcite.com'>hello@keepcite.com</a> · Tallinn, EU",
+    "noteHtml": "Den här sidan klarar granskningen den säljer: WCAG 2.1 AA, tangentbordsnavigerbar, testad med skärmläsare. · © 2026 keepcite",
+    "sourcesLabel": "Källor:",
+    "sources": [
+      { "label": "Lag (2023:254) (riksdagen.se)", "href": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2023254-om-vissa-produkters-och-tjansters_sfs-2023-254/" },
+      { "label": "Tillgänglighetslagen — PTS", "href": "https://pts.se/digital-inkludering/lagen-om-vissa-produkters-och-tjansters-tillganglighet/" },
+      { "label": "Direktiv (EU) 2019/882 (EUR-Lex)", "href": "https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=CELEX:32019L0882" }
+    ]
+  }
+}

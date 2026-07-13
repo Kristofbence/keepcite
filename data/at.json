@@ -60,7 +60,7 @@
     "pill": "Das Gesetz in 30 Sekunden",
     "cells": [
       { "h3Html": "Was <span>es ist</span>", "bodyHtml": "Ein österreichisches Gesetz, <b>in Kraft seit 28. Juni 2025</b>, das die EU-Richtlinie 2019/882 umsetzt. Digitale Dienste für Verbraucher müssen für Menschen mit Behinderungen nutzbar sein. E-Commerce ist ausdrücklich erfasst." },
-      { "h3Html": "Wer <span>betroffen ist</span>", "bodyHtml": "Alle, die Produkte <b>oder Dienstleistungen</b> online an Verbraucher in Österreich verkaufen — Shops, SaaS, Buchung &amp; Ticketing, Banking, E-Books. Kleinstunternehmen, die Dienstleistungen erbringen, sind ausgenommen (< 10 MA <b>und</b> < 2 Mio. €)." },
+      { "h3Html": "Wer <span>betroffen ist</span>", "bodyHtml": "Alle, die Produkte <b>oder Dienstleistungen</b> online an Verbraucher in Österreich verkaufen — Shops, <a href='/at/barrierefreiheit-saas/'>SaaS</a>, Buchung &amp; Ticketing, Banking, E-Books. Kleinstunternehmen, die Dienstleistungen erbringen, sind ausgenommen (< 10 MA <b>und</b> < 2 Mio. €)." },
       { "h3Html": "Was <span>gefordert ist</span>", "bodyHtml": "Ihre Website muss <b>WCAG 2.1 AA</b> erfüllen — rund 50 prüfbare Kriterien. Checkout und Bezahlvorgang sind am risikoreichsten. Eine Barrierefreiheitserklärung ist Pflicht." }
     ]
   },
@@ -111,8 +111,8 @@
   "faqSection": {
     "h2": "FAQ",
     "items": [
-      { "q": "Gilt das BaFG für meinen Shop?", "a": "Verkaufen Sie über Website oder App an Verbraucher in Österreich? Dann ja. Das BaFG gilt seit dem 28. Juni 2025 — E-Commerce, Banking, Telekommunikation, Ticketing, E-Books. Der Standard ist WCAG 2.1 AA (EN 301 549). Kleinstunternehmen, die Dienstleistungen erbringen, sind ausgenommen (unter 10 Mitarbeitende UND unter 2 Mio. € Umsatz)." },
-      { "q": "Wie hoch sind die Strafen?", "a": "Die Verwaltungsstrafen sind nach Unternehmensgröße gestaffelt: bis <b>80.000 €</b> für große Unternehmen, bis 50.000 € für KMU und bis 25.000 € für Kleinstunternehmen. Zuständig ist das Sozialministeriumservice; bei erstmaligen oder geringfügigen Verstößen gilt der Grundsatz „Beraten vor Strafen“." },
+      { "q": "Gilt das BaFG für meinen Shop?", "a": "Verkaufen Sie über Website oder App an Verbraucher in Österreich? Dann ja. Das BaFG gilt seit dem 28. Juni 2025 — E-Commerce, Banking, Telekommunikation, Ticketing, E-Books. Der Standard ist WCAG 2.1 AA (EN 301 549). Kleinstunternehmen, die Dienstleistungen erbringen, sind ausgenommen (unter 10 Mitarbeitende UND unter 2 Mio. € Umsatz). <a href='/at/barrierefreiheit-online-shop/'>Barrierefreiheit im Online-Shop →</a>" },
+      { "q": "Wie hoch sind die Strafen?", "a": "Die Verwaltungsstrafen sind nach Unternehmensgröße gestaffelt: bis <b>80.000 €</b> für große Unternehmen, bis 50.000 € für KMU und bis 25.000 € für Kleinstunternehmen. Zuständig ist das Sozialministeriumservice; bei erstmaligen oder geringfügigen Verstößen gilt der Grundsatz „Beraten vor Strafen“. <a href='/at/barrierefreiheit-strafen/'>Mehr zu den Strafen →</a>" },
       { "q": "Reicht ein Overlay-Widget?", "a": "Nein. Overlays ändern nicht den Code, den der Standard misst. Über 800 Fachleute für Barrierefreiheit erklären öffentlich, dass sie nicht funktionieren, und die US-Handelsbehörde FTC verurteilte den Anbieter accessiBe zu 1 Mio. $ wegen irreführender Aussagen. Schlimmer: Ein Widget zeigt, dass Sie es wussten — ohne etwas zu beheben." },
       { "q": "Was bekomme ich jeden Monat?", "a": "Wöchentliche automatische Scans, monatliche manuelle Screenreader-Tests, umsetzbare Fix-Tickets, Ihre stets aktuelle Barrierefreiheitserklärung und ein datiertes Konformitätszertifikat — die Nachweisakte, die Sie jeder Behörde, jedem Verband oder Anwalt vorlegen." },
       { "q": "Ist das eine Rechtsberatung?", "a": "Nein — es ist der technische Nachweis, über den sich Ihre Rechtsberatung freuen wird. Wir prüfen, beheben, dokumentieren. Über die Strategie entscheidet Ihre Anwältin oder Ihr Anwalt." }

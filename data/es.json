@@ -65,7 +65,7 @@
     "pill": "La ley en 30 segundos",
     "cells": [
       { "h3Html": "Qué <span>es</span>", "bodyHtml": "Una ley española que transpone la Directiva (UE) 2019/882, <b>en vigor desde el 28 de junio de 2025</b>. Los servicios digitales dirigidos a consumidores deben ser utilizables por personas con discapacidad. El comercio electrónico está incluido expresamente." },
-      { "h3Html": "A quién <span>obliga</span>", "bodyHtml": "A quien venda productos <b>o servicios</b> online a consumidores en España — tiendas, SaaS, reservas y venta de entradas, banca, libros electrónicos. Solo se libran las microempresas reales: menos de 10 empleados <b>y</b> menos de 2 M€ de facturación." },
+      { "h3Html": "A quién <span>obliga</span>", "bodyHtml": "A quien venda productos <b>o servicios</b> online a consumidores en España — tiendas, <a href='/es/accesibilidad-saas/'>SaaS</a>, reservas y venta de entradas, banca, libros electrónicos. Solo se libran las microempresas reales: menos de 10 empleados <b>y</b> menos de 2 M€ de facturación." },
       { "h3Html": "Qué <span>exige</span>", "bodyHtml": "Tu web debe cumplir <b>WCAG 2.1 AA</b> — un estándar técnico con unos 50 criterios verificables. El checkout y el pago son las páginas de mayor riesgo. Una declaración de accesibilidad pública es obligatoria." }
     ]
   },
@@ -116,7 +116,7 @@
   "faqSection": {
     "h2": "Preguntas frecuentes",
     "items": [
-      { "q": "¿Me afecta esta ley?", "a": "¿Vendes a consumidores en España mediante web o app? Entonces sí. La Ley 11/2023 está en vigor desde el 28 de junio de 2025 — e-commerce, banca, telecomunicaciones, venta de entradas, libros electrónicos. El estándar es WCAG 2.1 AA (EN 301 549). Solo se libran las microempresas reales — menos de 10 empleados Y menos de 2 M€ de facturación. Deben cumplirse ambas." },
+      { "q": "¿Me afecta esta ley?", "a": "¿Vendes a consumidores en España mediante web o app? Entonces sí. La Ley 11/2023 está en vigor desde el 28 de junio de 2025 — e-commerce, banca, telecomunicaciones, venta de entradas, libros electrónicos. El estándar es WCAG 2.1 AA (EN 301 549). Solo se libran las microempresas reales — menos de 10 empleados Y menos de 2 M€ de facturación. Deben cumplirse ambas. <a href='/es/accesibilidad-tienda-online/'>Accesibilidad de una tienda online →</a>" },
       { "q": "¿De cuánto son las multas?", "a": "El régimen sancionador (basado en la LGDPD) va desde 301 € hasta <b>1.000.000 €</b>: las infracciones leves no superan los 30.000 €, las graves los 90.000 €, y las muy graves llegan hasta 1.000.000 €. Además, la autoridad puede suspender la actividad. <a href='/es/multas-accesibilidad/'>Detalle de las multas →</a>" },
       { "q": "¿No basta con un widget de accesibilidad?", "a": "No. Los overlays no cambian el código que mide el estándar. Más de 800 profesionales de la accesibilidad afirman públicamente que no funcionan, y la FTC de EE. UU. multó al proveedor accessiBe con 1 M$ por afirmaciones engañosas. Peor aún: un widget demuestra que lo sabías — sin corregir nada." },
       { "q": "¿Qué recibo cada mes?", "a": "Escaneos automáticos semanales, pruebas mensuales con lector de pantalla, tickets de corrección, tu declaración de accesibilidad siempre actualizada y un certificado de conformidad fechado — el expediente que presentas a cualquier autoridad, asociación o abogado." },

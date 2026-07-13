@@ -67,7 +67,7 @@
     "pill": "The law, in 30 seconds",
     "cells": [
       { "h3Html": "What <span>it is</span>", "bodyHtml": "An EU directive (2019/882), transposed in Ireland by <b>S.I. 636/2023 and in force since 28 June 2025</b>. Digital services sold to consumers must be usable by people with disabilities. E-commerce is named explicitly." },
-      { "h3Html": "Who <span>must comply</span>", "bodyHtml": "Anyone selling products <b>or services</b> online to consumers in Ireland — stores, SaaS, booking &amp; ticketing, banking, e-books. Only true microenterprises are exempt: under 10 staff <b>and</b> under €2M turnover." },
+      { "h3Html": "Who <span>must comply</span>", "bodyHtml": "Anyone selling products <b>or services</b> online to consumers in Ireland — stores, <a href='/ie/saas-accessibility/'>SaaS</a>, booking &amp; ticketing, banking, e-books. Only true microenterprises are exempt: under 10 staff <b>and</b> under €2M turnover." },
       { "h3Html": "What <span>it requires</span>", "bodyHtml": "Your site must meet <b>WCAG 2.1 AA</b> — a technical standard with ~50 testable criteria. Your checkout and payment flow are the highest-risk pages. A public accessibility statement is also mandatory." }
     ]
   },
@@ -118,8 +118,8 @@
   "faqSection": {
     "h2": "FAQ",
     "items": [
-      { "q": "Does this law apply to my store?", "a": "Selling to consumers in Ireland via website or app? Yes. The EAA has been in force since 28 June 2025 under S.I. 636/2023 — e-commerce, banking, telecom, travel booking, e-books. The standard is WCAG 2.1 AA (EN 301 549). Only true microenterprises — under 10 staff AND under €2M turnover — are exempt. Both must be true." },
-      { "q": "Why is Ireland different?", "a": "Ireland is the only EU member state that makes serious EAA non-compliance a criminal offence. Under S.I. 636/2023 (Regs. 32–33), conviction on indictment carries a fine up to <b>€60,000 or 18 months' imprisonment</b>; summary conviction up to €5,000 or 6 months. Company directors, managers and officers can be held personally liable unless they prove they took reasonable steps." },
+      { "q": "Does this law apply to my store?", "a": "Selling to consumers in Ireland via website or app? Yes. The EAA has been in force since 28 June 2025 under S.I. 636/2023 — e-commerce, banking, telecom, travel booking, e-books. The standard is WCAG 2.1 AA (EN 301 549). Only true microenterprises — under 10 staff AND under €2M turnover — are exempt. Both must be true. <a href='/ie/online-store-accessibility/'>Online store accessibility →</a>" },
+      { "q": "Why is Ireland different?", "a": "Ireland is the only EU member state that makes serious EAA non-compliance a criminal offence. Under S.I. 636/2023 (Regs. 32–33), conviction on indictment carries a fine up to <b>€60,000 or 18 months' imprisonment</b>; summary conviction up to €5,000 or 6 months. Company directors, managers and officers can be held personally liable unless they prove they took reasonable steps. <a href='/ie/accessibility-fines/'>Accessibility fines in Ireland →</a>" },
       { "q": "Can't I just install a widget?", "a": "No. Overlays don't touch the code the standard measures. 800+ accessibility professionals have publicly said they don't work, and the US FTC ordered accessiBe to pay $1M over its compliance claims. Worse: a widget proves you knew — without fixing anything." },
       { "q": "What do I get every month?", "a": "Weekly automated scans, monthly human screen-reader testing, developer-ready fix tickets, your accessibility statement kept current, and a dated compliance certificate — the evidence file you hand to any regulator or court." },
       { "q": "Why monitoring instead of a one-off audit?", "a": "Because every deploy can break compliance again. An audit is a snapshot. Evidence has to be current to protect you — and your directors." },
