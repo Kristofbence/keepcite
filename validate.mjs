@@ -20,6 +20,7 @@ const pages = [
   ...markets.map(m => `${m.cc}/index.html`),
   ...keywords.map(k => `${k.cc}/${k.slug}/index.html`),
   ...legals.map(l => `${l.slug}/index.html`),
+  'thanks/index.html', // noindex conversion page (not in sitemap, but still must be submission-ready)
 ];
 
 const titles = new Map(), metas = new Map();

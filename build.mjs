@@ -251,6 +251,81 @@ ${renderFooter(page.footNote, null, null)}
 `;
 }
 
+// ---------- thank-you / conversion page ----------
+// Web3Forms redirects here after a successful scan submission (see the `redirect`
+// hidden field in every scan form). noindex + excluded from sitemap.
+// This is the ONLY page that carries the Google Ads conversion tag.
+function renderThanks() {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scan requested — keepcite</title>
+<meta name="description" content="Your free accessibility scan is queued. We'll email your WCAG 2.1 AA report within 48 hours.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="${BASE}/thanks/">
+<link rel="alternate" hreflang="en" href="${BASE}/thanks/">
+<meta property="og:title" content="Scan requested — keepcite">
+<meta property="og:description" content="Your free accessibility scan is queued. Your report arrives within 48 hours.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="${BASE}/thanks/">
+<script type="application/ld+json">
+${JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebPage', name: 'Scan requested', url: `${BASE}/thanks/`, inLanguage: 'en', isPartOf: { '@type': 'WebSite', name: 'keepcite', url: `${BASE}/` } }, null, 2)}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>${sharedCss}${extraCss}</style>
+${ANALYTICS}
+<!-- Google Ads conversion tag — /thanks/ ONLY. TODO: replace AW-CONVERSION_ID and CONVERSION_LABEL with the real Google Ads values. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-CONVERSION_ID');
+</script>
+<script>
+  gtag('event', 'conversion', {
+    'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL'
+  });
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/">keep<em>cite</em></a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="/">keepcite.com</a></li>
+        <li><a class="btn" href="/#scan" style="padding:11px 20px;font-size:14.5px;">Free scan</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="legalwrap">
+    <div class="wrap">
+      <div class="legal" style="max-width:620px;margin:0 auto;text-align:center;">
+        <span class="kicker"><span class="pulse" aria-hidden="true"></span>Scan queued</span>
+        <h1 class="display" style="margin:18px 0 14px;">You're all set — your scan is on its way.</h1>
+        <p style="font-size:18px;">Thanks for requesting your free accessibility scan. We've queued your store and will email your report — checked against <b>WCAG 2.1 AA</b> — within <b>48 hours</b>.</p>
+        <p style="margin-top:26px;"><a class="btn btn-lg" href="/" style="color:#fff;">Back to homepage</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+${renderFooter('This page passes the audit it sells: WCAG 2.1 AA, keyboard-navigable, screen-reader tested. · © 2026 keepcite', null, null)}
+</body>
+</html>
+`;
+}
+
 // ---------- the template ----------
 function render(d, alternates, sep) {
   const hreflang = alternates.map(a => `<link rel="alternate" hreflang="${a.lang}" href="${a.href}">`).join('\n');
@@ -325,6 +400,7 @@ ${ANALYTICS}
         <input type="hidden" name="access_key" value="c5401409-96ce-4c81-b144-bba532372fdd">
         <input type="hidden" name="subject" value="${esc(d.scan.subject)}">
         <input type="hidden" name="market" value="${d.cc.toUpperCase()}">
+        <input type="hidden" name="redirect" value="https://keepcite.com/thanks/">
         <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" aria-hidden="true">
         <div class="row">
           <div>
@@ -562,6 +638,7 @@ ${ANALYTICS}
           <input type="hidden" name="subject" value="${esc(kw.scan.subject)}">
           <input type="hidden" name="market" value="${kw.cc.toUpperCase()}">
           <input type="hidden" name="page" value="${kw.slug}">
+          <input type="hidden" name="redirect" value="https://keepcite.com/thanks/">
           <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" aria-hidden="true">
           <div class="row">
             <div>
@@ -670,6 +747,15 @@ for (const pg of legals) {
   writeFileSync(join(dir, 'index.html'), html);
   built.push(`/${pg.slug}/`);
   console.log(`built /${pg.slug}/index.html`);
+}
+
+// thank-you / conversion page (noindex; intentionally NOT in sitemap)
+{
+  const thanksDir = join(ROOT, 'thanks');
+  mkdirSync(thanksDir, { recursive: true });
+  writeFileSync(join(thanksDir, 'index.html'), renderThanks());
+  built.push('/thanks/');
+  console.log('built /thanks/index.html (noindex, excluded from sitemap)');
 }
 
 // keep index.html's footer in sync (between the FOOTER markers)
